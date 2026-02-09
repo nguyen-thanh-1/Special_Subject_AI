@@ -9,7 +9,7 @@ from pageindex_multiformat import MultiFormatRAG
 # ═══════════════════════════════════════════════════════════
 # CONFIG - THAY ĐỔI API KEY Ở ĐÂY
 # ═══════════════════════════════════════════════════════════
-GEMINI_API_KEY = "AIzaSyDXG1WzdA1oqodgLE8jus32FK5-cOEC8bA"  # ← API key của bạn
+GEMINI_API_KEY = "[ENCRYPTION_KEY]"  # ← API key của bạn
 MODEL_NAME = "gemini-2.5-flash"   # Model name
 DOCUMENTS_DIR = "./courses"
 
