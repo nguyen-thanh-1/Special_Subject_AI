@@ -1,0 +1,426 @@
+{
+  "event": {
+    "chunk_ids": [
+      "chunk-f23ac140cb981aae9be85d4061cdc74f"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "event"
+  },
+  "The Anatomy of an Agent": {
+    "chunk_ids": [
+      "chunk-d6c229e370b8a7d2f437965f778c3850"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "The Anatomy of an Agent"
+  },
+  "event-driven microservices": {
+    "chunk_ids": [
+      "chunk-d6c229e370b8a7d2f437965f778c3850"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "event-driven microservices"
+  },
+  "Alan Turing's theoretical considerations": {
+    "chunk_ids": [
+      "chunk-d6c229e370b8a7d2f437965f778c3850"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Alan Turing's theoretical considerations"
+  },
+  "Confluent, Inc.": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent, Inc."
+  },
+  "Confluent, Inc.'s data streaming platform": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent, Inc.'s data streaming platform"
+  },
+  "Confluent, Inc.'s AI Accelerator Program": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent, Inc.'s AI Accelerator Program"
+  },
+  "Agents use APIs, sensors, and user inputs to gather data from their environment": {
+    "chunk_ids": [
+      "chunk-d6c229e370b8a7d2f437965f778c3850"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Agents use APIs, sensors, and user inputs to gather data from their environment"
+  },
+  "Confluent's cloud-native offering": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent's cloud-native offering"
+  },
+  "Confluent": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent"
+  },
+  "is related to": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "is related to"
+  },
+  "uses": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918",
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887",
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 3,
+    "update_time": 1769934371,
+    "_id": "uses"
+  },
+  "provides": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "provides"
+  },
+  "agent": {
+    "chunk_ids": [
+      "chunk-d6c229e370b8a7d2f437965f778c3850"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "agent"
+  },
+  "Is-A": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Is-A"
+  },
+  "Provides": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Provides"
+  },
+  "Confluent Data Streaming Platform": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent Data Streaming Platform"
+  },
+  "integrates": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "integrates"
+  },
+  "Apache Flink": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Apache Flink"
+  },
+  "LangGraph": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "LangGraph"
+  },
+  "Microsoft AutoGen": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Microsoft AutoGen"
+  },
+  "CrewAI": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "CrewAI"
+  },
+  "Offers": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Offers"
+  },
+  "is based on": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "is based on"
+  },
+  "integrates with": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "integrates with"
+  },
+  "employs": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887",
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 2,
+    "update_time": 1769934371,
+    "_id": "employs"
+  },
+  "utilizes": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "utilizes"
+  },
+  "MongoDB": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "MongoDB"
+  },
+  "stores data in": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "stores data in"
+  },
+  "Located-In": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Located-In"
+  },
+  "GDPR": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "GDPR"
+  },
+  "RAG": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887",
+      "chunk-04a91a22ba38bfcc9bb0e1df32b15611"
+    ],
+    "count": 2,
+    "update_time": 1769934388,
+    "_id": "RAG"
+  },
+  "GitHub": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "GitHub"
+  },
+  "Sean Falconer": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Sean Falconer"
+  },
+  "Confluent, LLC": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent, LLC"
+  },
+  "complies with": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "complies with"
+  },
+  "generates": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "generates"
+  },
+  "hosts": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "hosts"
+  },
+  "is-author-of": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "is-author-of"
+  },
+  "develops": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "develops"
+  },
+  "Artificial Intelligence": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Artificial Intelligence"
+  },
+  "Predictive AI": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Predictive AI"
+  },
+  "requires": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "requires"
+  },
+  "transforms": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "transforms"
+  },
+  "has-relation-with": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "has-relation-with"
+  },
+  "integrates-with": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "integrates-with"
+  },
+  "Llama 3.1 8B": {
+    "chunk_ids": [
+      "chunk-04a91a22ba38bfcc9bb0e1df32b15611"
+    ],
+    "count": 1,
+    "create_time": 1769934388,
+    "update_time": 1769934388,
+    "_id": "Llama 3.1 8B"
+  }
+}

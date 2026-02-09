@@ -1,0 +1,83 @@
+{
+  "Confluent, Inc.<SEP>is related to": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Confluent, Inc.<SEP>is related to"
+  },
+  "Confluent, Inc.'s data streaming platform<SEP>uses": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Confluent, Inc.'s data streaming platform<SEP>uses"
+  },
+  "Confluent, Inc.'s AI Accelerator Program<SEP>provides": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Confluent, Inc.'s AI Accelerator Program<SEP>provides"
+  },
+  "Agents use APIs, sensors, and user inputs to gather data from their environment<SEP>agent": {
+    "chunk_ids": [
+      "chunk-d6c229e370b8a7d2f437965f778c3850"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Agents use APIs, sensors, and user inputs to gather data from their environment<SEP>agent"
+  },
+  "Confluent's cloud-native offering<SEP>Is-A": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Confluent's cloud-native offering<SEP>Is-A"
+  },
+  "Confluent<SEP>Provides": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Confluent<SEP>Provides"
+  },
+  "Confluent, Inc.'s data streaming platform<SEP>integrates": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Confluent, Inc.'s data streaming platform<SEP>integrates"
+  },
+  "Confluent<SEP>Offers": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Confluent<SEP>Offers"
+  },
+  "Confluent<SEP>Located-In": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Confluent<SEP>Located-In"
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "Confluent, Inc.<SEP>is related to": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent, Inc.<SEP>is related to"
+  },
+  "Confluent, Inc.'s data streaming platform<SEP>uses": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent, Inc.'s data streaming platform<SEP>uses"
+  },
+  "Confluent, Inc.'s AI Accelerator Program<SEP>provides": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent, Inc.'s AI Accelerator Program<SEP>provides"
+  },
+  "Agents use APIs, sensors, and user inputs to gather data from their environment<SEP>agent": {
+    "chunk_ids": [
+      "chunk-d6c229e370b8a7d2f437965f778c3850"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Agents use APIs, sensors, and user inputs to gather data from their environment<SEP>agent"
+  },
+  "Confluent's cloud-native offering<SEP>Is-A": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent's cloud-native offering<SEP>Is-A"
+  },
+  "Confluent<SEP>Provides": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent<SEP>Provides"
+  },
+  "Confluent, Inc.'s data streaming platform<SEP>integrates": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent, Inc.'s data streaming platform<SEP>integrates"
+  },
+  "Confluent Data Streaming Platform<SEP>is based on": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent Data Streaming Platform<SEP>is based on"
+  },
+  "Apache Flink<SEP>uses": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Apache Flink<SEP>uses"
+  },
+  "Confluent<SEP>Offers": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent<SEP>Offers"
+  },
+  "LangGraph<SEP>integrates with": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "LangGraph<SEP>integrates with"
+  },
+  "Microsoft AutoGen<SEP>employs": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Microsoft AutoGen<SEP>employs"
+  },
+  "CrewAI<SEP>utilizes": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "CrewAI<SEP>utilizes"
+  },
+  "MongoDB<SEP>stores data in": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "MongoDB<SEP>stores data in"
+  },
+  "Confluent<SEP>Located-In": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent<SEP>Located-In"
+  },
+  "GDPR<SEP>complies with": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "GDPR<SEP>complies with"
+  },
+  "RAG<SEP>generates": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "RAG<SEP>generates"
+  },
+  "GitHub<SEP>hosts": {
+    "chunk_ids": [
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "GitHub<SEP>hosts"
+  },
+  "Sean Falconer<SEP>is-author-of": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Sean Falconer<SEP>is-author-of"
+  },
+  "Confluent, LLC<SEP>develops": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent, LLC<SEP>develops"
+  },
+  "Artificial Intelligence<SEP>requires": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Artificial Intelligence<SEP>requires"
+  },
+  "Sean Falconer<SEP>employs": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Sean Falconer<SEP>employs"
+  },
+  "Predictive AI<SEP>transforms": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Predictive AI<SEP>transforms"
+  },
+  "Confluent, LLC<SEP>uses": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent, LLC<SEP>uses"
+  },
+  "Confluent, LLC<SEP>has-relation-with": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent, LLC<SEP>has-relation-with"
+  },
+  "Confluent, LLC<SEP>integrates-with": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "Confluent, LLC<SEP>integrates-with"
+  }
+}

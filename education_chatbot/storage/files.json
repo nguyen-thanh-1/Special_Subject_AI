@@ -1,0 +1,12 @@
+{
+  "nlp-book.pdf": {
+    "hash": "39b46ffc9c7378b20d4e357817367d58",
+    "chunks": 1981,
+    "indexed_at": "2026-02-06T21:54:38.783109"
+  },
+  "20250423-EB-Event-Driven_Design_for_Agents_copy.pdf": {
+    "hash": "3a3b721d4f48fe55fdc0c24fdb64e091",
+    "chunks": 61,
+    "indexed_at": "2026-02-06T21:54:59.848730"
+  }
+}

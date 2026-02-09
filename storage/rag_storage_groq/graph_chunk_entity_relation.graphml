@@ -1,0 +1,1708 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="truncate" attr.type="string"/>
+<key id="d12" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d11" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d10" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d8" for="edge" attr.name="description" attr.type="string"/>
+<key id="d7" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d6" for="node" attr.name="truncate" attr.type="string"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Memory">
+  <data key="d0">Memory</data>
+  <data key="d1">concept</data>
+  <data key="d2">Memory refers to the ability of agents to retain domain-specific information across interactions, similar to human short-term and long-term memory.&lt;SEP&gt;Memory refers to the ability of an agent to retain and recall information.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e&lt;SEP&gt;chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Short-Term Memory">
+  <data key="d0">Short-Term Memory</data>
+  <data key="d1">concept</data>
+  <data key="d2">Short-term memory allows agents to keep track of immediate context within a conversation, stored temporarily in memory buffers during the session.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Long-Term Memory">
+  <data key="d0">Long-Term Memory</data>
+  <data key="d1">concept</data>
+  <data key="d2">Long-term memory involves storing historical data, such as user preferences or past interactions, in permanent storage like vector databases.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Vector Database">
+  <data key="d0">Vector Database</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A vector database, such as MongoDB, Elasticsearch, or Pinecone, enables semantic search and efficient retrieval of relevant information.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Planning">
+  <data key="d0">Planning</data>
+  <data key="d1">concept</data>
+  <data key="d2">Planning is the process by which agents devise a plan to achieve their goals, mirroring human strategizing and problem-solving.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Action">
+  <data key="d0">Action</data>
+  <data key="d1">concept</data>
+  <data key="d2">Action refers to the execution of planned steps, where agents interact with the world by sending messages, controlling devices, or updating databases.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Execution Handlers">
+  <data key="d0">Execution Handlers</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Execution handlers are responsible for ensuring accurate action execution and validating outcomes.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Learning">
+  <data key="d0">Learning</data>
+  <data key="d1">concept</data>
+  <data key="d2">Learning involves agents improving from mistakes and adapting to new information using machine learning, refining reasoning, predictions, and actions.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Machine Learning">
+  <data key="d0">Machine Learning</data>
+  <data key="d1">method</data>
+  <data key="d2">Machine Learning is a method used in Predictive AI to build models for specific tasks.&lt;SEP&gt;Machine learning is a method used by agents to learn from data, optimize decision-making, and improve performance.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e&lt;SEP&gt;chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Reinforcement Learning">
+  <data key="d0">Reinforcement Learning</data>
+  <data key="d1">method</data>
+  <data key="d2">Reinforcement learning is a type of machine learning where decision-making is optimized using rewards or penalties tied to specific actions.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Coordination">
+  <data key="d0">Coordination</data>
+  <data key="d1">concept</data>
+  <data key="d2">Coordination enables agents to work together, share knowledge, and divide tasks to achieve shared goals.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Collaboration">
+  <data key="d0">Collaboration</data>
+  <data key="d1">concept</data>
+  <data key="d2">Collaboration refers to the process of agents working together, exchanging information, and adapting to changes.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Tool Interface">
+  <data key="d0">Tool Interface</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The tool interface is a bridge for agents to access specialized capabilities, extend their reach, and operate effectively in the real world.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="API Handlers">
+  <data key="d0">API Handlers</data>
+  <data key="d1">artifact</data>
+  <data key="d2">API handlers or plugin architectures allow agents to extend their functionality dynamically and efficiently.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Event-Driven Architecture">
+  <data key="d0">Event-Driven Architecture</data>
+  <data key="d1">concept</data>
+  <data key="d2">Event-driven architecture enables agents to operate in an ecosystem where they consume and emit events dynamically, ensuring scalability and adaptability.&lt;SEP&gt;Event-driven architecture ensures seamless coordination and communication among agents in a multi-agent system.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e&lt;SEP&gt;chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Microservices Architecture">
+  <data key="d0">Microservices Architecture</data>
+  <data key="d1">concept</data>
+  <data key="d2">Microservices architecture is a design approach that allows services to operate independently, enabling real-time responsiveness and scalability.&lt;SEP&gt;Microservices Architecture is a design approach that structures an application as a collection of small, independent services, similar to how AI Agents operate.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e&lt;SEP&gt;chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Event Streaming">
+  <data key="d0">Event Streaming</data>
+  <data key="d1">method</data>
+  <data key="d2">Event streaming is a method that enables agents to collaborate without rigid dependencies, ensuring flexibility and resilience.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Data Streaming Platform">
+  <data key="d0">Data Streaming Platform</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A Data Streaming Platform is a tool that enables event-driven design and facilitates real-time event processing.&lt;SEP&gt;A data streaming platform connects disparate data sources, processes events in motion, and enforces governance, enabling agents to operate on real-time, contextualized data.&lt;SEP&gt;A Data Streaming Platform is a tool that enables the real-time processing and analysis of data, crucial for event-driven systems.&lt;SEP&gt;A data streaming platform is a technology that enables the continuous, low-latency access to real-time data, essential for scalable agentic systems.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e&lt;SEP&gt;chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c&lt;SEP&gt;chunk-36de3e44c6c5713387fd456adc08fc1e&lt;SEP&gt;chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Multi-Agent Systems">
+  <data key="d0">Multi-Agent Systems</data>
+  <data key="d1">concept</data>
+  <data key="d2">Multi-agent systems consist of multiple specialized agents working together to solve complex problems, distributing workloads, balancing specialization, and enabling decentralized decision-making.&lt;SEP&gt;Multi-agent systems are designed to distribute workloads, balance specialization, and enable decentralized decision-making.&lt;SEP&gt;Multi-Agent Systems refer to networks of agents that collaborate and interact to achieve common goals.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e&lt;SEP&gt;chunk-36de3e44c6c5713387fd456adc08fc1e&lt;SEP&gt;chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Apache Kafka">
+  <data key="d0">Apache Kafka</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Apache Kafka is a message broker used for asynchronous communication in microservices architecture.&lt;SEP&gt;Apache Kafka is a tool used in data streaming platforms for connecting and unlocking data from any system.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e&lt;SEP&gt;chunk-48e7d7bf91dbafcf34da8fb5c497bc79&lt;SEP&gt;chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="MongoDB">
+  <data key="d0">MongoDB</data>
+  <data key="d1">artifact</data>
+  <data key="d2">MongoDB is a vector database that enables semantic search and efficient retrieval of relevant information.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Elasticsearch">
+  <data key="d0">Elasticsearch</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Elasticsearch is a vector database that enables semantic search and efficient retrieval of relevant information.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Pinecone">
+  <data key="d0">Pinecone</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Pinecone is a vector database that enables semantic search and efficient retrieval of relevant information.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Agent">
+  <data key="d0">Agent</data>
+  <data key="d1">concept</data>
+  <data key="d2">An agent is an autonomous entity that can perceive its environment, reason, and take actions to achieve its goals.&lt;SEP&gt;An agent is an autonomous entity that can perform tasks and interact with other agents in a multi-agent system.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e&lt;SEP&gt;chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Human">
+  <data key="d0">Human</data>
+  <data key="d1">creature</data>
+  <data key="d2">Humans are biological creatures capable of cognition, problem-solving, and interaction with their environment.</data>
+  <data key="d3">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Market-Based Pattern">
+  <data key="d0">Market-Based Pattern</data>
+  <data key="d1">concept</data>
+  <data key="d2">The Market-Based Pattern models a decentralized system where agents negotiate or compete for tasks and resources.&lt;SEP&gt;The Market-Based Pattern is a decentralized system model where agents negotiate or compete for tasks and resources.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c&lt;SEP&gt;chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Autonomous Trading">
+  <data key="d0">Autonomous Trading</data>
+  <data key="d1">concept</data>
+  <data key="d2">Autonomous trading is an application of the Market-Based Pattern, where agents make decisions without human intervention.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Logistics">
+  <data key="d0">Logistics</data>
+  <data key="d1">concept</data>
+  <data key="d2">Logistics is a field that benefits from the Market-Based Pattern, particularly in optimizing resource allocation.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Distributed Optimization Problems">
+  <data key="d0">Distributed Optimization Problems</data>
+  <data key="d1">concept</data>
+  <data key="d2">Distributed optimization problems are complex challenges that the Market-Based Pattern can help solve by enabling agents to work together efficiently.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Event-Driven Approach">
+  <data key="d0">Event-Driven Approach</data>
+  <data key="d1">method</data>
+  <data key="d2">The Event-Driven Approach is a design pattern that allows agents to interact through a central event log, reducing complexity.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Apache Flink">
+  <data key="d0">Apache Flink</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Apache Flink is a technology used for processing and analyzing data in real-time, often in conjunction with the Event-Driven Approach.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="AI Model Inference">
+  <data key="d0">AI Model Inference</data>
+  <data key="d1">concept</data>
+  <data key="d2">AI Model Inference is the process of using artificial intelligence models to make predictions or decisions, which can be facilitated by the Event-Driven Approach.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Multi-Agent System">
+  <data key="d0">Multi-Agent System</data>
+  <data key="d1">concept</data>
+  <data key="d2">A Multi-Agent System is a system composed of multiple agents that interact with each other, often using an Event-Driven Approach.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Confluent Data Streaming Platform">
+  <data key="d0">Confluent Data Streaming Platform</data>
+  <data key="d1">organization</data>
+  <data key="d2">Confluent Data Streaming Platform is a foundation for multi-agent systems, enabling agents to consume, process, and act on data in motion.&lt;SEP&gt;Confluent is a company that provides a Data Streaming Platform, which is used to support event-driven architectures.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c&lt;SEP&gt;chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Kafka">
+  <data key="d0">Kafka</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Kafka is an open-source software used for building real-time data pipelines and streaming apps, often part of a Data Streaming Platform.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="GitHub">
+  <data key="d0">GitHub</data>
+  <data key="d1">artifact</data>
+  <data key="d2">GitHub is a platform where developers can share and collaborate on code, including implementations of the Market-Based Pattern and Event-Driven Approach.&lt;SEP&gt;GitHub is a web-based platform for version control and collaboration, where users can access and share code repositories.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c&lt;SEP&gt;chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="AI Agents">
+  <data key="d0">AI Agents</data>
+  <data key="d1">concept</data>
+  <data key="d2">AI Agents are autonomous entities that use artificial intelligence to make decisions and interact with their environment.&lt;SEP&gt;AI agents are software programs that can think, act, and collaborate in real-time, using event-driven architectures to process and respond to events.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c&lt;SEP&gt;chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Event Persistence">
+  <data key="d0">Event Persistence</data>
+  <data key="d1">concept</data>
+  <data key="d2">Event Persistence refers to the ability of a system to store and retrieve events, ensuring consistency and reliability.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Immutable Logs">
+  <data key="d0">Immutable Logs</data>
+  <data key="d1">concept</data>
+  <data key="d2">Immutable Logs are records of events that cannot be altered, providing a secure and trustworthy basis for event-driven systems.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Real-Time Event Broker">
+  <data key="d0">Real-Time Event Broker</data>
+  <data key="d1">concept</data>
+  <data key="d2">A Real-Time Event Broker is a system that facilitates the exchange of events between agents in real-time, enabling efficient communication and decision-making.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Financial Markets">
+  <data key="d0">Financial Markets</data>
+  <data key="d1">location</data>
+  <data key="d2">Financial Markets refer to the platforms where financial assets are traded, and prices are determined, often utilizing event-driven systems for real-time transactions.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="LangGraph">
+  <data key="d0">LangGraph</data>
+  <data key="d1">artifact</data>
+  <data key="d2">LangGraph is a framework used for building and managing complex agent systems, potentially integrating with event-driven architectures.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Cloud-Native Service">
+  <data key="d0">Cloud-Native Service</data>
+  <data key="d1">concept</data>
+  <data key="d2">A Cloud-Native Service is a software service designed to take advantage of cloud computing principles, such as scalability and on-demand resources, which can support event-driven systems.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Vector Stores">
+  <data key="d0">Vector Stores</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Vector Stores are databases optimized for storing and querying vector data, which can be used in AI agent systems for efficient information retrieval.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Enterprise Applications">
+  <data key="d0">Enterprise Applications</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Enterprise Applications are software systems designed to support the operations of an organization, which can interact with AI agents and event-driven systems.</data>
+  <data key="d3">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Sean Falconer">
+  <data key="d0">Sean Falconer</data>
+  <data key="d1">person</data>
+  <data key="d2">Sean Falconer is an AI Entrepreneur in Residence at Confluent.</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Confluent">
+  <data key="d0">Confluent</data>
+  <data key="d1">organization</data>
+  <data key="d2">Confluent is a company where Sean Falconer works as an AI Entrepreneur in Residence.&lt;SEP&gt;Confluent is a company that pioneers a fundamentally new category of data infrastructure focused on data in motion, offering a cloud-native platform for real-time data streaming.&lt;SEP&gt;Confluent is an organization that provides information on digital front-end customer experiences and back-end operations.</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e&lt;SEP&gt;chunk-e0da988329c10b63d290447e49c5bbe2&lt;SEP&gt;chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="AI">
+  <data key="d0">AI</data>
+  <data key="d1">concept</data>
+  <data key="d2">AI refers to Artificial Intelligence, which has evolved through three distinct phases.</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Event-Driven Design">
+  <data key="d0">Event-Driven Design</data>
+  <data key="d1">concept</data>
+  <data key="d2">Event-Driven Design is an approach to building AI systems that react dynamically to changes.</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Agentic AI">
+  <data key="d0">Agentic AI</data>
+  <data key="d1">concept</data>
+  <data key="d2">Agentic AI is a phase of AI evolution that enables systems to act, adapt, and collaborate in real time.</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Predictive AI">
+  <data key="d0">Predictive AI</data>
+  <data key="d1">concept</data>
+  <data key="d2">Predictive AI is the first wave of AI evolution, focusing on predictive capabilities for narrowly defined tasks.</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Generative AI">
+  <data key="d0">Generative AI</data>
+  <data key="d1">concept</data>
+  <data key="d2">Generative AI is the second wave of AI evolution, marked by the ability to generate text, images, and videos.</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Deep Learning">
+  <data key="d0">Deep Learning</data>
+  <data key="d1">method</data>
+  <data key="d2">Deep Learning is a method used in Generative AI to train models on vast, diverse datasets.</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="LLMs">
+  <data key="d0">LLMs</data>
+  <data key="d1">concept</data>
+  <data key="d2">LLMs, or Large Language Models, are foundation models used in Generative AI.&lt;SEP&gt;LLMs, or Large Language Models, are broadly capable and reusable foundation models.&lt;SEP&gt;LLMs stands for Large Language Models, which are AI models used for generating precise Flink SQL queries.</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e&lt;SEP&gt;chunk-e0da988329c10b63d290447e49c5bbe2&lt;SEP&gt;chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Artificial Intelligence">
+  <data key="d0">Artificial Intelligence</data>
+  <data key="d1">concept</data>
+  <data key="d2">Artificial Intelligence refers to the broader field of research and development that encompasses various phases of AI evolution.&lt;SEP&gt;Artificial intelligence refers to the development of computer systems that can perform tasks that typically require human intelligence.</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e&lt;SEP&gt;chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Foundation Models">
+  <data key="d0">Foundation Models</data>
+  <data key="d1">concept</data>
+  <data key="d2">Foundation Models are broadly capable and reusable models, such as LLMs, used in Generative AI.&lt;SEP&gt;Foundation models are a type of artificial intelligence model that can be fine-tuned for specific tasks.</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e&lt;SEP&gt;chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Real-Time Event Processing">
+  <data key="d0">Real-Time Event Processing</data>
+  <data key="d1">concept</data>
+  <data key="d2">Real-Time Event Processing is a capability enabled by a Data Streaming Platform, allowing for dynamic reaction to changes.</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Scalability">
+  <data key="d0">Scalability</data>
+  <data key="d1">concept</data>
+  <data key="d2">Scalability is a key benefit of Event-Driven Design, enabling systems to handle increased complexity without performance degradation.</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Agentic RAG">
+  <data key="d0">Agentic RAG</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Agentic RAG is an event-driven research agent that mines source materials and creates a podcast interview brief using RAG.</data>
+  <data key="d3">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Reworkd">
+  <data key="d0">Reworkd</data>
+  <data key="d1">organization</data>
+  <data key="d2">Reworkd is a company that built an agentic system for web scraping, using AI agents to extract relevant data and test and validation agents to verify the generated code.</data>
+  <data key="d3">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Airy">
+  <data key="d0">Airy</data>
+  <data key="d1">organization</data>
+  <data key="d2">Airy is a company that enables AI-powered copilots, providing a natural language interface for exploring and working with real-time data.</data>
+  <data key="d3">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Agent Taskflow">
+  <data key="d0">Agent Taskflow</data>
+  <data key="d1">organization</data>
+  <data key="d2">Agent Taskflow is a company that provides a no-code platform for building multi-agent systems, allowing users to create workflows with a drag-and-drop UI.</data>
+  <data key="d3">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Event-Driven Agentic Systems">
+  <data key="d0">Event-Driven Agentic Systems</data>
+  <data key="d1">concept</data>
+  <data key="d2">Event-driven agentic systems are a type of architecture that enables AI agents to operate in real-time, processing and responding to events as they happen.</data>
+  <data key="d3">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Web Scraping">
+  <data key="d0">Web Scraping</data>
+  <data key="d1">method</data>
+  <data key="d2">Web scraping is the process of extracting data from websites, which can be automated using AI agents and event-driven architectures.</data>
+  <data key="d3">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Intelligent Business Copilots">
+  <data key="d0">Intelligent Business Copilots</data>
+  <data key="d1">concept</data>
+  <data key="d2">Intelligent business copilots are AI-powered systems that provide real-time access to data, enabling faster and smarter decision-making.</data>
+  <data key="d3">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Workflow Automation">
+  <data key="d0">Workflow Automation</data>
+  <data key="d1">concept</data>
+  <data key="d2">Workflow automation is the process of automating complex, real-time tasks using AI agents and event-driven architectures.</data>
+  <data key="d3">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="GitHub Repo">
+  <data key="d0">GitHub Repo</data>
+  <data key="d1">location</data>
+  <data key="d2">GitHub Repo is a web-based platform for version control and collaboration, where users can access and share code repositories.</data>
+  <data key="d3">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Blog">
+  <data key="d0">Blog</data>
+  <data key="d1">content</data>
+  <data key="d2">Blog is a source of information where users can learn more about event-driven agentic systems and related topics.</data>
+  <data key="d3">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Flink Jobs">
+  <data key="d0">Flink Jobs</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Flink jobs are software programs used for processing and analyzing data streams.</data>
+  <data key="d3">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Real-Time Data">
+  <data key="d0">Real-Time Data</data>
+  <data key="d1">data</data>
+  <data key="d2">Real-time data refers to information that is processed and analyzed as it happens, enabling immediate decision-making.</data>
+  <data key="d3">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Scalable Agentic Systems">
+  <data key="d0">Scalable Agentic Systems</data>
+  <data key="d1">concept</data>
+  <data key="d2">Scalable agentic systems are architectures that enable AI agents to operate in real-time, processing and responding to events as they happen.</data>
+  <data key="d3">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Orchestrator-Worker Pattern">
+  <data key="d0">Orchestrator-Worker Pattern</data>
+  <data key="d1">concept</data>
+  <data key="d2">The Orchestrator-Worker pattern is a design pattern where a central agent assigns tasks to worker agents and manages execution.</data>
+  <data key="d3">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Hierarchical Agent Pattern">
+  <data key="d0">Hierarchical Agent Pattern</data>
+  <data key="d1">concept</data>
+  <data key="d2">The Hierarchical Agent pattern organizes agents into layers, where higher-level agents oversee or delegate tasks to lower-level agents.</data>
+  <data key="d3">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Blackboard Pattern">
+  <data key="d0">Blackboard Pattern</data>
+  <data key="d1">concept</data>
+  <data key="d2">The Blackboard Pattern introduces a shared knowledge base where agents asynchronously post and retrieve information.</data>
+  <data key="d3">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Data Streaming">
+  <data key="d0">Data Streaming</data>
+  <data key="d1">concept</data>
+  <data key="d2">Data streaming refers to the process of transmitting and processing data in real-time, enabling efficient decision-making and action.</data>
+  <data key="d3">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Event Log">
+  <data key="d0">Event Log</data>
+  <data key="d1">artifact</data>
+  <data key="d2">An event log is a central repository that stores and manages events, allowing agents to interact and coordinate with each other.</data>
+  <data key="d3">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Decentralized System">
+  <data key="d0">Decentralized System</data>
+  <data key="d1">concept</data>
+  <data key="d2">A decentralized system is a system where decision-making and control are distributed among multiple agents, rather than being controlled by a central authority.</data>
+  <data key="d3">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Generative Models">
+  <data key="d0">Generative Models</data>
+  <data key="d1">concept</data>
+  <data key="d2">Generative models are a type of AI model that can generate text or other content, but are fixed in time and difficult to adapt.</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Compound AI">
+  <data key="d0">Compound AI</data>
+  <data key="d1">organization</data>
+  <data key="d2">Compound AI is a company that develops AI systems that integrate generative models with other components.</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Retrieval-Augmented Generation (RAG)">
+  <data key="d0">Retrieval-Augmented Generation (RAG)</data>
+  <data key="d1">method</data>
+  <data key="d2">RAG is a process that dynamically incorporates relevant data into a model's workflow to generate more accurate responses.</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Agentic Systems">
+  <data key="d0">Agentic Systems</data>
+  <data key="d1">concept</data>
+  <data key="d2">Agentic systems are a type of AI that can think, adapt, and act independently, using dynamic context-driven workflows.</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="HubSpot">
+  <data key="d0">HubSpot</data>
+  <data key="d1">organization</data>
+  <data key="d2">HubSpot is a company that develops marketing and sales software, and its CTO Dharmesh Shah has spoken about the potential of agentic systems.</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Salesforce">
+  <data key="d0">Salesforce</data>
+  <data key="d1">organization</data>
+  <data key="d2">Salesforce is a company that develops customer relationship management software, and its CEO Marc Benioff has spoken about the future of AI and agentic systems.</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Dharmesh Shah">
+  <data key="d0">Dharmesh Shah</data>
+  <data key="d1">person</data>
+  <data key="d2">Dharmesh Shah is the CTO of HubSpot and has spoken about the potential of agentic systems.</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Marc Benioff">
+  <data key="d0">Marc Benioff</data>
+  <data key="d1">person</data>
+  <data key="d2">Marc Benioff is the CEO of Salesforce and has spoken about the future of AI and agentic systems.</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Alan Turing">
+  <data key="d0">Alan Turing</data>
+  <data key="d1">person</data>
+  <data key="d2">Alan Turing was a computer scientist and mathematician who made significant contributions to the development of artificial intelligence.</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="John McCarthy">
+  <data key="d0">John McCarthy</data>
+  <data key="d1">person</data>
+  <data key="d2">John McCarthy was a computer scientist who made significant contributions to the development of artificial intelligence.</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="APIs">
+  <data key="d0">APIs</data>
+  <data key="d1">artifact</data>
+  <data key="d2">APIs, or Application Programming Interfaces, are used by agents to gather data from the world around them.</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Sensors">
+  <data key="d0">Sensors</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Sensors are used by agents to gather data from the world around them.</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="User Inputs">
+  <data key="d0">User Inputs</data>
+  <data key="d1">data</data>
+  <data key="d2">User inputs are used by agents to gather data from the world around them.</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Rule-Based Reasoning Agents">
+  <data key="d0">Rule-Based Reasoning Agents</data>
+  <data key="d1">concept</data>
+  <data key="d2">Rule-based reasoning agents are a type of artificial intelligence agent that uses rules to make decisions.</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Persona">
+  <data key="d0">Persona</data>
+  <data key="d1">concept</data>
+  <data key="d2">In the context of artificial intelligence, a persona refers to the role or function of an agent.</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Perception">
+  <data key="d0">Perception</data>
+  <data key="d1">concept</data>
+  <data key="d2">Perception refers to the process by which an agent gathers information from its environment.</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Reasoning And Decision-Making">
+  <data key="d0">Reasoning And Decision-Making</data>
+  <data key="d1">concept</data>
+  <data key="d2">Reasoning and decision-making refer to the processes by which an agent analyzes information and makes decisions.</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916559</data>
+  <data key="d6"></data>
+</node>
+<node id="Digital Front-End Customer Experiences">
+  <data key="d0">Digital Front-End Customer Experiences</data>
+  <data key="d1">concept</data>
+  <data key="d2">Digital front-end customer experiences refer to the interactions customers have with a company's digital platforms.</data>
+  <data key="d3">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916560</data>
+  <data key="d6"></data>
+</node>
+<node id="Real-Time Software-Driven Back-End Operations">
+  <data key="d0">Real-Time Software-Driven Back-End Operations</data>
+  <data key="d1">concept</data>
+  <data key="d2">Real-time software-driven back-end operations involve the use of software to manage and process data in real-time.</data>
+  <data key="d3">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916560</data>
+  <data key="d6"></data>
+</node>
+<node id="Www.Confluent.Io">
+  <data key="d0">Www.Confluent.Io</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Www.confluent.io is a website that provides more information on digital front-end customer experiences and back-end operations.</data>
+  <data key="d3">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916560</data>
+  <data key="d6"></data>
+</node>
+<node id="Software">
+  <data key="d0">Software</data>
+  <data key="d1">concept</data>
+  <data key="d2">Software refers to the programs and operating systems used in digital front-end customer experiences and back-end operations.</data>
+  <data key="d3">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916560</data>
+  <data key="d6"></data>
+</node>
+<node id="Customer Experiences">
+  <data key="d0">Customer Experiences</data>
+  <data key="d1">concept</data>
+  <data key="d2">Customer experiences encompass the interactions and impressions customers have with a company's products or services.</data>
+  <data key="d3">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916560</data>
+  <data key="d6"></data>
+</node>
+<node id="Back-End Operations">
+  <data key="d0">Back-End Operations</data>
+  <data key="d1">concept</data>
+  <data key="d2">Back-end operations involve the management and processing of data and systems that support a company's front-end customer experiences.</data>
+  <data key="d3">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916560</data>
+  <data key="d6"></data>
+</node>
+<node id="Agents">
+  <data key="d0">Agents</data>
+  <data key="d3">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d2">APIs are used by agents to gather data from the world around them.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769916560</data>
+  <data key="d6"></data>
+</node>
+<edge source="Memory" target="Short-Term Memory">
+  <data key="d7">1.0</data>
+  <data key="d8">Short-term memory is a type of memory that allows agents to retain information temporarily.</data>
+  <data key="d9">information retention,memory type</data>
+  <data key="d10">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Memory" target="Long-Term Memory">
+  <data key="d7">1.0</data>
+  <data key="d8">Long-term memory is a type of memory that allows agents to retain information permanently.</data>
+  <data key="d9">information retention,memory type</data>
+  <data key="d10">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Memory" target="Agent">
+  <data key="d7">1.0</data>
+  <data key="d8">Memory is a crucial aspect of an agent's cognitive function, enabling it to retain information and learn from experiences.</data>
+  <data key="d9">cognitive function,information retention</data>
+  <data key="d10">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Memory" target="Agents">
+  <data key="d7">1.0</data>
+  <data key="d8">Memory is the ability of an agent to retain and recall information.</data>
+  <data key="d9">ability,concept relationship</data>
+  <data key="d10">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Planning" target="Action">
+  <data key="d7">1.0</data>
+  <data key="d8">Planning leads to action, where agents execute planned steps to achieve their goals.</data>
+  <data key="d9">execution,problem-solving</data>
+  <data key="d10">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Planning" target="Agent">
+  <data key="d7">1.0</data>
+  <data key="d8">Planning is a key component of an agent's decision-making process, allowing it to devise strategies and achieve goals.</data>
+  <data key="d9">decision-making,problem-solving</data>
+  <data key="d10">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Action" target="Execution Handlers">
+  <data key="d7">1.0</data>
+  <data key="d8">Execution handlers are responsible for ensuring accurate action execution and validating outcomes.</data>
+  <data key="d9">execution,validation</data>
+  <data key="d10">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Action" target="Agent">
+  <data key="d7">1.0</data>
+  <data key="d8">Action is the execution of planned steps by an agent, enabling it to interact with its environment and achieve goals.</data>
+  <data key="d9">execution,interaction</data>
+  <data key="d10">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Learning" target="Machine Learning">
+  <data key="d7">1.0</data>
+  <data key="d8">Machine learning is a method used by agents to learn and adapt.</data>
+  <data key="d9">adaptation,improvement</data>
+  <data key="d10">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Learning" target="Agent">
+  <data key="d7">1.0</data>
+  <data key="d8">Learning is a critical aspect of an agent's development, enabling it to improve its performance and adapt to changing environments.</data>
+  <data key="d9">adaptation,improvement</data>
+  <data key="d10">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Machine Learning" target="Predictive AI">
+  <data key="d7">1.0</data>
+  <data key="d8">Machine Learning is a method used in Predictive AI.</data>
+  <data key="d9">application,method</data>
+  <data key="d10">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Coordination" target="Collaboration">
+  <data key="d7">1.0</data>
+  <data key="d8">Coordination enables agents to collaborate and work together to achieve shared goals.</data>
+  <data key="d9">agent interaction,goal achievement</data>
+  <data key="d10">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Coordination" target="Multi-Agent Systems">
+  <data key="d7">1.0</data>
+  <data key="d8">Coordination is crucial for multi-agent systems, enabling agents to work together effectively.</data>
+  <data key="d9">agent interaction,system design</data>
+  <data key="d10">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Tool Interface" target="API Handlers">
+  <data key="d7">1.0</data>
+  <data key="d8">The tool interface uses API handlers to extend agent functionality.</data>
+  <data key="d9">functionality extension,interface</data>
+  <data key="d10">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Event-Driven Architecture" target="Microservices Architecture">
+  <data key="d7">1.0</data>
+  <data key="d8">Event-driven architecture is inspired by microservices architecture, enabling scalability and adaptability.</data>
+  <data key="d9">design approach,scalability</data>
+  <data key="d10">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Event-Driven Architecture" target="Agent">
+  <data key="d7">1.0</data>
+  <data key="d8">Event-driven architecture is a design approach that enables agents to operate in a scalable and adaptable manner.</data>
+  <data key="d9">design approach,scalability</data>
+  <data key="d10">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Event-Driven Architecture" target="Multi-Agent Systems">
+  <data key="d7">1.0</data>
+  <data key="d8">Multi-agent systems utilize event-driven architecture for seamless coordination and communication.</data>
+  <data key="d9">coordination,system design</data>
+  <data key="d10">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Event-Driven Architecture" target="Orchestrator-Worker Pattern">
+  <data key="d7">1.0</data>
+  <data key="d8">The Orchestrator-Worker pattern is adapted to be event-driven, ensuring scalability and efficiency.</data>
+  <data key="d9">pattern adaptation,scalability</data>
+  <data key="d10">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Event-Driven Architecture" target="Hierarchical Agent Pattern">
+  <data key="d7">1.0</data>
+  <data key="d8">The Hierarchical Agent pattern is made event-driven to ensure scalability and structured delegation.</data>
+  <data key="d9">pattern adaptation,scalability</data>
+  <data key="d10">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Event-Driven Architecture" target="Blackboard Pattern">
+  <data key="d7">1.0</data>
+  <data key="d8">The Blackboard Pattern is adapted to be event-driven, allowing for real-time collaboration among agents.</data>
+  <data key="d9">pattern adaptation,real-time collaboration</data>
+  <data key="d10">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Event-Driven Architecture" target="Market-Based Pattern">
+  <data key="d7">1.0</data>
+  <data key="d8">The Market-Based Pattern is made event-driven, modeling a decentralized system where agents interact through a central event log.</data>
+  <data key="d9">decentralization,pattern adaptation</data>
+  <data key="d10">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Event-Driven Architecture" target="Data Streaming">
+  <data key="d7">1.0</data>
+  <data key="d8">Event-driven architecture enables data streaming by providing a framework for real-time data processing and event handling.</data>
+  <data key="d9">architecture,enablement</data>
+  <data key="d10">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Microservices Architecture" target="AI Agents">
+  <data key="d7">1.0</data>
+  <data key="d8">Microservices Architecture and AI Agents share similarities in their design for autonomy and loose coupling.</data>
+  <data key="d9">autonomy,design approach</data>
+  <data key="d10">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Microservices Architecture" target="Event-Driven Approach">
+  <data key="d7">1.0</data>
+  <data key="d8">The Event-Driven Approach shares similarities with Microservices Architecture in terms of designing systems as collections of independent services.</data>
+  <data key="d9">design pattern,system structure</data>
+  <data key="d10">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Event Streaming" target="Data Streaming Platform">
+  <data key="d7">1.0</data>
+  <data key="d8">Event streaming is enabled by data streaming platforms, connecting disparate data sources and processing events in motion.</data>
+  <data key="d9">data integration,event processing</data>
+  <data key="d10">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Data Streaming Platform" target="Apache Flink">
+  <data key="d7">1.0</data>
+  <data key="d8">Apache Flink is often used in conjunction with a Data Streaming Platform for real-time data processing.</data>
+  <data key="d9">real-time processing,technology</data>
+  <data key="d10">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Data Streaming Platform" target="Multi-Agent System">
+  <data key="d7">1.0</data>
+  <data key="d8">A Multi-Agent System often relies on a Data Streaming Platform to facilitate real-time interaction among agents.</data>
+  <data key="d9">real-time interaction,system composition</data>
+  <data key="d10">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Data Streaming Platform" target="Real-Time Event Broker">
+  <data key="d7">1.0</data>
+  <data key="d8">A Data Streaming Platform can act as a Real-Time Event Broker, facilitating the exchange of events between agents.</data>
+  <data key="d9">facilitation,real-time communication</data>
+  <data key="d10">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Data Streaming Platform" target="Event-Driven Design">
+  <data key="d7">1.0</data>
+  <data key="d8">A Data Streaming Platform enables and facilitates Event-Driven Design.</data>
+  <data key="d9">enabling technology,facilitation</data>
+  <data key="d10">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Data Streaming Platform" target="Real-Time Event Processing">
+  <data key="d7">1.0</data>
+  <data key="d8">A Data Streaming Platform enables Real-Time Event Processing, facilitating dynamic system responses.</data>
+  <data key="d9">capability,enabling technology</data>
+  <data key="d10">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Data Streaming Platform" target="Confluent">
+  <data key="d7">1.0</data>
+  <data key="d8">Confluent offers a cloud-native data streaming platform, essential for scalable agentic systems and real-time data processing.</data>
+  <data key="d9">cloud-native,real-time data</data>
+  <data key="d10">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Data Streaming Platform" target="Event-Driven Agentic Systems">
+  <data key="d7">1.0</data>
+  <data key="d8">A data streaming platform is essential for event-driven agentic systems, providing continuous, low-latency access to real-time data.</data>
+  <data key="d9">low-latency,real-time data</data>
+  <data key="d10">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Multi-Agent Systems" target="Agent">
+  <data key="d7">2.0</data>
+  <data key="d8">Multi-agent systems are designed to facilitate cooperation and interaction among multiple agents, enabling them to achieve complex goals.&lt;SEP&gt;Multi-agent systems are composed of multiple autonomous agents that interact and coordinate with each other.</data>
+  <data key="d9">autonomy,cooperation,system composition,system design</data>
+  <data key="d10">chunk-f4b5515bbe441a5d3e8b11a9cb6a085e&lt;SEP&gt;chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Multi-Agent Systems" target="Agentic AI">
+  <data key="d7">1.0</data>
+  <data key="d8">Agentic AI enables the development of Multi-Agent Systems that can collaborate and interact in real-time.</data>
+  <data key="d9">application,collaboration</data>
+  <data key="d10">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Multi-Agent Systems" target="Confluent Data Streaming Platform">
+  <data key="d7">1.0</data>
+  <data key="d8">Confluent Data Streaming Platform enables multi-agent systems to function efficiently.</data>
+  <data key="d9">enablement,platform</data>
+  <data key="d10">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Apache Kafka" target="LangGraph">
+  <data key="d7">1.0</data>
+  <data key="d8">Apache Kafka can be integrated with LangGraph for building complex agent systems that utilize event-driven architectures.</data>
+  <data key="d9">framework integration,technology</data>
+  <data key="d10">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Apache Kafka" target="Confluent Data Streaming Platform">
+  <data key="d7">1.0</data>
+  <data key="d8">Confluent Data Streaming Platform utilizes Apache Kafka as a tool for connecting and unlocking data.</data>
+  <data key="d9">platform,tool</data>
+  <data key="d10">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Market-Based Pattern" target="Event-Driven Approach">
+  <data key="d7">1.0</data>
+  <data key="d8">The Market-Based Pattern often utilizes the Event-Driven Approach to facilitate agent interaction and reduce complexity.</data>
+  <data key="d9">decentralized system,design pattern</data>
+  <data key="d10">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Market-Based Pattern" target="Autonomous Trading">
+  <data key="d7">1.0</data>
+  <data key="d8">Autonomous trading is an application of the Market-Based Pattern, leveraging its decentralized nature.</data>
+  <data key="d9">application,decentralized system</data>
+  <data key="d10">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Market-Based Pattern" target="Decentralized System">
+  <data key="d7">1.0</data>
+  <data key="d8">The Market-Based Pattern is a design pattern that models a decentralized system, where agents negotiate and compete for tasks and resources.</data>
+  <data key="d9">pattern,system design</data>
+  <data key="d10">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Event-Driven Approach" target="AI Agents">
+  <data key="d7">1.0</data>
+  <data key="d8">AI Agents benefit from the Event-Driven Approach, enabling them to make decisions in real-time based on events.</data>
+  <data key="d9">autonomy,real-time decision-making</data>
+  <data key="d10">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Confluent Data Streaming Platform" target="Kafka">
+  <data key="d7">1.0</data>
+  <data key="d8">Confluent provides a Data Streaming Platform that includes Kafka for building real-time data pipelines.</data>
+  <data key="d9">company,technology</data>
+  <data key="d10">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Confluent Data Streaming Platform" target="Cloud-Native Service">
+  <data key="d7">1.0</data>
+  <data key="d8">Confluent provides a Cloud-Native Service as part of its Data Streaming Platform, supporting scalable and on-demand event-driven systems.</data>
+  <data key="d9">company,service offering</data>
+  <data key="d10">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Confluent Data Streaming Platform" target="Event Log">
+  <data key="d7">1.0</data>
+  <data key="d8">Confluent Data Streaming Platform utilizes an event log to manage and store events, enabling efficient event-driven architecture.</data>
+  <data key="d9">event management,platform</data>
+  <data key="d10">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="AI Agents" target="Vector Stores">
+  <data key="d7">1.0</data>
+  <data key="d8">AI Agents can utilize Vector Stores for efficient information retrieval and querying.</data>
+  <data key="d9">efficient querying,information retrieval</data>
+  <data key="d10">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="AI Agents" target="Event-Driven Agentic Systems">
+  <data key="d7">1.0</data>
+  <data key="d8">Event-driven agentic systems enable AI agents to operate in real-time, processing and responding to events as they happen.</data>
+  <data key="d9">event-driven,real-time processing</data>
+  <data key="d10">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="AI Agents" target="Reworkd">
+  <data key="d7">1.0</data>
+  <data key="d8">Reworkd uses AI agents to automate web scraping, extracting relevant data from websites.</data>
+  <data key="d9">automation,web scraping</data>
+  <data key="d10">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Event Persistence" target="Immutable Logs">
+  <data key="d7">1.0</data>
+  <data key="d8">Event Persistence is ensured through the use of Immutable Logs, providing a secure and reliable record of events.</data>
+  <data key="d9">reliability,security</data>
+  <data key="d10">chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Sean Falconer" target="Confluent">
+  <data key="d7">1.0</data>
+  <data key="d8">Sean Falconer is affiliated with Confluent as an AI Entrepreneur in Residence.</data>
+  <data key="d9">affiliation,employment</data>
+  <data key="d10">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Confluent" target="Real-Time Data">
+  <data key="d7">1.0</data>
+  <data key="d8">Confluent offers a cloud-native data streaming platform, essential for scalable agentic systems and real-time data processing.</data>
+  <data key="d9">processing,streaming</data>
+  <data key="d10">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Confluent" target="Digital Front-End Customer Experiences">
+  <data key="d7">1.0</data>
+  <data key="d8">Confluent provides information on digital front-end customer experiences.</data>
+  <data key="d9">expertise,information provision</data>
+  <data key="d10">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Confluent" target="Real-Time Software-Driven Back-End Operations">
+  <data key="d7">1.0</data>
+  <data key="d8">Confluent provides information on real-time software-driven back-end operations.</data>
+  <data key="d9">expertise,information provision</data>
+  <data key="d10">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Confluent" target="Www.Confluent.Io">
+  <data key="d7">1.0</data>
+  <data key="d8">Confluent is associated with the website www.confluent.io, which offers more information on their expertise.</data>
+  <data key="d9">organization,website</data>
+  <data key="d10">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="AI" target="Event-Driven Design">
+  <data key="d7">1.0</data>
+  <data key="d8">AI has evolved to incorporate Event-Driven Design as a key architecture.</data>
+  <data key="d9">architecture,evolution</data>
+  <data key="d10">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="AI" target="Agentic AI">
+  <data key="d7">1.0</data>
+  <data key="d8">Agentic AI is a phase in the evolution of AI, building upon previous phases.</data>
+  <data key="d9">evolution,phase</data>
+  <data key="d10">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="AI" target="Predictive AI">
+  <data key="d7">1.0</data>
+  <data key="d8">Predictive AI is the first phase in the evolution of AI.</data>
+  <data key="d9">evolution,phase</data>
+  <data key="d10">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="AI" target="Generative AI">
+  <data key="d7">1.0</data>
+  <data key="d8">Generative AI is the second phase in the evolution of AI.</data>
+  <data key="d9">evolution,phase</data>
+  <data key="d10">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Event-Driven Design" target="Scalability">
+  <data key="d7">1.0</data>
+  <data key="d8">Event-Driven Design provides Scalability as a key benefit, allowing systems to handle increased complexity.</data>
+  <data key="d9">advantage,benefit</data>
+  <data key="d10">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Generative AI" target="Deep Learning">
+  <data key="d7">1.0</data>
+  <data key="d8">Deep Learning is a method used in Generative AI.</data>
+  <data key="d9">application,method</data>
+  <data key="d10">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Generative AI" target="LLMs">
+  <data key="d7">1.0</data>
+  <data key="d8">LLMs are foundation models used in Generative AI.</data>
+  <data key="d9">foundation,model</data>
+  <data key="d10">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Generative AI" target="Foundation Models">
+  <data key="d7">1.0</data>
+  <data key="d8">Foundation Models, such as LLMs, are used in Generative AI to enable generalization across various contexts.</data>
+  <data key="d9">application,method</data>
+  <data key="d10">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="LLMs" target="Generative Models">
+  <data key="d7">1.0</data>
+  <data key="d8">LLMs are a type of generative model that is fixed in time and difficult to adapt.</data>
+  <data key="d9">limitations,model type</data>
+  <data key="d10">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Artificial Intelligence" target="Agentic Systems">
+  <data key="d7">1.0</data>
+  <data key="d8">Artificial intelligence is a broader field that encompasses agentic systems.</data>
+  <data key="d9">concept relationship,development</data>
+  <data key="d10">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Foundation Models" target="Generative Models">
+  <data key="d7">1.0</data>
+  <data key="d8">Foundation models are a type of generative model that can be fine-tuned for specific tasks.</data>
+  <data key="d9">model type,relationship</data>
+  <data key="d10">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Agentic RAG" target="Event-Driven Agentic Systems">
+  <data key="d7">1.0</data>
+  <data key="d8">Agentic RAG is an example of an event-driven agentic system, using RAG to create a podcast interview brief.</data>
+  <data key="d9">architecture,event-driven</data>
+  <data key="d10">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Reworkd" target="Web Scraping">
+  <data key="d7">1.0</data>
+  <data key="d8">Reworkd uses AI agents to automate web scraping, extracting relevant data from websites.</data>
+  <data key="d9">AI agents,automation</data>
+  <data key="d10">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Airy" target="Intelligent Business Copilots">
+  <data key="d7">1.0</data>
+  <data key="d8">Airy enables intelligent business copilots, providing a natural language interface for exploring and working with real-time data.</data>
+  <data key="d9">AI-powered,real-time data</data>
+  <data key="d10">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Airy" target="Real-Time Data">
+  <data key="d7">1.0</data>
+  <data key="d8">Airy provides real-time access to data, enabling faster and smarter decision-making.</data>
+  <data key="d9">access,analysis</data>
+  <data key="d10">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Agent Taskflow" target="Workflow Automation">
+  <data key="d7">1.0</data>
+  <data key="d8">Agent Taskflow provides a no-code platform for workflow automation, allowing users to create workflows with a drag-and-drop UI.</data>
+  <data key="d9">drag-and-drop UI,no-code platform</data>
+  <data key="d10">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Agent Taskflow" target="Scalable Agentic Systems">
+  <data key="d7">1.0</data>
+  <data key="d8">Agent Taskflow provides a no-code platform for workflow automation, enabling scalable agentic systems.</data>
+  <data key="d9">scalability,workflow automation</data>
+  <data key="d10">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Event-Driven Agentic Systems" target="Scalable Agentic Systems">
+  <data key="d7">1.0</data>
+  <data key="d8">Event-driven agentic systems enable scalable agentic systems, processing and responding to events as they happen.</data>
+  <data key="d9">architecture,scalability</data>
+  <data key="d10">chunk-e0da988329c10b63d290447e49c5bbe2</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Compound AI" target="Retrieval-Augmented Generation (RAG)">
+  <data key="d7">1.0</data>
+  <data key="d8">Compound AI uses RAG to dynamically incorporate relevant data into a model's workflow.</data>
+  <data key="d9">company process,dynamic data incorporation</data>
+  <data key="d10">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Agentic Systems" target="HubSpot">
+  <data key="d7">1.0</data>
+  <data key="d8">Agentic systems have the potential to revolutionize the way companies like HubSpot approach AI.</data>
+  <data key="d9">concept company,potential</data>
+  <data key="d10">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Agentic Systems" target="Dharmesh Shah">
+  <data key="d7">1.0</data>
+  <data key="d8">Dharmesh Shah has spoken about the potential of agentic systems and their role in the future of AI.</data>
+  <data key="d9">future of AI,person concept</data>
+  <data key="d10">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Agentic Systems" target="Marc Benioff">
+  <data key="d7">1.0</data>
+  <data key="d8">Marc Benioff has spoken about the future of AI and the potential of agentic systems.</data>
+  <data key="d9">future of AI,person concept</data>
+  <data key="d10">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Agentic Systems" target="Alan Turing">
+  <data key="d7">1.0</data>
+  <data key="d8">Alan Turing's work laid the foundation for the development of agentic systems.</data>
+  <data key="d9">historical context,person concept</data>
+  <data key="d10">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Agentic Systems" target="John McCarthy">
+  <data key="d7">1.0</data>
+  <data key="d8">John McCarthy's work laid the foundation for the development of agentic systems.</data>
+  <data key="d9">historical context,person concept</data>
+  <data key="d10">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Agentic Systems" target="Rule-Based Reasoning Agents">
+  <data key="d7">1.0</data>
+  <data key="d8">Rule-based reasoning agents are an early form of agentic systems that have evolved over time.</data>
+  <data key="d9">concept relationship,evolution</data>
+  <data key="d10">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="APIs" target="Agents">
+  <data key="d7">1.0</data>
+  <data key="d8">APIs are used by agents to gather data from the world around them.</data>
+  <data key="d9">artifact concept,data gathering</data>
+  <data key="d10">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Sensors" target="Agents">
+  <data key="d7">1.0</data>
+  <data key="d8">Sensors are used by agents to gather data from the world around them.</data>
+  <data key="d9">artifact concept,data gathering</data>
+  <data key="d10">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="User Inputs" target="Agents">
+  <data key="d7">1.0</data>
+  <data key="d8">User inputs are used by agents to gather data from the world around them.</data>
+  <data key="d9">data concept,data gathering</data>
+  <data key="d10">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Persona" target="Agents">
+  <data key="d7">1.0</data>
+  <data key="d8">A persona defines the role or function of an agent.</data>
+  <data key="d9">concept relationship,definition</data>
+  <data key="d10">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Perception" target="Agents">
+  <data key="d7">1.0</data>
+  <data key="d8">Perception is the process by which an agent gathers information from its environment.</data>
+  <data key="d9">concept relationship,process</data>
+  <data key="d10">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Reasoning And Decision-Making" target="Agents">
+  <data key="d7">1.0</data>
+  <data key="d8">Reasoning and decision-making are the processes by which an agent analyzes information and makes decisions.</data>
+  <data key="d9">concept relationship,process</data>
+  <data key="d10">chunk-649a8550ca25b31b1eac35cf9ef704d5</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Digital Front-End Customer Experiences" target="Customer Experiences">
+  <data key="d7">1.0</data>
+  <data key="d8">Digital front-end customer experiences are a part of the broader concept of customer experiences.</data>
+  <data key="d9">component,subset</data>
+  <data key="d10">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Real-Time Software-Driven Back-End Operations" target="Back-End Operations">
+  <data key="d7">1.0</data>
+  <data key="d8">Real-time software-driven back-end operations are a specific type of back-end operations.</data>
+  <data key="d9">methodology,specific type</data>
+  <data key="d10">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Real-Time Software-Driven Back-End Operations" target="Software">
+  <data key="d7">1.0</data>
+  <data key="d8">Software is used to enable and drive real-time back-end operations.</data>
+  <data key="d9">application,enabling technology</data>
+  <data key="d10">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769916560</data>
+  <data key="d13"></data>
+</edge>
+</graph></graphml>

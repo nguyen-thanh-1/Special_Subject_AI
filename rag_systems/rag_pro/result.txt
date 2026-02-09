@@ -1,0 +1,101 @@
+PS C:\Users\Admin\Desktop\Special_Subject_AI> & c:/Users/Admin/Desktop/Special_Subject_AI/.venv/Scripts/Activate.ps1
+(special-subject-ai) PS C:\Users\Admin\Desktop\Special_Subject_AI> cd rag_systems/rag_pro
+(special-subject-ai) PS C:\Users\Admin\Desktop\Special_Subject_AI\rag_systems\rag_pro> uv run rag_query.py
+════════════════════════════════════════════════════════════
+🚀 RAG PRO V2 - QUERY ONLY
+════════════════════════════════════════════════════════════
+   📊 Embedding: BAAI/bge-m3 (CPU)
+   🎯 Reranker:  BAAI/bge-reranker-v2-m3 (CPU)
+   🤖 LLM:       Llama 3.1 8B (GPU)
+   ⚡ Chunking:  Semantic (800-1500 words)
+════════════════════════════════════════════════════════════
+
+🔄 Loading LLM (GPU priority)...
+   📥 Loading Llama 3.1 8B...
+Loading model...
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:13<00:00,  3.43s/it]
+Model loaded!
+   ✅ Llama 3.1 8B loaded (GPU)
+
+🔄 Loading index from disk...
+   📦 Loaded index: 88 chunks
+   ✅ Loaded 88 chunks
+
+🔄 Loading embedding & reranker (CPU)...
+   📥 Loading BAAI/bge-m3...
+   ✅ Embedding model loaded (CPU)
+   📥 Loading BAAI/bge-reranker-v2-m3...
+   ✅ Reranker loaded (CUDA)
+
+════════════════════════════════════════════════════════════
+📊 DATABASE STATS
+════════════════════════════════════════════════════════════
+   Total files: 1
+   Total chunks: 88
+════════════════════════════════════════════════════════════
+
+════════════════════════════════════════════════════════════
+💬 INTERACTIVE MODE
+════════════════════════════════════════════════════════════
+Gõ câu hỏi. 'exit' để thoát, 'stats' để xem thống kê.
+------------------------------------------------------------
+
+🧑 Bạn: NLP là gì
+
+🤖 Đang xử lý...
+   🔍 Searching...
+   📄 Found 15 chunks
+   🎯 Reranking to top 2...
+   ✅ Selected 2 best chunks
+   🤖 Generating answer...
+   ⚠️  Chunk 1 truncated to fit 1200 token limit
+   ✅ Context: 2 chunks, 1200 tokens (limit: 1200)
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Setting `pad_token_id` to `eos_token_id`:128009 for open-end generation.
+   ⏱️ Total: 83.1s
+
+📝 Trả lời:
+NLP là một trong những lĩnh vực cốt yếu của trí tuệ nhân tạo (AI).
+
+(Từ đoạn 1: "Naturallanguage processing (NLP) là một trong các cơ sở hạ tầng của trí tuệ nhân tạo (AI)")
+
+🧑 Bạn: NLP viết tắt của từ nào
+
+🤖 Đang xử lý...
+   🔍 Searching...
+   📄 Found 15 chunks
+   🎯 Reranking to top 2...
+   ✅ Selected 2 best chunks
+   🤖 Generating answer...
+   ⚠️  Chunk 1 truncated to fit 1200 token limit
+   ✅ Context: 2 chunks, 1200 tokens (limit: 1200)
+Setting `pad_token_id` to `eos_token_id`:128009 for open-end generation.
+   ⏱️ Total: 91.0s
+
+📝 Trả lời:
+Tôi sử dụng phần "Naturallanguageprocessing (NLP) là một trong các core subfield của artificial intelligence (AI)" để trả lời câu hỏi.
+
+NLP viết tắt của từ "Natural Language Processing".
+
+🧑 Bạn: NLP đóng vai trò gì trong AI
+
+🤖 Đang xử lý...
+   🔍 Searching...
+   📄 Found 15 chunks
+   🎯 Reranking to top 2...
+   ✅ Selected 2 best chunks
+   🤖 Generating answer...
+   ⚠️  Chunk 1 truncated to fit 1200 token limit
+   ✅ Context: 2 chunks, 1200 tokens (limit: 1200)
+Setting `pad_token_id` to `eos_token_id`:128009 for open-end generation.
+   ⏱️ Total: 860.5s
+
+📝 Trả lời:
+Tôi không tìm thấy thông tin này trong tài liệu.
+
+🧑 Bạn: kkk
+
+🤖 Đang xử lý...
+   🔍 Searching...
+   📄 Found 15 chunks
+   🎯 Reranking to top 2...

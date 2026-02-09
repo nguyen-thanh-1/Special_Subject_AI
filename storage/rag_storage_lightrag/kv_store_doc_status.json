@@ -1,0 +1,44 @@
+{
+  "doc-cda0e3aef4c5151a2f709f4cef7aee7e": {
+    "status": "processed",
+    "chunks_count": 9,
+    "chunks_list": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e",
+      "chunk-f23ac140cb981aae9be85d4061cdc74f",
+      "chunk-d6c229e370b8a7d2f437965f778c3850",
+      "chunk-d95fc9af155efcfee2a297ca03d7989f",
+      "chunk-5c1ccd6e4169f2c696ec77c1ea699f31",
+      "chunk-fdcede6800acbf2e3e236e61d926e28b",
+      "chunk-714ac346e5243ff68a2a0f7dd3afc887",
+      "chunk-be8a479aabd0d0444893f31e7e29e918",
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "content_summary": "A Guide to Event-Driven\nDesign for Agents and\nMulti-Agent Systems\nBy Sean Falconer, AI Entrepreneur in Residence, Confluent\n© 2025 Confluent, Inc.\n\nContents\n3 Introduction\n4 Part I: Understanding the Evolution of AI\nThe First Wave: Predictive AI\nThe ...",
+    "content_length": 45962,
+    "created_at": "2026-02-01T08:14:30.330917+00:00",
+    "updated_at": "2026-02-01T08:26:11.647309+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260201_151430_c808abde",
+    "metadata": {
+      "processing_start_time": 1769933670,
+      "processing_end_time": 1769934371
+    }
+  },
+  "doc-04a91a22ba38bfcc9bb0e1df32b15611": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-04a91a22ba38bfcc9bb0e1df32b15611"
+    ],
+    "content_summary": "RAGAnything là một framework RAG tất cả trong một.\n        Nó hỗ trợ xử lý đa phương thức (hình ảnh, bảng biểu, công thức).\n        Việc sử dụng Local LLM giúp bảo mật dữ liệu và tiết kiệm chi phí API.\n        Llama 3.1 8B là một mô hình ngôn ngữ mạn...",
+    "content_length": 264,
+    "created_at": "2026-02-01T08:26:11.692078+00:00",
+    "updated_at": "2026-02-01T08:26:28.734370+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260201_152611_406f0e96",
+    "metadata": {
+      "processing_start_time": 1769934371,
+      "processing_end_time": 1769934388
+    }
+  }
+}

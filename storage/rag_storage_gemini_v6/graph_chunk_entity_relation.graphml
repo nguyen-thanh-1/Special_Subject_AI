@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="node" attr.name="truncate" attr.type="string"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Data Streaming Platform">
+  <data key="d0">Data Streaming Platform</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A platform that unlocks real-time AI capabilities without infrastructure headaches, enables multi-agent system design patterns, provides tools to connect and unlock data, enforces governance, and processes data into high-value streams.</data>
+  <data key="d3">chunk-5c1ccd6e4169f2c696ec77c1ea699f31</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769951455</data>
+  <data key="d6"></data>
+</node>
+<node id="Real-Time AI Capabilities">
+  <data key="d0">Real-Time AI Capabilities</data>
+  <data key="d1">concept</data>
+  <data key="d2">AI functionalities that can be unlocked using a data streaming platform without infrastructure headaches, and are fueled by high-value data streams.</data>
+  <data key="d3">chunk-5c1ccd6e4169f2c696ec77c1ea699f31</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769951455</data>
+  <data key="d6"></data>
+</node>
+<node id="Multi-Agent Design Patterns">
+  <data key="d0">Multi-Agent Design Patterns</data>
+  <data key="d1">concept</data>
+  <data key="d2">Patterns that define how autonomous agents communicate, collaborate, or compete to solve problems, structuring</data>
+  <data key="d3">chunk-5c1ccd6e4169f2c696ec77c1ea699f31</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769951455</data>
+  <data key="d6"></data>
+</node>
+<node id="Confluent, Inc.">
+  <data key="d0">Confluent, Inc.</data>
+  <data key="d1">organization</data>
+  <data key="d2">Confluent, Inc. is the copyright holder for the document.</data>
+  <data key="d3">chunk-d6c229e370b8a7d2f437965f778c3850</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769951455</data>
+  <data key="d6"></data>
+</node>
+<node id="AI Systems">
+  <data key="d0">AI Systems</data>
+  <data key="d1">concept</data>
+  <data key="d2">AI Systems are the subject of the document, specifically focusing on scalable and interoperable implementations.</data>
+  <data key="d3">chunk-d6c229e370b8a7d2f437965f778c3850</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769951455</data>
+  <data key="d6"></data>
+</node>
+<node id="Event-Driven Agentic Systems">
+  <data key="d0">Event-Driven Agentic Systems</data>
+  <data key="d1">concept</data>
+  <data key="d2">Event-Driven Agentic Systems are a type of AI system where agents function like microservices but with reasoning, planning, and action capabilities, benefiting from event-driven design for coordination and scalability.</data>
+  <data key="d3">chunk-d6c229e370b8a7d2f437965f778c3850</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769951455</data>
+  <data key="d6"></data>
+</node>
+<node id="Artificial Intelligence">
+  <data key="d0">Artificial Intelligence</data>
+  <data key="d1">concept</data>
+  <data key="d2">Artificial Intelligence is the</data>
+  <data key="d3">chunk-d6c229e370b8a7d2f437965f778c3850</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769951455</data>
+  <data key="d6"></data>
+</node>
+<node id="Blackboard">
+  <data key="d0">Blackboard</data>
+  <data key="d1">concept</data>
+  <data key="d2">A memory layer that ensures shared context is always available for real-time collaboration without agents needing to track each other's state explicitly.</data>
+  <data key="d3">chunk-fdcede6800acbf2e3e236e61d926e28b</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769951455</data>
+  <data key="d6"></data>
+</node>
+<node id="Market-Based Pattern">
+  <data key="d0">Market-Based Pattern</data>
+  <data key="d1">concept</data>
+  <data key="d2">A pattern that models a decentralized system where agents negotiate or compete for tasks and resources, commonly</data>
+  <data key="d3">chunk-fdcede6800acbf2e3e236e61d926e28b</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769951455</data>
+  <data key="d6"></data>
+</node>
+<node id="Sean Falconer">
+  <data key="d0">Sean Falconer</data>
+  <data key="d1">person</data>
+  <data key="d2">Sean Falconer is an AI Entrepreneur in Residence at Confluent and the author of "A Guide to Event-Driven Design for Agents and Multi-Agent Systems."</data>
+  <data key="d3">chunk-e78da99a2d589a658ec77f66e1eccc2e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769951455</data>
+  <data key="d6"></data>
+</node>
+<node id="Confluent">
+  <data key="d0">Confluent</data>
+  <data key="d1">organization</data>
+  <data key="d2">Confluent, Inc. is the publisher of the guide "A Guide to Event-Driven Design for Agents and Multi-Agent Systems" and is associated with the copyright of the document.</data>
+  <data key="d3">chunk-e78da99a2d589a658ec77f66e1eccc2e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769951455</data>
+  <data key="d6"></data>
+</node>
+<node id="Microservices">
+  <data key="d0">Microservices</data>
+  <data key="d1">concept</data>
+  <data key="d2">A software architecture approach that addresses tight coupling by decoupling services, allowing them to operate independently.</data>
+  <data key="d3">chunk-d95fc9af155efcfee2a297ca03d7989f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769951455</data>
+  <data key="d6"></data>
+</node>
+<node id="Tight Coupling">
+  <data key="d0">Tight Coupling</data>
+  <data key="d1">concept</data>
+  <data key="d2">A state where components have direct dependencies on others, leading to bottlenecks and fragility.</data>
+  <data key="d3">chunk-d95fc9af155efcfee2a297ca03d7989f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769951455</data>
+  <data key="d6"></data>
+</node>
+<node id="Generative AI">
+  <data key="d0">Generative AI</data>
+  <data key="d1">concept</data>
+  <data key="d2">Generative AI is a type of artificial intelligence driven by deep learning, capable of generating text, images, and videos by generalizing across diverse datasets.</data>
+  <data key="d3">chunk-f23ac140cb981aae9be85d4061cdc74f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769951455</data>
+  <data key="d6"></data>
+</node>
+<node id="Deep Learning">
+  <data key="d0">Deep Learning</data>
+  <data key="d1">method</data>
+  <data key="d2">Deep learning is a method that drives Generative AI, enabling it to learn from vast, diverse datasets.</data>
+  <data key="d3">chunk-f23ac140cb981aae9be85d4061cdc74f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769951455</data>
+  <data key="d6"></data>
+</node>
+<node id="Generative Models">
+  <data key="d0">Generative Models</data>
+  <data key="d1">concept</data>
+  <data key="d2">Generative models are a type of AI that are fixed in time, unable to incorporate new or dynamic information, and are</data>
+  <data key="d3">chunk-f23ac140cb981aae9be85d4061cdc74f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769951455</data>
+  <data key="d6"></data>
+</node>
+</graph></graphml>

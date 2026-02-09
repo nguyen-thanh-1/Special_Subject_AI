@@ -1,0 +1,46 @@
+{
+  "doc-cda0e3aef4c5151a2f709f4cef7aee7e": {
+    "relation_pairs": [
+      [
+        "Confluent, Inc.'s AI Accelerator Program",
+        "provides"
+      ],
+      [
+        "Confluent's cloud-native offering",
+        "Is-A"
+      ],
+      [
+        "Confluent, Inc.",
+        "is related to"
+      ],
+      [
+        "Confluent",
+        "Located-In"
+      ],
+      [
+        "Confluent, Inc.'s data streaming platform",
+        "integrates"
+      ],
+      [
+        "Confluent",
+        "Offers"
+      ],
+      [
+        "Confluent",
+        "Provides"
+      ],
+      [
+        "Confluent, Inc.'s data streaming platform",
+        "uses"
+      ],
+      [
+        "Agents use APIs, sensors, and user inputs to gather data from their environment",
+        "agent"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "doc-cda0e3aef4c5151a2f709f4cef7aee7e"
+  }
+}

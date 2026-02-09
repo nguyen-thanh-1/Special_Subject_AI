@@ -1,0 +1,4315 @@
+[
+    {
+        "type": "text",
+        "text": "A Guide to Event-Driven Design for Agents and Multi-Agent Systems ",
+        "text_level": 1,
+        "bbox": [
+            119,
+            587,
+            848,
+            763
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "By Sean Falconer, AI Entrepreneur in Residence, Confluent ",
+        "bbox": [
+            119,
+            795,
+            776,
+            819
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "√ ? ",
+        "bbox": [
+            112,
+            87,
+            153,
+            119
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "CONFLUENT ",
+        "bbox": [
+            158,
+            90,
+            333,
+            112
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            112,
+            898,
+            331,
+            919
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Contents ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            88,
+            299,
+            114
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3 Introduction ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            146,
+            261,
+            161
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4 Part I: Understanding the Evolution of AI ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            166,
+            482,
+            181
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The First Wave: Predictive AI ",
+        "bbox": [
+            194,
+            185,
+            406,
+            198
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The Second Wave: Generative AI ",
+        "bbox": [
+            194,
+            200,
+            434,
+            214
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Compound AI Bridges the Gap ",
+        "bbox": [
+            238,
+            217,
+            459,
+            231
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The Third Wave: Agentic AI ",
+        "bbox": [
+            194,
+            232,
+            393,
+            244
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The Power of Singular Agent Systems ",
+        "bbox": [
+            238,
+            247,
+            511,
+            261
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "9 Part II: The Case for Event-Driven Agentic Systems ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            263,
+            565,
+            279
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The Anatomy of an Agent ",
+        "bbox": [
+            194,
+            281,
+            380,
+            295
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Persona (Job Function) ",
+        "bbox": [
+            238,
+            297,
+            406,
+            309
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Perception (Sensing) ",
+        "bbox": [
+            238,
+            310,
+            392,
+            324
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Reasoning and Decision-Making ",
+        "bbox": [
+            238,
+            325,
+            473,
+            338
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Memory ",
+        "bbox": [
+            238,
+            339,
+            302,
+            351
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Planning ",
+        "bbox": [
+            238,
+            352,
+            303,
+            364
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Action ",
+        "bbox": [
+            238,
+            366,
+            287,
+            376
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Learning ",
+        "bbox": [
+            238,
+            378,
+            305,
+            391
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Coordination and Collaboration ",
+        "bbox": [
+            238,
+            392,
+            465,
+            404
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Tool Interface ",
+        "bbox": [
+            238,
+            406,
+            341,
+            417
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Why Event-Driven Matters for Agents ",
+        "bbox": [
+            194,
+            420,
+            465,
+            434
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "From Singular to Multi-Agent Systems ",
+        "bbox": [
+            194,
+            436,
+            470,
+            450
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Part III: Design Patterns for Multi-Agent Systems13 ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            454,
+            547,
+            470
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Multi-Agent Design Patterns ",
+        "bbox": [
+            194,
+            473,
+            401,
+            486
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Orchestrator-Worker Pattern ",
+        "bbox": [
+            194,
+            489,
+            403,
+            501
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Traditional Approach ",
+        "bbox": [
+            238,
+            503,
+            393,
+            517
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Event-Driven Approach ",
+        "bbox": [
+            238,
+            518,
+            408,
+            532
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Hierarchical Agent Pattern ",
+        "bbox": [
+            194,
+            534,
+            413,
+            546
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Traditional Approach ",
+        "bbox": [
+            238,
+            547,
+            392,
+            561
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Event-Driven Approach ",
+        "bbox": [
+            238,
+            561,
+            408,
+            575
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Blackboard Pattern ",
+        "bbox": [
+            194,
+            577,
+            334,
+            589
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Traditional Approach ",
+        "bbox": [
+            238,
+            592,
+            393,
+            604
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Event-Driven Approach ",
+        "bbox": [
+            238,
+            604,
+            408,
+            618
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Market-Based Pattern ",
+        "bbox": [
+            194,
+            619,
+            354,
+            632
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Traditional Approach ",
+        "bbox": [
+            238,
+            635,
+            392,
+            648
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Event-Driven Approach ",
+        "bbox": [
+            238,
+            648,
+            408,
+            662
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The Role of the Data Streaming Platform in Multi-Agent Systems ",
+        "bbox": [
+            194,
+            664,
+            656,
+            678
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Part IV: Building Event-Driven Systems for Agents with a Data Streaming Platform23 ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            681,
+            813,
+            696
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Architecting Singular and Multi-Agent Systems ",
+        "bbox": [
+            194,
+            700,
+            535,
+            714
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Challenges and Solutions in Event-Driven Agent Design ",
+        "bbox": [
+            194,
+            715,
+            594,
+            729
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "[Stream] Next-Level Data Streaming with a Fully Managed, Cloud-Native Service ",
+        "bbox": [
+            238,
+            732,
+            818,
+            744
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "[Connect] Seamless Integration: Connecting Agents with Diverse Systems ",
+        "bbox": [
+            238,
+            746,
+            772,
+            758
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "[Process] Ensuring Data Freshness: Handling Dynamic Data Streams ",
+        "bbox": [
+            238,
+            758,
+            732,
+            772
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "[Govern] Data Quality, Security, and Compliance ",
+        "bbox": [
+            238,
+            773,
+            588,
+            786
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Real-World Applications of Event-Driven Agentic Systems ",
+        "bbox": [
+            194,
+            787,
+            612,
+            801
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1. Automating Web Scraping with AI Agents ",
+        "bbox": [
+            238,
+            803,
+            552,
+            816
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2. Intelligent Business Copilots ",
+        "bbox": [
+            238,
+            816,
+            462,
+            829
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3. Workflow Automation with a Drag-and-Drop Agent Builder ",
+        "bbox": [
+            238,
+            830,
+            676,
+            843
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Broader Industry Impact ",
+        "bbox": [
+            238,
+            844,
+            416,
+            857
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Why a Data Streaming Platform Is Essential for AI Agents ",
+        "bbox": [
+            194,
+            858,
+            604,
+            872
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The Future of AI is Event-Driven28 ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            875,
+            411,
+            890
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Take the Next Step29 ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            895,
+            305,
+            910
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            112,
+            944,
+            261,
+            957
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Introduction ",
+        "text_level": 1,
+        "bbox": [
+            114,
+            87,
+            356,
+            114
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "AI has come a long way. We’ve moved from predictive models that analyze patterns to generative AI that creates new content. Now, we’re entering the next phase: agentic AI— systems that don’t just generate, but have the agency to act, adapt, and collaborate, in real time. ",
+        "bbox": [
+            112,
+            157,
+            475,
+            270
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "For AI agents to be useful, they need more than just intelligence. They need infrastructure. They need security. They need governance. ",
+        "bbox": [
+            112,
+            284,
+            478,
+            349
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "An agent must consume data, use tools, make decisions, and share outputs across an organization. But rigid, request-driven architectures can’t keep up. APIs and synchronous workflows create bottlenecks, limit scalability, and make coordination between multiple agents a nightmare. The future of AI agents isn’t about making models better, it’s about making AI systems work together seamlessly. ",
+        "bbox": [
+            112,
+            361,
+            473,
+            523
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "This demands an event-driven architecture (EDA) powered by a data streaming platform, which enables agents to react dynamically to changes, share state efficiently, and scale without the constraints of traditional request-response patterns. A data streaming platform not only facilitates real-time event processing, but also ensures governance, enforces data quality, and connects disparate data sources into a unified stream. ",
+        "bbox": [
+            112,
+            536,
+            473,
+            700
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "By processing data close to the source, it reduces latency and enhances decisionmaking, allowing AI agents to operate with the freshest, most relevant data, while maintaining compliance and control across the organization. ",
+        "bbox": [
+            514,
+            157,
+            859,
+            255
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "EDA transforms AI from isolated models into a dynamic system of agents that react to events in real time. By using a data streaming platform, agents can consume, process, and emit events asynchronously, ensuring scalable, flexible, and resilient interactions. Whether it’s a single agent handling customer queries, or a network of agents optimizing a supply chain, event-driven design ensures they stay in sync, without breaking down under complexity. ",
+        "bbox": [
+            514,
+            267,
+            880,
+            446
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "This ebook is a guide to building eventdriven AI agents and multi-agent systems. We’ll cover the evolution of AI, the anatomy of an agent, design patterns for scalable architectures, and real-world applications. At the core of this approach is a data streaming platform, which enables agents to consume, process, and act on real-time data, while maintaining governance and scalability. The goal is simple: to demonstrate why eventdriven design—powered by a data streaming platform—is the backbone of AI’s next evolution, and how to architect systems that are not only effective today, but are built for long-term scalability and adaptability. ",
+        "bbox": [
+            514,
+            459,
+            875,
+            705
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            944,
+            261,
+            958
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "3 ",
+        "bbox": [
+            870,
+            945,
+            882,
+            955
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Part I: Understanding the Evolution of AI ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            71,
+            867,
+            104
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "AI has evolved through three distinct phases, each unlocking new capabilities, while introducing its own limitations. ",
+        "bbox": [
+            109,
+            119,
+            872,
+            151
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The First Wave: Predictive AI ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            178,
+            439,
+            196
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The first wave of AI revolved around traditional machine learning, focusing on predictive capabilities for narrowly defined tasks. ",
+        "bbox": [
+            111,
+            203,
+            812,
+            236
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/9a5cc94e3cc98cb73b19d61e4b33f5060b7beb8c34a3fc91f7264fc393450348.jpg",
+        "image_caption": [
+            "The Traditional Machine Learning Workflow "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            155,
+            289,
+            844,
+            541
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Building these models required significant expertise, as they were crafted specifically for individual use cases. They were domain-specific, with their domain specificity embedded in the training data, making them rigid and tough to repurpose. Adapting a model to a new domain often meant starting from scratch—an approach that lacked scalability and slowed adoption. ",
+        "bbox": [
+            109,
+            617,
+            883,
+            684
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The Second Wave: Generative AI ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            709,
+            485,
+            727
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Generative AI, driven by deep learning, marked a turning point. ",
+        "bbox": [
+            111,
+            734,
+            609,
+            751
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Instead of being confined to single domains, these generative models were trained on vast, diverse datasets, giving them the ability to generalize across a variety of contexts. They could generate text, images, and even videos, opening up exciting new applications. Whereas predictive AI relies on traditional batch-based statistical models to solve specific problems, generative AI uses foundation models like LLMs that are broadly capable and reusable: ",
+        "bbox": [
+            109,
+            762,
+            854,
+            845
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            945,
+            261,
+            958
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "4 ",
+        "bbox": [
+            870,
+            946,
+            882,
+            955
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/071fa6b2d022b4649525de7b4fef3b2ed56cc5cfdbd51d75799f4dddb018a480.jpg",
+        "image_caption": [
+            "The Generative AI Workflow "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            119,
+            77,
+            831,
+            385
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "However, this wave came with its own challenges. ",
+        "bbox": [
+            120,
+            450,
+            517,
+            467
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Generative models are fixed in time—unable to incorporate new or dynamic information— and are difficult to adapt. Fine-tuning can address domain-specific needs, but it’s expensive and error-prone. Fine-tuning requires vast data, significant computational resources, and ML expertise, making it impractical for many situations. Additionally, since LLMs are trained on publicly available data, they don’t have access to domain-specific information, limiting their ability to accurately respond to questions that require context. ",
+        "bbox": [
+            119,
+            478,
+            854,
+            575
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "For example, suppose you ask a generative model to recommend an insurance policy tailored to a user’s personal health history, location, and financial goals. ",
+        "bbox": [
+            119,
+            588,
+            890,
+            621
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/1d89776da395b3bd357e221389c619142818ed99853655f514e6b7313fa0a190.jpg",
+        "image_caption": [
+            "Simple Prompt and Response with an LLM "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            161,
+            657,
+            836,
+            794
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "In this scenario, you prompt the LLM and it generates a response. Clearly the model can’t deliver accurate recommendations, because it lacks access to the relevant user data. Without it, the response will either be generic or flat-out wrong. ",
+        "bbox": [
+            111,
+            859,
+            875,
+            907
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            945,
+            261,
+            958
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "5 ",
+        "bbox": [
+            872,
+            946,
+            882,
+            955
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Compound AI Bridges the Gap ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            90,
+            359,
+            107
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "To overcome these limitations, Compound AI systems integrate generative models with other components like programmatic logic, data retrieval mechanisms, and validation layers. This modular design allows AI to combine tools, fetch relevant data, and tailor outputs in a way that static models cannot. ",
+        "bbox": [
+            111,
+            118,
+            854,
+            183
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "For instance, in the insurance recommendation example: ",
+        "bbox": [
+            112,
+            194,
+            565,
+            210
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• A retrieval mechanism pulls the user’s health and financial data from a secure database. ",
+            "• This data is added to the context provided to the LLM during prompt assembly. ",
+            "• The LLM uses the assembled prompt to generate an accurate response. "
+        ],
+        "bbox": [
+            112,
+            223,
+            834,
+            294
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/64bd8cbc50cf76847f93bb95a27d3f5a1e35aa7e4cd580ca77d3cb4b70318c59.jpg",
+        "image_caption": [
+            "Simple RAG Architecture "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            166,
+            316,
+            823,
+            494
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "This process, known as Retrieval-Augmented Generation (RAG), bridges the gap between static AI and real-world needs by dynamically incorporating relevant data into the model’s workflow. ",
+        "bbox": [
+            112,
+            551,
+            867,
+            585
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "While RAG effectively handles tasks like this, it relies on fixed workflows, meaning every interaction and execution path must be predefined. This rigidity makes it impractical to handle more complex or dynamic tasks, where workflows cannot be exhaustively encoded. Encoding all possible execution paths manually is labor-intensive and ultimately limiting. ",
+        "bbox": [
+            111,
+            595,
+            875,
+            662
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The limitations of fixed-flow architectures have led to the rise of the third wave of AI: agentic systems. ",
+        "bbox": [
+            111,
+            672,
+            846,
+            705
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The Third Wave: Agentic AI ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            732,
+            421,
+            752
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "As HubSpot CTO Dharmesh Shah put it, “Agents are the new apps.” Salesforce CEO Marc Benioff echoed this sentiment on The Wall Street Journal’s “Future of Everything” podcast, emphasizing that the future of AI lies with autonomous agents—systems that can think, adapt, and act independently. ",
+        "bbox": [
+            111,
+            757,
+            880,
+            823
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Agents bring something fundamentally new: dynamic, context-driven workflows. Unlike traditional AI models that follow predefined paths, agentic systems determine the best course of action on the fly, adapting in real time to the challenges they face. This makes them particularly well-suited for solving complex, interconnected problems, in enterprise environments. ",
+        "bbox": [
+            111,
+            834,
+            883,
+            900
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            945,
+            261,
+            958
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "page_number",
+        "text": "6 ",
+        "bbox": [
+            870,
+            946,
+            882,
+            955
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/acfc9caa2e5728ec55382f8205f14b5bfb65f28eee4a0e518ea1bb7c82b65cc8.jpg",
+        "image_caption": [
+            "Control Logic: Programmatic vs. Agentic "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            174,
+            97,
+            836,
+            335
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Agents flip traditional control logic on its head. ",
+        "bbox": [
+            112,
+            426,
+            483,
+            441
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Instead of rigid programs dictating every move, agents use LLMs to drive decisions. They can reason, use tools, and access memory—all dynamically. This flexibility allows for workflows that evolve in real time, making agents far more powerful than anything built on fixed logic. ",
+        "bbox": [
+            111,
+            454,
+            874,
+            503
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/15eb05d590ad211672d88775d634a36530b293550eedc1927bf035e88e294038.jpg",
+        "image_caption": [
+            "Agent Architecture (inspired by https://arxiv.org/pdf/2304.03442) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            84,
+            566,
+            906,
+            806
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            945,
+            261,
+            958
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "page_number",
+        "text": "7 ",
+        "bbox": [
+            872,
+            945,
+            882,
+            955
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The Power of Singular Agent Systems ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            90,
+            450,
+            107
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A single agent can be powerful when designed correctly. Effective AI agents share key characteristics: ",
+        "bbox": [
+            111,
+            113,
+            797,
+            143
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Autonomy: They operate without constant human intervention. ",
+            "• Adaptability: They adjust to new data and changing conditions. ",
+            "• Decision-Making: They evaluate multiple options and select the best course of action. "
+        ],
+        "bbox": [
+            112,
+            156,
+            823,
+            213
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "However, traditional architectures make deploying such agents challenging. ",
+        "bbox": [
+            111,
+            220,
+            712,
+            234
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "AI systems struggle with data freshness, integration complexity, security, governance, and realtime responsiveness. Many still rely on batch-based processing, leading to decisions made based on stale data, while fragmented data landscapes make it difficult to establish contextualized and trustworthy data. These challenges create a data mess, where agents lack the reliable, realtime inputs needed to make effective decisions. This highlights the need for an event-driven foundation powered by a data streaming platform, where agents can securely react to live events, enforce governance, and integrate data from disparate sources in real time—eliminating bottlenecks, and enabling AI systems to operate with speed, accuracy, and compliance. ",
+        "bbox": [
+            111,
+            247,
+            880,
+            378
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Before we explore why event-driven design is critical, we need to break down the fundamental components of an agent. Understanding the anatomy of an agent provides the foundation for architecting scalable, interoperable AI systems. ",
+        "bbox": [
+            111,
+            390,
+            859,
+            439
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            945,
+            261,
+            955
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "page_number",
+        "text": "8 ",
+        "bbox": [
+            872,
+            946,
+            880,
+            955
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Part II: The Case for Event-Driven Agentic Systems ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            93,
+            743,
+            162
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "In artificial intelligence, agents have a long history, from early theoretical considerations by Alan Turing and John McCarthy, to rule-based reasoning agents in the 1960s. These agents were designed to act autonomously within a defined context, but their capabilities were limited by narrow applications and rigid logic. ",
+        "bbox": [
+            111,
+            176,
+            870,
+            242
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Today, the emergence of foundation models has transformed what’s possible. ",
+        "bbox": [
+            112,
+            253,
+            725,
+            270
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The Anatomy of an Agent ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            296,
+            401,
+            316
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Just like humans, agents solve problems by combining their senses, memory, reasoning, and ability to act. But before diving into these mechanics, there’s one foundational element that underpins everything: their persona. ",
+        "bbox": [
+            111,
+            321,
+            846,
+            371
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/bbd80f26b2a646768f02d2c4da52124b6fd463fb922f0416d2005be8664ef9a9.jpg",
+        "image_caption": [
+            "The Anatomy of an Agent "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            138,
+            401,
+            841,
+            875
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            945,
+            261,
+            955
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "9 ",
+        "bbox": [
+            870,
+            946,
+            882,
+            955
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Persona (Job Function) ",
+        "text_level": 1,
+        "bbox": [
+            116,
+            89,
+            307,
+            106
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The persona of an agent defines its job function and expertise. It’s like a detailed job description embedded into the system prompt, shaping the agent’s behavior and responses. The system prompt sets expectations, and influences the model’s probability distribution over tokens, to align outputs with the defined role. ",
+        "bbox": [
+            116,
+            117,
+            880,
+            181
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Perception (Sensing) ",
+        "text_level": 1,
+        "bbox": [
+            116,
+            193,
+            289,
+            210
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "With a clear role, the first step to solving any problem is understanding the environment. For agents, perception is their sensory input—how they gather data from the world around them. Humans use eyes, ears, and touch; agents use APIs, sensors, and user inputs. ",
+        "bbox": [
+            116,
+            222,
+            846,
+            270
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Reasoning and Decision-Making ",
+        "text_level": 1,
+        "bbox": [
+            116,
+            282,
+            380,
+            299
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Once information is gathered, it needs to be processed and understood. Reasoning is the agent’s ability to analyze data, derive insights, and decide what to do next. For humans, this happens in the brain. For agents, it’s powered by models like LLMs, which dynamically adapt to inputs and contexts. ",
+        "bbox": [
+            116,
+            310,
+            880,
+            375
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Memory ",
+        "text_level": 1,
+        "bbox": [
+            116,
+            387,
+            186,
+            404
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Memory allows agents to retain domain-specific information across interactions. It’s not about learning, which is a separate part of the anatomy. Humans rely on both short-term memory (like recalling the start of a conversation) and long-term memory (like remembering a skill learned years ago). Agents work the same way. ",
+        "bbox": [
+            116,
+            415,
+            867,
+            479
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Short-term memory allows the agent to keep track of the immediate context within a conversation, which might be stored temporarily in memory buffers during the session. Meanwhile, long-term memory involves storing historical data, such as user preferences or past interactions. This could be a vector database like MongoDB, Elasticsearch, Pinecone, or another permanent storage. A vector database enables semantic search, where embeddings allow the agent to retrieve relevant information efficiently. ",
+        "bbox": [
+            116,
+            491,
+            885,
+            590
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Planning ",
+        "text_level": 1,
+        "bbox": [
+            116,
+            602,
+            191,
+            619
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Once the agent knows what needs to be done, it devises a plan to achieve its goal. This step mirrors how humans strategize: breaking a problem into smaller steps and prioritizing actions. ",
+        "bbox": [
+            116,
+            628,
+            854,
+            662
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Action ",
+        "text_level": 1,
+        "bbox": [
+            116,
+            674,
+            174,
+            689
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Planning is worthless without execution. Action is where agents interact with the world, whether by sending a message, controlling a device, or updating a database. ",
+        "bbox": [
+            116,
+            700,
+            872,
+            733
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The agent’s execution handlers are responsible for ensuring these actions are performed accurately, and for validating the outcomes. ",
+        "bbox": [
+            116,
+            744,
+            818,
+            777
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Learning ",
+        "text_level": 1,
+        "bbox": [
+            116,
+            790,
+            191,
+            806
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Humans improve by learning from mistakes and adapting to new information. Agents do the same, using machine learning to refine their reasoning, improve predictions, and optimize actions. ",
+        "bbox": [
+            116,
+            816,
+            885,
+            849
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "This process may involve adjusting the agent’s context dynamically during prompt assembly, allowing it to refine its responses based on situational feedback, without making permanent changes to the model’s weights. Alternatively, learning can also occur through reinforcement ",
+        "bbox": [
+            116,
+            861,
+            849,
+            910
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            116,
+            945,
+            263,
+            955
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "page_number",
+        "text": "10 ",
+        "bbox": [
+            866,
+            946,
+            880,
+            955
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "learning, where decision-making is optimized using rewards or penalties tied to specific actions. In many cases, adapting context provides a flexible and efficient way for agents to improve, without the overhead of fine-tuning. ",
+        "bbox": [
+            111,
+            90,
+            872,
+            138
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Coordination and Collaboration ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            151,
+            372,
+            166
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Humans rarely work alone—we collaborate, share knowledge, and divide tasks. In multi-agent systems, coordination enables agents to do the same, working together to achieve shared goals. ",
+        "bbox": [
+            111,
+            178,
+            875,
+            212
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Tool Interface ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            223,
+            230,
+            238
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Humans use tools to amplify their capabilities—doctors use stethoscopes, and programmers use integrated development environments (IDEs). Agents are no different. The tool interface is their bridge to specialized capabilities, allowing them to extend their reach, and operate effectively in the real world. ",
+        "bbox": [
+            111,
+            250,
+            877,
+            316
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "These interfaces often rely on modular API handlers or plugin architectures, allowing the agent to extend its functionality dynamically and efficiently. Agents sense their environment, process inputs, recall relevant information, make decisions, and take action. These steps mirror human cognition and problem-solving, but operate within digital ecosystems. ",
+        "bbox": [
+            111,
+            327,
+            864,
+            393
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Why Event-Driven Matters for Agents ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            419,
+            535,
+            440
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Agents, at their core, function much like microservices—as modular, independent units that execute specific tasks. However, unlike traditional microservices, agents don’t just process requests; they reason, plan, and take actions based on stateful information. Without proper coordination, this complexity can quickly spiral out of control. ",
+        "bbox": [
+            111,
+            444,
+            836,
+            510
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Imagine deploying hundreds of microservices without guardrails—without standardized communication, state synchronization, or failure recovery mechanisms. The result would be chaos. The same applies to multi-agent systems: without a structured framework, agents become fragmented, inefficient, and unreliable. ",
+        "bbox": [
+            111,
+            522,
+            883,
+            587
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Microservices architecture evolved to solve similar challenges by shifting from tightly coupled, request/response-based communication to event-driven design. ",
+        "bbox": [
+            111,
+            598,
+            862,
+            633
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Early monolithic applications struggled to scale, because every component had direct dependencies on others. Microservices addressed this by decoupling services, allowing them to operate independently. But managing interservice communication through APIs still introduced bottlenecks. The breakthrough came with event-driven architectures (EDA), where services could react to changes asynchronously, enabling real-time responsiveness and scalability. ",
+        "bbox": [
+            111,
+            643,
+            885,
+            726
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/86cb03c2adf527b946b36f7214b7bce73b075dd26a649a6ddce458c82b49d6ea.jpg",
+        "image_caption": [
+            "Tightly Coupled Microservices to Event-Driven Microservices "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            120,
+            747,
+            885,
+            883
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            945,
+            261,
+            958
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "page_number",
+        "text": "11 ",
+        "bbox": [
+            867,
+            946,
+            883,
+            955
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Agents need the same shift. ",
+        "bbox": [
+            112,
+            77,
+            336,
+            92
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Instead of rigid, API-driven interactions, they should operate in an event-driven ecosystem, consuming and emitting events dynamically. EDA provides the necessary foundation for scalable, adaptive agents by ensuring: ",
+        "bbox": [
+            109,
+            104,
+            880,
+            154
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Asynchronous Processing: Agents can process tasks as events arrive, avoiding bottlenecks caused by synchronous API calls. ",
+            "Scalability: New agents can join the system without disrupting existing workflows, much like adding new microservices to an event-driven infrastructure. ",
+            "Loose Coupling: Agents interact via event streams rather than direct dependencies, reducing fragility and enabling modular development. ",
+            "Real-Time Responsiveness: Agents react instantly to events, ensuring that decisions are made based on the latest available data. "
+        ],
+        "bbox": [
+            112,
+            162,
+            893,
+            296
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "By borrowing from microservices architecture, event-driven agentic systems enable flexibility, resilience, and efficiency at scale. Just as microservices rely on message brokers like Apache Kafka® for asynchronous communication, agents leverage event streaming to collaborate without rigid dependencies. A data streaming platform takes this further by not just streaming data, but also connecting disparate data sources, processing events in motion, and enforcing governance. ",
+        "bbox": [
+            109,
+            304,
+            898,
+            387
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "With a data streaming platform, agents operate on real-time, contextualized data, avoiding stale insights from batch processing. It enables dynamic filtering, transformation, and secure data sharing, ensuring decisions are made with the freshest, most relevant information. This keeps agent ecosystems adaptive, scalable, and ready for real-world challenges—moving beyond static, request-driven workflows, to truly autonomous AI systems. ",
+        "bbox": [
+            109,
+            397,
+            888,
+            481
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "From Singular to Multi-Agent Systems ",
+        "text_level": 1,
+        "bbox": [
+            111,
+            506,
+            542,
+            527
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "As powerful as a single agent can be, its capabilities are inherently limited by its scope. ",
+        "bbox": [
+            109,
+            532,
+            803,
+            549
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "No single agent can handle every possible task with full expertise, just as no individual worker in a company can effectively perform every job. The real promise of agentic AI lies in multi-agent systems (MAS), where multiple specialized agents work together, coordinating actions, exchanging information, and dynamically adapting to changes. ",
+        "bbox": [
+            109,
+            559,
+            895,
+            625
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A MAS is a network of agents that collaborate (or sometimes compete) to solve complex problems more effectively than any single agent could on its own. These systems are designed to distribute workloads, balance specialization, and enable decentralized decision-making. ",
+        "bbox": [
+            109,
+            636,
+            888,
+            686
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Multi-agent systems allow: ",
+        "bbox": [
+            111,
+            696,
+            328,
+            713
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Task Delegation: Agents specialize in specific domains and distribute workloads efficiently. ",
+            "• Parallel Processing: Agents execute tasks simultaneously without bottlenecks. ",
+            "• Dynamic Role Allocation: Responsibilities shift based on changing requirements. "
+        ],
+        "bbox": [
+            112,
+            723,
+            866,
+            781
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "To function effectively, multi-agent systems require seamless coordination and communication. Traditional API-based integrations create tight coupling, where agents must know exactly which other agents to interact with. This approach does not scale. As the number of agents grows, the complexity of interactions increases exponentially. ",
+        "bbox": [
+            109,
+            791,
+            870,
+            857
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Event-driven architecture ensures seamless coordination, enabling agents to operate as part of an adaptive, resilient ecosystem. In the next section, we’ll explore the design patterns that make multiagent interactions scalable and efficient. ",
+        "bbox": [
+            109,
+            868,
+            895,
+            917
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            945,
+            261,
+            958
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "page_number",
+        "text": "",
+        "bbox": [
+            866,
+            946,
+            880,
+            955
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Part III: Design Patterns for Multi-Agent Systems ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            93,
+            854,
+            165
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Enterprises require networks of agents that collaborate, share context, and execute workflows together. However, scaling from a single agent to a multi-agent system introduces significant challenges: ",
+        "bbox": [
+            109,
+            176,
+            859,
+            227
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Context and Data Sharing: Agents must exchange information efficiently without duplication, loss, or inconsistency. ",
+            "Scalability and Fault Tolerance: Systems should handle a growing number of agents, while ensuring recovery from failures. ",
+            "Integration Complexity: Agents interact with diverse tools and data sources, requiring seamless interoperability. ",
+            "Timely and Accurate Decisions: Agents need access to fresh, real-time data to make informed decisions without delay. ",
+            "Safety and Validation: Guardrails are necessary to prevent unintended behaviors and ensure reliable, high-quality outputs. ",
+            "Security and Governance: Organizations must enforce data security, compliance, and lineage to maintain trust and control. ",
+            "Operational Overhead: Managing infrastructure for data pipelines, integration, and compute at scale adds significant burden. ",
+            "Lack of Global Availability: AI systems require real-time data access and processing across regions to support global operations. "
+        ],
+        "bbox": [
+            112,
+            236,
+            883,
+            520
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Confluent Data Streaming Platform is the future-proof foundation for addressing these challenges. It acts as the communication layer and data enabler in the agentic AI stack: ",
+        "bbox": [
+            111,
+            534,
+            800,
+            568
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "bbox": [
+            143,
+            585,
+            274,
+            598
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/7d9538faa9cea8fcbee362e5f35f0cece9778d51c860a4d177c90fcb119d1a2b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            140,
+            599,
+            666,
+            796
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/1998bc57286853eff82efd8ca408ab4380074ae97677644d25cd69687b394bf7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            700,
+            636,
+            728,
+            657
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "CONFLUENT ",
+        "text_level": 1,
+        "bbox": [
+            733,
+            638,
+            852,
+            655
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "End-to-End Agents with ConfluentData Streaming Platform ",
+        "bbox": [
+            705,
+            686,
+            841,
+            727
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "table",
+        "img_path": "images/592a89ef862a920fc6d497af259ca50524bee81f15dda4112bc005d48a4f2451.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Stream</td><td>Connect</td></tr><tr><td>Process</td><td>Govern</td></tr></table>",
+        "bbox": [
+            694,
+            744,
+            854,
+            785
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Cloud Platforms ",
+        "text_level": 1,
+        "bbox": [
+            145,
+            799,
+            254,
+            811
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/45542cf96821d674eab6ce8b720f6091d2855140512e35a44fa7399860e93a6f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            140,
+            811,
+            870,
+            890
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            944,
+            261,
+            957
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "page_number",
+        "text": "13 ",
+        "bbox": [
+            866,
+            946,
+            880,
+            955
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "By combining four key pillars—Stream, Connect, Process, and Govern—Confluent enables agents to seamlessly consume, process, and act on data in motion. ",
+        "bbox": [
+            109,
+            90,
+            887,
+            125
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Streaming ensures real-time event flow, allowing agents to react instantly to changes. ",
+            "• Connectors integrate disparate data sources, removing bottlenecks in interoperability. ",
+            "Stream Processing transforms and enriches data in motion, enabling contextualized decisionmaking. ",
+            "• Stream Governance enforces security, compliance, and data quality, ensuring trust and reliability. "
+        ],
+        "bbox": [
+            112,
+            132,
+            883,
+            242
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "This section explores key design patterns that enable multi-agent systems to function as scalable, resilient, and adaptable networks, leveraging a data streaming platform to unlock real-time AI capabilities without infrastructure headaches. ",
+        "bbox": [
+            109,
+            248,
+            883,
+            297
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Multi-Agent Design Patterns ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            323,
+            434,
+            345
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Multi-agent design patterns define how autonomous agents communicate, collaborate, or compete to solve problems. These patterns structure interactions between agents, ensuring efficient decision-making and workload distribution. ",
+        "bbox": [
+            109,
+            349,
+            841,
+            397
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Below, we examine four essential patterns: Orchestrator-Worker, Hierarchical Agent, Blackboard, and Market-Based, along with how event-driven architectures transform them into scalable, loosely coupled systems. A data streaming platform not only enables any multi-agent system design pattern, but goes far beyond just Apache Kafka®, providing all the tools to connect and unlock data from any system, enforce governance for quality and compliance, and process data into high-value streams that fuel real-time, intelligent agent decision-making. ",
+        "bbox": [
+            109,
+            409,
+            883,
+            508
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Orchestrator-Worker Pattern ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            534,
+            439,
+            553
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "In the Orchestrator-Worker pattern, a central agent assigns tasks to worker agents and manages execution. This is akin to the Master-Worker pattern in distributed computing, where an orchestrator coordinates multiple independent workers that execute specific jobs. ",
+        "bbox": [
+            109,
+            559,
+            883,
+            609
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "image",
+        "img_path": "images/b356134f23add347998f9bf5cc4ecae4104e417d283f6dea2a28ded41eeaaed8.jpg",
+        "image_caption": [
+            "Orchestrator-Worker Pattern "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            274,
+            626,
+            738,
+            882
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            944,
+            264,
+            958
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "page_number",
+        "text": "14 ",
+        "bbox": [
+            864,
+            945,
+            883,
+            955
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Traditional Approach: ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            90,
+            294,
+            107
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "The orchestrator assigns tasks to worker agents. ",
+            "• Workers execute tasks and return results to the orchestrator. ",
+            "• If a worker fails, the orchestrator must reassign tasks manually. "
+        ],
+        "bbox": [
+            112,
+            114,
+            643,
+            172
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Event-Driven Approach: ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            200,
+            313,
+            217
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Using data streaming, we can adapt this pattern to make the agents event-driven. Confluent Data Streaming Platform offers key-based Kafka partitioning strategies, so the orchestrator can use keys to distribute command messages across partitions in a single topic. Worker agents can then act as a consumer group, pulling events from one or more assigned partitions to complete the work. Each worker agent then sends output messages into a second topic, where it can be consumed by downstream systems. ",
+        "bbox": [
+            111,
+            226,
+            872,
+            325
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The pattern now looks like this: ",
+        "bbox": [
+            112,
+            335,
+            359,
+            352
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "image",
+        "img_path": "images/c7491628148152ea8c7da88cc0557f360260187f207c7bc0eaec3ce13e3c433f.jpg",
+        "image_caption": [
+            "Event-Driven Orchestrator-Worker Pattern "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            166,
+            383,
+            869,
+            830
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            945,
+            261,
+            958
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "page_number",
+        "text": "15 ",
+        "bbox": [
+            866,
+            946,
+            882,
+            955
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "While this diagram looks more complex, it dramatically simplifies the operations of the system. ",
+        "bbox": [
+            111,
+            90,
+            854,
+            107
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "The orchestrator no longer has to manage its connections to worker agents, including managing what happens if one dies, or handling more or fewer worker agents. Instead, it uses a keying strategy that distributes work across partitions. For events that should be processed by the stateful worker agent as some previous message, the same key can be used for each event in a sequence. The worker agents gain the benefits of any consumer group. ",
+        "bbox": [
+            111,
+            117,
+            872,
+            200
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "The worker agents pull from one or more partitions, and the Kafka Consumer Rebalance Protocol assures that each worker has similar workloads, even as worker agents are added or removed. In the event of a worker failure, the log can be replayed from a given partition for a saved offset. The orchestrator no longer needs bespoke logic for managing workers; instead, it simply specifies work and distributes it with a sensible keying strategy. Similarly, the worker agents inherit the functionality of a Kafka consumer group, so they can use common machinery for coordination, scaling, and fault recovery. ",
+        "bbox": [
+            109,
+            210,
+            883,
+            325
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "This pattern allows for dynamic scaling, automatic fault recovery, and efficient workload distribution without the need for complex management logic. ",
+        "bbox": [
+            111,
+            337,
+            812,
+            372
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Hierarchical Agent Pattern ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            397,
+            413,
+            417
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "The Hierarchical Agent pattern organizes agents into layers, where higher-level agents oversee or delegate tasks to lower-level agents. This is ideal for breaking down complex problems into smaller, manageable parts. ",
+        "bbox": [
+            111,
+            422,
+            874,
+            472
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "image",
+        "img_path": "images/de053ea65af9fc830d71fc71b7c98f34751a87d97b3ef5484e07d130c071d72d.jpg",
+        "image_caption": [
+            "Hierarchical Multi-Agent Pattern "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            212,
+            484,
+            728,
+            736
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Traditional Approach: ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            808,
+            294,
+            824
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• A central decision-making agent controls multiple subordinate agents. ",
+            "• Subordinate agents handle specialized tasks but require direct coordination. "
+        ],
+        "bbox": [
+            112,
+            833,
+            746,
+            869
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            945,
+            261,
+            958
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "page_number",
+        "text": "16 ",
+        "bbox": [
+            864,
+            946,
+            882,
+            955
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Event-Driven Approach: ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            90,
+            313,
+            107
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "To make the hierarchical pattern event-driven, we apply the same techniques for decomposing work in the orchestrator-worker pattern recursively in the agent hierarchy, such that each nonleaf node is the orchestrator for its respective subtree. ",
+        "bbox": [
+            111,
+            114,
+            864,
+            165
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "image",
+        "img_path": "images/962fe4ff5177639ebc14e4d3a73be3373ffc0db177a46da346cb570eb599c392.jpg",
+        "image_caption": [
+            "Event-Driven Hierarchical Multi-Agent Pattern "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            197,
+            184,
+            859,
+            750
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "By making hierarchical coordination event-driven, agents publish and subscribe to event streams, rather than rely on direct supervision: ",
+        "bbox": [
+            111,
+            797,
+            826,
+            830
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Higher-level agents publish objectives as events. ",
+            "Mid-tier agents consume events, break down tasks, and issue new events to lower-tier agents. "
+        ],
+        "bbox": [
+            112,
+            840,
+            826,
+            893
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            945,
+            261,
+            958
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "page_number",
+        "text": "17 ",
+        "bbox": [
+            867,
+            946,
+            882,
+            955
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Execution agents consume low-level tasks, process them, and publish results. ",
+            "• Sibling agents form consumer groups to process shared workloads dynamically. "
+        ],
+        "bbox": [
+            112,
+            71,
+            781,
+            109
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "With this approach, hierarchy is no longer rigid, agents can be added or removed dynamically without modifying the system’s core logic. Asynchronous event processing ensures scalability while maintaining structured delegation. ",
+        "bbox": [
+            111,
+            114,
+            857,
+            162
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Blackboard Pattern ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            190,
+            331,
+            208
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "The Blackboard Pattern introduces a shared knowledge base—a “blackboard”—where agents asynchronously post and retrieve information. This pattern is widely used in complex problemsolving, such as collaborative AI systems and robotics. ",
+        "bbox": [
+            111,
+            215,
+            864,
+            265
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "image",
+        "img_path": "images/4b5ec91204336f1094808aa889c5f7a179126f1449d1f607bec119a5f07c5cbf.jpg",
+        "image_caption": [
+            "Blackboard Pattern "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            209,
+            297,
+            754,
+            492
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Traditional Approach: ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            571,
+            294,
+            588
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Agents must explicitly query a database or communicate directly with other agents. ",
+            "• Coordination becomes a bottleneck, leading to synchronization challenges. "
+        ],
+        "bbox": [
+            112,
+            597,
+            800,
+            633
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Event-Driven Approach: ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            667,
+            313,
+            683
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• The blackboard is implemented as a streaming topic in Kafka. ",
+            "• Agents publish knowledge updates as events instead of direct database writes. ",
+            "• Other agents subscribe to these updates dynamically, consuming only relevant information. "
+        ],
+        "bbox": [
+            112,
+            693,
+            866,
+            750
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            944,
+            261,
+            957
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "page_number",
+        "text": "18 ",
+        "bbox": [
+            866,
+            946,
+            880,
+            955
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "The event-driven version looks like this: ",
+        "bbox": [
+            114,
+            90,
+            429,
+            104
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "image",
+        "img_path": "images/37931f74e62aae7ee03471b380b0ceddd451e9f81b50e45410304e298a399b12.jpg",
+        "image_caption": [
+            "Event-Driven Blackboard Pattern "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            163,
+            138,
+            799,
+            409
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "This approach allows real-time collaboration without agents needing to track each other’s state explicitly. The blackboard acts as a memory layer, ensuring that shared context is always available without excessive network calls. ",
+        "bbox": [
+            112,
+            472,
+            859,
+            521
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Market-Based Pattern ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            549,
+            362,
+            566
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "The Market-Based Pattern models a decentralized system where agents negotiate or compete for tasks and resources. This is commonly used in autonomous trading, logistics, and distributed optimization problems. ",
+        "bbox": [
+            111,
+            574,
+            874,
+            625
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "image",
+        "img_path": "images/236f71618ca13f62b67f215e8aea26c65e58fe05bb5e6e9f4faf70c5b50aec8f.jpg",
+        "image_caption": [
+            "Market-Based Pattern "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            204,
+            657,
+            759,
+            816
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            945,
+            261,
+            958
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "page_number",
+        "text": "19 ",
+        "bbox": [
+            866,
+            946,
+            880,
+            955
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Traditional Approach: ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            90,
+            294,
+            107
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Agents communicate directly with each other to place bids or negotiate terms. ",
+            "• A central system is often required to coordinate interactions. "
+        ],
+        "bbox": [
+            112,
+            114,
+            758,
+            151
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Event-Driven Approach: ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            174,
+            313,
+            191
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Bidding agents publish offers and requests as events. ",
+            "• A market-making service matches events, executing transactions asynchronously. ",
+            "• Agents listen for matched events and adjust their strategies dynamically. "
+        ],
+        "bbox": [
+            112,
+            200,
+            795,
+            258
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "The pattern now looks like this: ",
+        "bbox": [
+            112,
+            282,
+            359,
+            299
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "image",
+        "img_path": "images/bffcf9ba3bcb9db141132d3b880dce98147cf7d1a9f32a677ecfcf30ea17bd20.jpg",
+        "image_caption": [
+            "Event-Driven Market-Based Pattern "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            165,
+            343,
+            908,
+            724
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "This removes the quadratic complexity of direct peer-to-peer communication, as agents interact through a central event log instead of maintaining individual connections. ",
+        "bbox": [
+            111,
+            792,
+            874,
+            824
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "For example, in financial markets, a data streaming platform is used as a real-time event broker, allowing thousands of trading agents to execute bids, match orders, and react to price fluctuations in milliseconds. ",
+        "bbox": [
+            111,
+            834,
+            854,
+            881
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            945,
+            261,
+            958
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "page_number",
+        "text": "20 ",
+        "bbox": [
+            862,
+            946,
+            882,
+            955
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Multi-Agent AI Sales Development Representative (SDR) ",
+        "text_level": 1,
+        "bbox": [
+            117,
+            104,
+            750,
+            126
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Here’s an event-driven, multi-agent system that automates the SDR workflow. Apache Flink® with AI Model Inference is used to orchestrate communication with a series of AI agents. ",
+        "bbox": [
+            116,
+            148,
+            887,
+            181
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "image",
+        "img_path": "images/22ca71ab0e05f33f89517139be07f2d3eb7bb6ae6585661154568886cadee2b0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            99,
+            229,
+            883,
+            523
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "The system consists of the following agents: ",
+        "bbox": [
+            130,
+            579,
+            483,
+            595
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Lead Ingestion Agent: Captures incoming leads from web forms, enriches them with external data (e.g., company website, Salesforce), and generates a report that can be used for scoring. ",
+            "Lead Scoring Agent: Uses enriched lead information to score leads and generate a short summary for how to best engage. Determines the appropriate next step and triggers downstream agents. ",
+            "Active Outreach Agent: Creates personalized outreach emails, incorporating insights from the lead’s online presence, in order to book a meeting. ",
+            "Nurture Campaign Agent: Dynamically creates a sequence of emails based on where the lead originated, and what their interest was. ",
+            "Send Email Agent: Currently sends to a terminal, but in a real application would send via email relay or email service. "
+        ],
+        "bbox": [
+            130,
+            599,
+            864,
+            806
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Visit this GitHub repo to learn more. ",
+        "bbox": [
+            130,
+            829,
+            433,
+            845
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "header",
+        "text": "E X A M P L E ",
+        "bbox": [
+            119,
+            56,
+            261,
+            75
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            945,
+            261,
+            957
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "page_number",
+        "text": "",
+        "bbox": [
+            866,
+            946,
+            880,
+            955
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "The Role of the Data Streaming Platform in Multi-Agent Systems ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            90,
+            831,
+            112
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "For multi-agent systems to function efficiently, they must operate under a shared event-driven model that standardizes communication and decision-making. This model consists of three primary components: ",
+        "bbox": [
+            109,
+            133,
+            857,
+            184
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Input: Agents consume structured events or commands. ",
+            "2. Processing: Agents apply reasoning, use tools, or retrieve additional context. ",
+            "3. Output: Agents produce new events or take actions in external systems. "
+        ],
+        "bbox": [
+            112,
+            191,
+            751,
+            250
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "By following this event-driven framework, multi-agent systems gain modularity, resilience, and the ability to scale dynamically. ",
+        "bbox": [
+            109,
+            272,
+            888,
+            306
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Maintaining state consistency across multiple agents requires event persistence and replayability. This is where immutable logs and event sourcing come into play. ",
+        "bbox": [
+            109,
+            328,
+            885,
+            361
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Every event is recorded as an immutable entry, ensuring no data loss. ",
+            "• If an agent fails, it can replay events from a saved offset, restoring its state seamlessly. ",
+            "Multiple agents can consume the same event stream, allowing parallel processing without interference. "
+        ],
+        "bbox": [
+            112,
+            371,
+            857,
+            443
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "This model dramatically improves reliability, making it easier to debug failures, scale workloads, and maintain real-time synchronization. ",
+        "bbox": [
+            109,
+            467,
+            867,
+            501
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "As multi-agent architectures become more prevalent, event-driven patterns are essential to ensuring they remain scalable, adaptable, and efficient. ",
+        "bbox": [
+            109,
+            523,
+            836,
+            555
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "By applying the lessons from microservices architecture, AI agents can be designed to operate in a loosely coupled, decentralized manner, reacting to events rather than relying on rigid dependencies. This enables the creation of AI-driven ecosystems where agents collaborate seamlessly across complex workflows, unlocking new possibilities for enterprise automation and large-scale AI systems. ",
+        "bbox": [
+            109,
+            579,
+            877,
+            660
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "In the next section, we’ll explore how to build and deploy these event-driven agents in real-world applications, leveraging a data streaming platform with fully managed Kafka and Flink for scalable execution. ",
+        "bbox": [
+            109,
+            683,
+            885,
+            732
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            944,
+            261,
+            957
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "page_number",
+        "text": "",
+        "bbox": [
+            864,
+            946,
+            880,
+            955
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Part IV: Building Event-Driven Systems for Agents with a Data Streaming Platform ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            93,
+            843,
+            196
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "AI agents are only as effective as the infrastructure that supports them. No matter how sophisticated an agent’s reasoning and decision-making capabilities are, they depend on access to the right data, tools, and communication channels. Traditional architectures—built around request/response patterns, rigid APIs, and batch data processing—create bottlenecks that limit an agent’s ability to act in real time. ",
+        "bbox": [
+            109,
+            213,
+            875,
+            297
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "EDAs solve this by treating data as a continuously moving asset, rather than a static snapshot. By using Confluent Data Streaming Platform as the backbone, agents can consume, process, and emit events asynchronously, making them adaptable, scalable, and resilient for enterprise use cases. ",
+        "bbox": [
+            109,
+            301,
+            880,
+            364
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "In this section, we’ll explore how to architect enterprise-ready event-driven AI systems, tackle the challenges of real-time agent interaction, and apply these concepts to real-world applications. ",
+        "bbox": [
+            109,
+            372,
+            883,
+            405
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Architecting Singular and Multi-Agent Systems ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            425,
+            642,
+            446
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "The shift to event-driven architectures marks a pivotal moment in building scalable agent systems. Instead of waiting for direct instructions, agents are designed to emit and listen for events autonomously. Events act as signals that something has happened—a change in data, a triggered action, or an important update—allowing agents to respond dynamically and independently. ",
+        "bbox": [
+            109,
+            450,
+            851,
+            527
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "image",
+        "img_path": "images/cd51a1cd3925f1ae26882273334b4c2e90369ff8a5bcd1be4c52098d379e235c.jpg",
+        "image_caption": [
+            "Event-Driven Agents: Agents Emit and Listen for Events "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            155,
+            537,
+            805,
+            760
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "At their core, AI agents function much like microservices, operating autonomously but needing structured communication to collaborate effectively. Confluent Data Streaming Platform acts as the “central nervous system” for agents, enabling them to function in a loosely coupled, but highly coordinated manner. ",
+        "bbox": [
+            109,
+            824,
+            859,
+            886
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            945,
+            261,
+            958
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "page_number",
+        "text": "",
+        "bbox": [
+            864,
+            946,
+            880,
+            955
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "image",
+        "img_path": "images/881f6ab252efad807e110ce2b59a5e2f8b7b229b118f7e6235b33e32a6a89779.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            98,
+            64,
+            903,
+            391
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Stream ",
+        "text_level": 1,
+        "bbox": [
+            91,
+            424,
+            165,
+            441
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Continuously capture and share real-time events with AI systems and agents anywhere, built on Kora, the cloudnative Apache Kafka® engine. ",
+        "bbox": [
+            89,
+            446,
+            282,
+            554
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Connect ",
+        "text_level": 1,
+        "bbox": [
+            312,
+            424,
+            398,
+            441
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Integrate disparate data from any environment, with $^ { 1 2 0 + }$ pre-built and custom connectors, bringing real-time data to agents. ",
+        "bbox": [
+            310,
+            446,
+            473,
+            554
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Process ",
+        "text_level": 1,
+        "bbox": [
+            519,
+            424,
+            602,
+            441
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Use Flink stream processing (e.g., join, filter) to enrich data with real-time context at query execution, enabling agentic RAG. ",
+        "bbox": [
+            519,
+            446,
+            699,
+            540
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Govern ",
+        "text_level": 1,
+        "bbox": [
+            728,
+            424,
+            803,
+            441
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Use data lineage, quality controls, and traceability to ensure data for agents is secure and verifiable. ",
+        "bbox": [
+            728,
+            446,
+            903,
+            522
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "The Central Nervous System for Agentic Systems ",
+        "text_level": 1,
+        "bbox": [
+            318,
+            582,
+            709,
+            599
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "By integrating Apache Kafka®, Apache Flink®, and an existing agent framework like LangGraph, we can build architectures that scale horizontally, process high-throughput data streams, and ensure real-time responsiveness. ",
+        "bbox": [
+            112,
+            618,
+            874,
+            666
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Here’s what Confluent Data Streaming Platform provides: ",
+        "bbox": [
+            112,
+            675,
+            570,
+            691
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Horizontal Scalability: Agents operate independently, allowing for seamless scaling. Adding more agents doesn’t require rewriting the entire system. ",
+            "Low Latency and High Throughput: Streaming platforms ensure that agents receive and act on fresh data without waiting for batch updates. ",
+            "Fault Recovery and Isolation: Failures in one part of the system don’t bring down the entire workflow. Agents replay events from logs, ensuring resilience. ",
+            "Shift Left: Data is processed closer to the source, reducing latency and improving AI performance. "
+        ],
+        "bbox": [
+            114,
+            696,
+            874,
+            835
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "A tightly integrated, event-driven pipeline ensures that agents not only receive fresh data, but also act on it dynamically, making real-time AI applications possible. ",
+        "bbox": [
+            112,
+            848,
+            854,
+            881
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            944,
+            261,
+            958
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "page_number",
+        "text": "",
+        "bbox": [
+            862,
+            945,
+            882,
+            955
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Challenges and Solutions in Event-Driven Agent Design ",
+        "text_level": 1,
+        "bbox": [
+            52,
+            41,
+            674,
+            61
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "While the benefits of an event-driven approach are clear, building AI-powered agentic systems comes with its own set of challenges. Below, we address key roadblocks and how Confluent Data Streaming Platform provides solutions. ",
+        "bbox": [
+            50,
+            65,
+            933,
+            111
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Stream Next-Level Data Streaming with a Fully Managed, Cloud-Native Service ",
+        "text_level": 1,
+        "bbox": [
+            50,
+            135,
+            705,
+            152
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "In an agent-driven system, failures, whether from network issues, hardware faults, or software crashes, are inevitable. The challenge is ensuring agents can recover seamlessly without disrupting workflows. ",
+        "bbox": [
+            50,
+            157,
+            900,
+            189
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Solution: ",
+        "text_level": 1,
+        "bbox": [
+            52,
+            193,
+            130,
+            208
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Kafka’s log-based architecture (on Kora) enables agents to replay events and recover from failures. ",
+            "• Idempotent processing ensures that retried operations don’t result in duplicate actions. ",
+            "• Dead-letter queues handle failure scenarios gracefully, allowing human oversight when needed. "
+        ],
+        "bbox": [
+            52,
+            213,
+            875,
+            273
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Connect Seamless Integration: Connecting Agents with Diverse Systems ",
+        "text_level": 1,
+        "bbox": [
+            50,
+            303,
+            656,
+            319
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "AI agents often interact with multiple external systems, such as databases, APIs, vector stores, and enterprise applications. These interactions require seamless, low-latency connectivity without introducing unnecessary dependencies. ",
+        "bbox": [
+            50,
+            323,
+            919,
+            369
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Solution: ",
+        "text_level": 1,
+        "bbox": [
+            52,
+            375,
+            130,
+            390
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Use connectors to integrate disparate data sources and event streams. This allows agents to consume and produce events without hardcoded dependencies. ",
+            "Leverage LangGraph, Microsoft AutoGen, CrewAI and similar frameworks for tool integration, enabling agents to call APIs, databases, and models dynamically. ",
+            "Use data streaming through Kafka topics and stream processing with Flink, ensuring structured collaboration between different AI agents. "
+        ],
+        "bbox": [
+            52,
+            396,
+            926,
+            500
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Process Ensuring Data Freshness: Handling Dynamic Data Streams ",
+        "text_level": 1,
+        "bbox": [
+            50,
+            530,
+            609,
+            547
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Agents require up-to-date, real-time data for optimal decision-making. Traditional architectures that rely on static data retrieval lead to outdated responses and inefficient workflows. ",
+        "bbox": [
+            50,
+            551,
+            941,
+            583
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Solution: ",
+        "text_level": 1,
+        "bbox": [
+            52,
+            588,
+            130,
+            602
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Flink SQL and Table API to process incoming data streams, ensuring AI models and agents work with the latest context. ",
+            "• Flink AI Model Inference ensures model predictions update dynamically as new data flows in. ",
+            "Embedding pipelines transform unstructured text into vector representations in real time, stored in vector databases such as MongoDB, for rapid retrieval in RAG. "
+        ],
+        "bbox": [
+            52,
+            608,
+            916,
+            696
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Govern Data Quality, Security, and Compliance ",
+        "text_level": 1,
+        "bbox": [
+            50,
+            727,
+            447,
+            744
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "AI agents often interact with sensitive data, requiring strong governance, auditing, and compliance measures. ",
+        "bbox": [
+            50,
+            750,
+            916,
+            766
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Solution: ",
+        "text_level": 1,
+        "bbox": [
+            52,
+            770,
+            130,
+            785
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Stream Governance ensures clean, structured data flows through the system, enforcing policies and data lineage tracking. ",
+            "• Encryption and access control at the field level prevent unauthorized data exposure. ",
+            "Fine-grained retention policies ensure data is handled in compliance with regulatory requirements like GDPR. "
+        ],
+        "bbox": [
+            52,
+            790,
+            916,
+            878
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "By addressing these challenges with an event-driven approach, we ensure that agents remain scalable, reliable, and capable of handling complex, multi-step workflows. ",
+        "bbox": [
+            50,
+            893,
+            885,
+            926
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            112,
+            944,
+            261,
+            958
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "page_number",
+        "text": "25 ",
+        "bbox": [
+            864,
+            945,
+            882,
+            955
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Agentic RAG ",
+        "text_level": 1,
+        "bbox": [
+            104,
+            104,
+            251,
+            125
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Here’s an event-driven research agent that mines source materials and leverages RAG to create a podcast interview brief. ",
+        "bbox": [
+            102,
+            128,
+            875,
+            159
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "image",
+        "img_path": "images/fba9dafe5010ec2e9528547c0bb7d7f232fe1b4bc72cca0a0e447eff816ec080.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            117,
+            172,
+            861,
+            625
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "The workflow: ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            648,
+            233,
+            662
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Stream unstructured data (e.g., website URLs, blogs, podcasts) into Confluent, retrieve the text, chunk it, generate embeddings using Flink, and store them in a vector database like MongoDB Atlas using a sink connector. ",
+            "2. For all text extracted, pull out the most interesting questions, and store those. ",
+            "3. Call the LLM to generate a research brief combining the most relevant context based on the embeddings. "
+        ],
+        "bbox": [
+            112,
+            667,
+            830,
+            768
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Visit this GitHub repo and blog to learn more. ",
+        "bbox": [
+            117,
+            792,
+            493,
+            808
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "header",
+        "text": "E X A M P L E ",
+        "bbox": [
+            102,
+            56,
+            243,
+            75
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            945,
+            261,
+            957
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "page_number",
+        "text": "26 ",
+        "bbox": [
+            864,
+            946,
+            882,
+            955
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Real-World Applications of Event-Driven Agentic Systems ",
+        "text_level": 1,
+        "bbox": [
+            91,
+            90,
+            741,
+            112
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Event-driven architectures unlock powerful AI applications across industries by ensuring agents operate with fresh, real-time data. Below are a few examples of how companies are using a data streaming platform to build event-driven multi-agent systems. ",
+        "bbox": [
+            89,
+            114,
+            851,
+            162
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "1. Automating Web Scraping with AI Agents ",
+        "text_level": 1,
+        "bbox": [
+            171,
+            198,
+            591,
+            217
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Traditional web scraping is brittle, requiring manual efforts to handle dynamic pages, extract relevant data, and adapt to site changes. This complexity increases when supporting GenAI models, which need structured and unstructured data in real time. Static scraping workflows fail to keep up, leading to outdated or incomplete information. ",
+        "bbox": [
+            171,
+            220,
+            867,
+            282
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Reworkd tackled this problem by building an agentic system for web scraping. AI agents write code to extract relevant data, while test and validation agents verify that the generated code is correct. These agents operate asynchronously, consuming and producing events in a continuous feedback loop. ",
+        "bbox": [
+            171,
+            287,
+            849,
+            349
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "The agents seamlessly process and stream real-time data into downstream applications. The result: a scalable, fault-tolerant system that dynamically adjusts to website changes, and ensures high-quality data feeds for AI models. ",
+        "bbox": [
+            171,
+            353,
+            872,
+            401
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "2. Intelligent Business Copilots ",
+        "text_level": 1,
+        "bbox": [
+            171,
+            446,
+            472,
+            465
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Teams need self-serve, real-time access to data for faster, smarter decision-making. Yet, business stakeholders often rely on engineering and data science teams to integrate and query data, introducing bottlenecks, batch-based delays, and stale insights. ",
+        "bbox": [
+            171,
+            469,
+            875,
+            516
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Airy transforms this process by enabling AI-powered copilots that provide a natural language interface for exploring and working with real-time data. Agents convert plain language into Flink jobs, continuously monitoring and processing data streams. ",
+        "bbox": [
+            171,
+            520,
+            854,
+            566
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "By leveraging real-time context from a data streaming platform, these agents use LLMs to generate precise Flink SQL queries, empowering teams to extract and analyze live data instantly. This shifts data interaction from manual queries to conversational, real-time insights, making knowledge more accessible than ever. ",
+        "bbox": [
+            171,
+            571,
+            880,
+            633
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "3. Workflow Automation with a Drag-and-Drop Agent Builder ",
+        "text_level": 1,
+        "bbox": [
+            171,
+            684,
+            759,
+            703
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "When starting to build multi-agent systems, teams face the complexity of integrating and orchestrating AI agents and tools, as well as managing intricate tasks at scale. ",
+        "bbox": [
+            171,
+            707,
+            874,
+            738
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Agent Taskflow provides a no-code platform that helps users get up and running with all the features that go into an agent–memory, knowledge bases, and tools–in just a few clicks. The drag-and-drop UI allows for effortless creation of workflows. ",
+        "bbox": [
+            171,
+            743,
+            864,
+            789
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Built on a data streaming platform, the solution enables agents to make context-informed decisions and adapt to real-time events, for more efficient and intelligent automation. From automating customer support to marketing campaigns, this frees teams to focus on high-value work while democratizing AI agents, making it accessible to users without programming expertise. ",
+        "bbox": [
+            171,
+            794,
+            875,
+            872
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            944,
+            261,
+            958
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "page_number",
+        "text": "27 ",
+        "bbox": [
+            864,
+            945,
+            882,
+            955
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Broader Industry Impact ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            94,
+            334,
+            111
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Event-driven AI agents enable businesses to automate complex, real-time tasks across industries: ",
+        "bbox": [
+            111,
+            114,
+            883,
+            132
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "E-commerce: Agents continuously track price changes, product availability, and competitor trends, ensuring businesses make informed pricing decisions. ",
+            "Market Research: Streaming data feeds allow companies to monitor customer sentiment, competitive shifts, and industry trends in real time. ",
+            "Finance: Agents aggregate financial data, news sentiment, and stock movements, helping analysts make more accurate, timely decisions. "
+        ],
+        "bbox": [
+            112,
+            140,
+            866,
+            242
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "By adopting event-driven multi-agent systems, businesses gain resilient, adaptive AI workflows that evolve dynamically. As this paradigm becomes standard, companies that integrate streaming-first architectures will gain a competitive edge in automating complex, data-intensive processes. ",
+        "bbox": [
+            111,
+            252,
+            870,
+            313
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Why a Data Streaming Platform is Essential for AI Agents ",
+        "text_level": 1,
+        "bbox": [
+            111,
+            334,
+            751,
+            354
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "At the heart of every scalable agentic system is a real-time data streaming platform. Unlike traditional request/response architectures that introduce bottlenecks and stale data, streaming enables continuous, low-latency access to the information agents need. ",
+        "bbox": [
+            111,
+            359,
+            861,
+            405
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Why streaming matters: ",
+        "text_level": 1,
+        "bbox": [
+            112,
+            410,
+            313,
+            426
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Real-Time Access: Eliminates batch delays and ensures agents make decisions based on the latest available data. ",
+            "Decoupled Architecture: Agents interact through event streams rather than direct calls, reducing complexity and interdependencies. ",
+            "AI-Ready Data: Streaming platforms transform unstructured data into embeddings stored in vector stores like MongoDB, making it AI-friendly. ",
+            "Scalable AI Interactions: AI workloads are distributed across streaming pipelines, preventing bottlenecks and improving efficiency. ",
+            "Modular and Future-Proof: Use any model, vector database, or AI framework of choice, with the flexibility to swap in new technologies as they evolve, ensuring long-term adaptability. "
+        ],
+        "bbox": [
+            112,
+            434,
+            875,
+            609
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "By adopting a shift-left approach—moving computation closer to the data source—organizations can reduce latency, improve AI performance, and create a more adaptive architecture. ",
+        "bbox": [
+            111,
+            618,
+            879,
+            648
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "The Future of AI is Event-Driven ",
+        "text_level": 1,
+        "bbox": [
+            109,
+            715,
+            725,
+            744
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "AI-powered agents will define the next era of automation, but only if they can think, act, and collaborate in real time. Event-driven architectures ensure that agents are no longer limited by outdated batch processes, rigid APIs, or stale data. Instead, they operate dynamically— processing, analyzing, and acting on real-time events as they happen. ",
+        "bbox": [
+            107,
+            761,
+            836,
+            824
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "As AI adoption accelerates, companies that embrace streaming-first architectures will have a massive advantage. They’ll build AI systems that are smarter, more adaptable, and infinitely scalable, unlocking true agentic intelligence across industries. ",
+        "bbox": [
+            107,
+            832,
+            844,
+            878
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "footer",
+        "text": "© 2025 Confluent, Inc. ",
+        "bbox": [
+            114,
+            944,
+            261,
+            957
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "page_number",
+        "text": "28 ",
+        "bbox": [
+            862,
+            945,
+            882,
+            955
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Take the Next Step ",
+        "text_level": 1,
+        "bbox": [
+            114,
+            85,
+            323,
+            162
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "To get started with building event-driven multi-agents: ",
+        "bbox": [
+            117,
+            179,
+            336,
+            248
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Sign up for Confluent Cloud and receive $400 in free credits. ",
+            "2 Visit the GenAI hub for more resources. ",
+            "Apply for Confluent’s AI Accelerator Program, which provides technical and business mentorship to help AI startups fast-track innovation and growth. "
+        ],
+        "bbox": [
+            406,
+            93,
+            887,
+            290
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "image",
+        "img_path": "images/1793b4d7a22436e98e3e93f7b5f5dc3992fd5f9de8afa56fbea291304950495b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            107,
+            449,
+            354,
+            789
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "About Confluent ",
+        "text_level": 1,
+        "bbox": [
+            398,
+            465,
+            625,
+            487
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Confluent is pioneering a fundamentally new category of data infrastructure focused on data in motion. Confluent’s cloud-native offering is the foundational platform for data in motion–designed to be the intelligent connective tissue enabling real-time data from multiple sources to constantly stream across the organization. With Confluent, organizations can meet the new business imperative of delivering rich digital front-end customer experiences and transitioning to sophisticated, real-time, software-driven back-end operations. ",
+        "bbox": [
+            393,
+            507,
+            864,
+            683
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "To learn more, please visit www.confluent.io. ",
+        "bbox": [
+            393,
+            705,
+            756,
+            723
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "footer",
+        "text": "© Confluent Inc. 2025 ",
+        "bbox": [
+            114,
+            936,
+            259,
+            949
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "page_number",
+        "text": "29 ",
+        "bbox": [
+            862,
+            936,
+            882,
+            949
+        ],
+        "page_idx": 28
+    }
+]

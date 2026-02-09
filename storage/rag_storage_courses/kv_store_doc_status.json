@@ -1,0 +1,41 @@
+{
+  "doc-7777c920c79808444a69426fa44312e8": {
+    "status": "processed",
+    "chunks_count": 7,
+    "chunks_list": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e",
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5",
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e",
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79",
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c",
+      "chunk-e0da988329c10b63d290447e49c5bbe2",
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "content_summary": "A Guide to Event-Driven Design for Agents and Multi-Agent Systems \n\nBy Sean Falconer, AI Entrepreneur in Residence, Confluent \n\nContents \n\n3 Introduction \n\n4 Part I: Understanding the Evolution of AI \n\nThe First Wave: Predictive AI \n\nThe Second Wave:...",
+    "content_length": 36069,
+    "created_at": "2026-02-01T02:54:23.885755+00:00",
+    "updated_at": "2026-02-01T03:01:10.495248+00:00",
+    "file_path": "20250423-EB-Event-Driven_Design_for_Agents_copy.pdf",
+    "track_id": "insert_20260201_095423_0a3a0111",
+    "metadata": {
+      "processing_start_time": 1769914463,
+      "processing_end_time": 1769914870
+    }
+  },
+  "dup-9d358f6d05f9b119da75efc8c3da04cf": {
+    "status": "failed",
+    "content_summary": "[DUPLICATE] Original document: doc-7777c920c79808444a69426fa44312e8",
+    "content_length": 36069,
+    "created_at": "2026-02-01T08:02:56.494337+00:00",
+    "updated_at": "2026-02-01T08:02:56.494337+00:00",
+    "file_path": "20250423-EB-Event-Driven_Design_for_Agents_copy.pdf",
+    "track_id": "insert_20260201_150256_9c58ed24",
+    "error_msg": "Content already exists. Original doc_id: doc-7777c920c79808444a69426fa44312e8, Status: processed",
+    "metadata": {
+      "is_duplicate": true,
+      "original_doc_id": "doc-7777c920c79808444a69426fa44312e8",
+      "original_track_id": "insert_20260201_095423_0a3a0111"
+    },
+    "chunks_list": []
+  }
+}

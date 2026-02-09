@@ -1,0 +1,146 @@
+{
+  "Data Streaming Platform": {
+    "chunk_ids": [
+      "chunk-5c1ccd6e4169f2c696ec77c1ea699f31"
+    ],
+    "count": 1,
+    "create_time": 1769951455,
+    "update_time": 1769951455,
+    "_id": "Data Streaming Platform"
+  },
+  "Real-Time AI Capabilities": {
+    "chunk_ids": [
+      "chunk-5c1ccd6e4169f2c696ec77c1ea699f31"
+    ],
+    "count": 1,
+    "create_time": 1769951455,
+    "update_time": 1769951455,
+    "_id": "Real-Time AI Capabilities"
+  },
+  "Multi-Agent Design Patterns": {
+    "chunk_ids": [
+      "chunk-5c1ccd6e4169f2c696ec77c1ea699f31"
+    ],
+    "count": 1,
+    "create_time": 1769951455,
+    "update_time": 1769951455,
+    "_id": "Multi-Agent Design Patterns"
+  },
+  "Confluent, Inc.": {
+    "chunk_ids": [
+      "chunk-d6c229e370b8a7d2f437965f778c3850"
+    ],
+    "count": 1,
+    "create_time": 1769951455,
+    "update_time": 1769951455,
+    "_id": "Confluent, Inc."
+  },
+  "AI Systems": {
+    "chunk_ids": [
+      "chunk-d6c229e370b8a7d2f437965f778c3850"
+    ],
+    "count": 1,
+    "create_time": 1769951455,
+    "update_time": 1769951455,
+    "_id": "AI Systems"
+  },
+  "Event-Driven Agentic Systems": {
+    "chunk_ids": [
+      "chunk-d6c229e370b8a7d2f437965f778c3850"
+    ],
+    "count": 1,
+    "create_time": 1769951455,
+    "update_time": 1769951455,
+    "_id": "Event-Driven Agentic Systems"
+  },
+  "Artificial Intelligence": {
+    "chunk_ids": [
+      "chunk-d6c229e370b8a7d2f437965f778c3850"
+    ],
+    "count": 1,
+    "create_time": 1769951455,
+    "update_time": 1769951455,
+    "_id": "Artificial Intelligence"
+  },
+  "Blackboard": {
+    "chunk_ids": [
+      "chunk-fdcede6800acbf2e3e236e61d926e28b"
+    ],
+    "count": 1,
+    "create_time": 1769951455,
+    "update_time": 1769951455,
+    "_id": "Blackboard"
+  },
+  "Market-Based Pattern": {
+    "chunk_ids": [
+      "chunk-fdcede6800acbf2e3e236e61d926e28b"
+    ],
+    "count": 1,
+    "create_time": 1769951455,
+    "update_time": 1769951455,
+    "_id": "Market-Based Pattern"
+  },
+  "Sean Falconer": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769951455,
+    "update_time": 1769951455,
+    "_id": "Sean Falconer"
+  },
+  "Confluent": {
+    "chunk_ids": [
+      "chunk-e78da99a2d589a658ec77f66e1eccc2e"
+    ],
+    "count": 1,
+    "create_time": 1769951455,
+    "update_time": 1769951455,
+    "_id": "Confluent"
+  },
+  "Microservices": {
+    "chunk_ids": [
+      "chunk-d95fc9af155efcfee2a297ca03d7989f"
+    ],
+    "count": 1,
+    "create_time": 1769951455,
+    "update_time": 1769951455,
+    "_id": "Microservices"
+  },
+  "Tight Coupling": {
+    "chunk_ids": [
+      "chunk-d95fc9af155efcfee2a297ca03d7989f"
+    ],
+    "count": 1,
+    "create_time": 1769951455,
+    "update_time": 1769951455,
+    "_id": "Tight Coupling"
+  },
+  "Generative AI": {
+    "chunk_ids": [
+      "chunk-f23ac140cb981aae9be85d4061cdc74f"
+    ],
+    "count": 1,
+    "create_time": 1769951455,
+    "update_time": 1769951455,
+    "_id": "Generative AI"
+  },
+  "Deep Learning": {
+    "chunk_ids": [
+      "chunk-f23ac140cb981aae9be85d4061cdc74f"
+    ],
+    "count": 1,
+    "create_time": 1769951455,
+    "update_time": 1769951455,
+    "_id": "Deep Learning"
+  },
+  "Generative Models": {
+    "chunk_ids": [
+      "chunk-f23ac140cb981aae9be85d4061cdc74f"
+    ],
+    "count": 1,
+    "create_time": 1769951455,
+    "update_time": 1769951455,
+    "_id": "Generative Models"
+  }
+}

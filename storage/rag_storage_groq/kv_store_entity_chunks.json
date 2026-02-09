@@ -1,0 +1,932 @@
+{
+  "Memory": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e",
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 2,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Memory"
+  },
+  "Short-Term Memory": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Short-Term Memory"
+  },
+  "Long-Term Memory": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Long-Term Memory"
+  },
+  "Vector Database": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Vector Database"
+  },
+  "Planning": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Planning"
+  },
+  "Action": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Action"
+  },
+  "Execution Handlers": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Execution Handlers"
+  },
+  "Learning": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Learning"
+  },
+  "Machine Learning": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e",
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 2,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Machine Learning"
+  },
+  "Reinforcement Learning": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Reinforcement Learning"
+  },
+  "Coordination": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Coordination"
+  },
+  "Collaboration": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Collaboration"
+  },
+  "Tool Interface": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Tool Interface"
+  },
+  "API Handlers": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "API Handlers"
+  },
+  "Event-Driven Architecture": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e",
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 2,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Event-Driven Architecture"
+  },
+  "Microservices Architecture": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e",
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 2,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Microservices Architecture"
+  },
+  "Event Streaming": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Event Streaming"
+  },
+  "Data Streaming Platform": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e",
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c",
+      "chunk-36de3e44c6c5713387fd456adc08fc1e",
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 4,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Data Streaming Platform"
+  },
+  "Multi-Agent Systems": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e",
+      "chunk-36de3e44c6c5713387fd456adc08fc1e",
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 3,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Multi-Agent Systems"
+  },
+  "Apache Kafka": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e",
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79",
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 3,
+    "update_time": 1769916560,
+    "_id": "Apache Kafka"
+  },
+  "MongoDB": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "MongoDB"
+  },
+  "Elasticsearch": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Elasticsearch"
+  },
+  "Pinecone": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Pinecone"
+  },
+  "Agent": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e",
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 2,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Agent"
+  },
+  "Human": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Human"
+  },
+  "Market-Based Pattern": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c",
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 2,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Market-Based Pattern"
+  },
+  "Autonomous Trading": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Autonomous Trading"
+  },
+  "Logistics": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Logistics"
+  },
+  "Distributed Optimization Problems": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Distributed Optimization Problems"
+  },
+  "Event-Driven Approach": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Event-Driven Approach"
+  },
+  "Apache Flink": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Apache Flink"
+  },
+  "AI Model Inference": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "AI Model Inference"
+  },
+  "Multi-Agent System": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Multi-Agent System"
+  },
+  "Confluent Data Streaming Platform": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c",
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 2,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Confluent Data Streaming Platform"
+  },
+  "Kafka": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Kafka"
+  },
+  "GitHub": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c",
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 2,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "GitHub"
+  },
+  "AI Agents": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c",
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 2,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "AI Agents"
+  },
+  "Event Persistence": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Event Persistence"
+  },
+  "Immutable Logs": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Immutable Logs"
+  },
+  "Real-Time Event Broker": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Real-Time Event Broker"
+  },
+  "Financial Markets": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Financial Markets"
+  },
+  "LangGraph": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "LangGraph"
+  },
+  "Cloud-Native Service": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Cloud-Native Service"
+  },
+  "Vector Stores": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Vector Stores"
+  },
+  "Enterprise Applications": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Enterprise Applications"
+  },
+  "Sean Falconer": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Sean Falconer"
+  },
+  "Confluent": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e",
+      "chunk-e0da988329c10b63d290447e49c5bbe2",
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 3,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Confluent"
+  },
+  "AI": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "AI"
+  },
+  "Event-Driven Design": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Event-Driven Design"
+  },
+  "Agentic AI": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Agentic AI"
+  },
+  "Predictive AI": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Predictive AI"
+  },
+  "Generative AI": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Generative AI"
+  },
+  "Deep Learning": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Deep Learning"
+  },
+  "LLMs": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e",
+      "chunk-e0da988329c10b63d290447e49c5bbe2",
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 3,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "LLMs"
+  },
+  "Artificial Intelligence": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e",
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 2,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Artificial Intelligence"
+  },
+  "Foundation Models": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e",
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 2,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Foundation Models"
+  },
+  "Real-Time Event Processing": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Real-Time Event Processing"
+  },
+  "Scalability": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Scalability"
+  },
+  "Agentic RAG": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Agentic RAG"
+  },
+  "Reworkd": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Reworkd"
+  },
+  "Airy": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Airy"
+  },
+  "Agent Taskflow": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Agent Taskflow"
+  },
+  "Event-Driven Agentic Systems": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Event-Driven Agentic Systems"
+  },
+  "Web Scraping": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Web Scraping"
+  },
+  "Intelligent Business Copilots": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Intelligent Business Copilots"
+  },
+  "Workflow Automation": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Workflow Automation"
+  },
+  "GitHub Repo": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "GitHub Repo"
+  },
+  "Blog": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Blog"
+  },
+  "Flink Jobs": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Flink Jobs"
+  },
+  "Real-Time Data": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Real-Time Data"
+  },
+  "Scalable Agentic Systems": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Scalable Agentic Systems"
+  },
+  "Orchestrator-Worker Pattern": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Orchestrator-Worker Pattern"
+  },
+  "Hierarchical Agent Pattern": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Hierarchical Agent Pattern"
+  },
+  "Blackboard Pattern": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Blackboard Pattern"
+  },
+  "Data Streaming": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Data Streaming"
+  },
+  "Event Log": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Event Log"
+  },
+  "Decentralized System": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Decentralized System"
+  },
+  "Generative Models": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Generative Models"
+  },
+  "Compound AI": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Compound AI"
+  },
+  "Retrieval-Augmented Generation (RAG)": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Retrieval-Augmented Generation (RAG)"
+  },
+  "Agentic Systems": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Agentic Systems"
+  },
+  "HubSpot": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "HubSpot"
+  },
+  "Salesforce": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Salesforce"
+  },
+  "Dharmesh Shah": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Dharmesh Shah"
+  },
+  "Marc Benioff": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Marc Benioff"
+  },
+  "Alan Turing": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Alan Turing"
+  },
+  "John McCarthy": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "John McCarthy"
+  },
+  "APIs": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "APIs"
+  },
+  "Sensors": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Sensors"
+  },
+  "User Inputs": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "User Inputs"
+  },
+  "Rule-Based Reasoning Agents": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Rule-Based Reasoning Agents"
+  },
+  "Persona": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Persona"
+  },
+  "Perception": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Perception"
+  },
+  "Reasoning And Decision-Making": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Reasoning And Decision-Making"
+  },
+  "Digital Front-End Customer Experiences": {
+    "chunk_ids": [
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Digital Front-End Customer Experiences"
+  },
+  "Real-Time Software-Driven Back-End Operations": {
+    "chunk_ids": [
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 1,
+    "create_time": 1769916559,
+    "update_time": 1769916559,
+    "_id": "Real-Time Software-Driven Back-End Operations"
+  },
+  "Www.Confluent.Io": {
+    "chunk_ids": [
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Www.Confluent.Io"
+  },
+  "Software": {
+    "chunk_ids": [
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Software"
+  },
+  "Customer Experiences": {
+    "chunk_ids": [
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Customer Experiences"
+  },
+  "Back-End Operations": {
+    "chunk_ids": [
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Back-End Operations"
+  },
+  "Agents": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agents"
+  }
+}

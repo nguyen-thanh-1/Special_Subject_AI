@@ -1,0 +1,358 @@
+{
+  "doc-e6bedbcccc6a6453b36a73929715f201": {
+    "relation_pairs": [
+      [
+        "Airy",
+        "Real-Time Data"
+      ],
+      [
+        "Data Streaming Platform",
+        "Real-Time Event Broker"
+      ],
+      [
+        "Agents",
+        "Persona"
+      ],
+      [
+        "Event-Driven Architecture",
+        "Market-Based Pattern"
+      ],
+      [
+        "Learning",
+        "Machine Learning"
+      ],
+      [
+        "Event-Driven Architecture",
+        "Orchestrator-Worker Pattern"
+      ],
+      [
+        "Agentic Systems",
+        "Marc Benioff"
+      ],
+      [
+        "Confluent",
+        "Real-Time Software-Driven Back-End Operations"
+      ],
+      [
+        "Event-Driven Design",
+        "Scalability"
+      ],
+      [
+        "Cloud-Native Service",
+        "Confluent Data Streaming Platform"
+      ],
+      [
+        "AI",
+        "Predictive AI"
+      ],
+      [
+        "Confluent Data Streaming Platform",
+        "Multi-Agent Systems"
+      ],
+      [
+        "Apache Kafka",
+        "Confluent Data Streaming Platform"
+      ],
+      [
+        "AI",
+        "Event-Driven Design"
+      ],
+      [
+        "Action",
+        "Agent"
+      ],
+      [
+        "Confluent",
+        "Www.Confluent.Io"
+      ],
+      [
+        "Back-End Operations",
+        "Real-Time Software-Driven Back-End Operations"
+      ],
+      [
+        "Autonomous Trading",
+        "Market-Based Pattern"
+      ],
+      [
+        "Agentic AI",
+        "Multi-Agent Systems"
+      ],
+      [
+        "Agent Taskflow",
+        "Scalable Agentic Systems"
+      ],
+      [
+        "AI Agents",
+        "Microservices Architecture"
+      ],
+      [
+        "Machine Learning",
+        "Predictive AI"
+      ],
+      [
+        "Data Streaming",
+        "Event-Driven Architecture"
+      ],
+      [
+        "AI Agents",
+        "Vector Stores"
+      ],
+      [
+        "AI Agents",
+        "Reworkd"
+      ],
+      [
+        "Action",
+        "Planning"
+      ],
+      [
+        "API Handlers",
+        "Tool Interface"
+      ],
+      [
+        "Agentic Systems",
+        "John McCarthy"
+      ],
+      [
+        "Event-Driven Approach",
+        "Market-Based Pattern"
+      ],
+      [
+        "Customer Experiences",
+        "Digital Front-End Customer Experiences"
+      ],
+      [
+        "Event-Driven Architecture",
+        "Multi-Agent Systems"
+      ],
+      [
+        "Confluent",
+        "Digital Front-End Customer Experiences"
+      ],
+      [
+        "Agents",
+        "Reasoning And Decision-Making"
+      ],
+      [
+        "Data Streaming Platform",
+        "Event-Driven Agentic Systems"
+      ],
+      [
+        "Agentic Systems",
+        "Dharmesh Shah"
+      ],
+      [
+        "Agents",
+        "Memory"
+      ],
+      [
+        "Confluent",
+        "Sean Falconer"
+      ],
+      [
+        "Event-Driven Architecture",
+        "Microservices Architecture"
+      ],
+      [
+        "Confluent Data Streaming Platform",
+        "Event Log"
+      ],
+      [
+        "AI",
+        "Agentic AI"
+      ],
+      [
+        "Confluent Data Streaming Platform",
+        "Kafka"
+      ],
+      [
+        "Decentralized System",
+        "Market-Based Pattern"
+      ],
+      [
+        "Memory",
+        "Short-Term Memory"
+      ],
+      [
+        "AI Agents",
+        "Event-Driven Approach"
+      ],
+      [
+        "Compound AI",
+        "Retrieval-Augmented Generation (RAG)"
+      ],
+      [
+        "APIs",
+        "Agents"
+      ],
+      [
+        "Agents",
+        "Perception"
+      ],
+      [
+        "Generative AI",
+        "LLMs"
+      ],
+      [
+        "Action",
+        "Execution Handlers"
+      ],
+      [
+        "Agents",
+        "Sensors"
+      ],
+      [
+        "Event-Driven Approach",
+        "Microservices Architecture"
+      ],
+      [
+        "Data Streaming Platform",
+        "Multi-Agent System"
+      ],
+      [
+        "Event-Driven Architecture",
+        "Hierarchical Agent Pattern"
+      ],
+      [
+        "AI Agents",
+        "Event-Driven Agentic Systems"
+      ],
+      [
+        "Confluent",
+        "Real-Time Data"
+      ],
+      [
+        "Agentic Systems",
+        "HubSpot"
+      ],
+      [
+        "Agent",
+        "Memory"
+      ],
+      [
+        "Apache Flink",
+        "Data Streaming Platform"
+      ],
+      [
+        "Apache Kafka",
+        "LangGraph"
+      ],
+      [
+        "Confluent",
+        "Data Streaming Platform"
+      ],
+      [
+        "Long-Term Memory",
+        "Memory"
+      ],
+      [
+        "AI",
+        "Generative AI"
+      ],
+      [
+        "Agent Taskflow",
+        "Workflow Automation"
+      ],
+      [
+        "Agentic Systems",
+        "Rule-Based Reasoning Agents"
+      ],
+      [
+        "Coordination",
+        "Multi-Agent Systems"
+      ],
+      [
+        "Agent",
+        "Event-Driven Architecture"
+      ],
+      [
+        "Data Streaming Platform",
+        "Real-Time Event Processing"
+      ],
+      [
+        "Collaboration",
+        "Coordination"
+      ],
+      [
+        "Foundation Models",
+        "Generative Models"
+      ],
+      [
+        "Agent",
+        "Learning"
+      ],
+      [
+        "Agent",
+        "Multi-Agent Systems"
+      ],
+      [
+        "Data Streaming Platform",
+        "Event Streaming"
+      ],
+      [
+        "Agentic RAG",
+        "Event-Driven Agentic Systems"
+      ],
+      [
+        "Agent",
+        "Planning"
+      ],
+      [
+        "Foundation Models",
+        "Generative AI"
+      ],
+      [
+        "Real-Time Software-Driven Back-End Operations",
+        "Software"
+      ],
+      [
+        "Reworkd",
+        "Web Scraping"
+      ],
+      [
+        "Event Persistence",
+        "Immutable Logs"
+      ],
+      [
+        "Deep Learning",
+        "Generative AI"
+      ],
+      [
+        "Agentic Systems",
+        "Artificial Intelligence"
+      ],
+      [
+        "Airy",
+        "Intelligent Business Copilots"
+      ],
+      [
+        "Agents",
+        "User Inputs"
+      ],
+      [
+        "Generative Models",
+        "LLMs"
+      ],
+      [
+        "Agentic Systems",
+        "Alan Turing"
+      ],
+      [
+        "Data Streaming Platform",
+        "Event-Driven Design"
+      ],
+      [
+        "Event-Driven Agentic Systems",
+        "Scalable Agentic Systems"
+      ],
+      [
+        "Blackboard Pattern",
+        "Event-Driven Architecture"
+      ]
+    ],
+    "count": 87,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "doc-e6bedbcccc6a6453b36a73929715f201"
+  }
+}

@@ -1,0 +1,46 @@
+[
+    {
+        "type": "text",
+        "text": "RAGAnything là m■t framework RAG t■t c■ trong m■t. ",
+        "bbox": [
+            126,
+            99,
+            547,
+            114
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Nó h■ tr■ x■ lý ■a ph■■ng th■c (hình ■nh, b■ng bi■u, công th■c). ",
+        "bbox": [
+            126,
+            117,
+            648,
+            131
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Vi■c s■ d■ng Local LLM giúp b■o m■t d■ li■u và ti■t ki■m chi phí API. ",
+        "bbox": [
+            126,
+            135,
+            677,
+            149
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Llama 3.1 8B là m■t mô hình ngôn ng■ m■nh m■ c■a Meta. ",
+        "bbox": [
+            126,
+            153,
+            591,
+            167
+        ],
+        "page_idx": 0
+    }
+]

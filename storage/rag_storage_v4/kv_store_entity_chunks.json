@@ -1,0 +1,191 @@
+{
+  "The Anatomy of an Agent": {
+    "chunk_ids": [
+      "chunk-d6c229e370b8a7d2f437965f778c3850"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "The Anatomy of an Agent"
+  },
+  "event-driven microservices": {
+    "chunk_ids": [
+      "chunk-d6c229e370b8a7d2f437965f778c3850"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "event-driven microservices"
+  },
+  "Alan Turing's theoretical considerations": {
+    "chunk_ids": [
+      "chunk-d6c229e370b8a7d2f437965f778c3850"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Alan Turing's theoretical considerations"
+  },
+  "event": {
+    "chunk_ids": [
+      "chunk-f23ac140cb981aae9be85d4061cdc74f"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "event"
+  },
+  "Confluent, Inc.": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Confluent, Inc."
+  },
+  "Confluent, Inc.'s data streaming platform": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Confluent, Inc.'s data streaming platform"
+  },
+  "Confluent, Inc.'s AI Accelerator Program": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Confluent, Inc.'s AI Accelerator Program"
+  },
+  "Agents use APIs, sensors, and user inputs to gather data from their environment": {
+    "chunk_ids": [
+      "chunk-d6c229e370b8a7d2f437965f778c3850"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Agents use APIs, sensors, and user inputs to gather data from their environment"
+  },
+  "Confluent's cloud-native offering": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Confluent's cloud-native offering"
+  },
+  "Confluent": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Confluent"
+  },
+  "is related to": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "is related to"
+  },
+  "uses": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "uses"
+  },
+  "provides": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "provides"
+  },
+  "agent": {
+    "chunk_ids": [
+      "chunk-d6c229e370b8a7d2f437965f778c3850"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "agent"
+  },
+  "Is-A": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Is-A"
+  },
+  "Provides": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Provides"
+  },
+  "integrates": {
+    "chunk_ids": [
+      "chunk-be8a479aabd0d0444893f31e7e29e918"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "integrates"
+  },
+  "Offers": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Offers"
+  },
+  "Located-In": {
+    "chunk_ids": [
+      "chunk-1171fadc9ac9d0b83d49887e5793a469"
+    ],
+    "count": 1,
+    "create_time": 1769938365,
+    "update_time": 1769938365,
+    "_id": "Located-In"
+  },
+  "RAG": {
+    "chunk_ids": [
+      "chunk-04a91a22ba38bfcc9bb0e1df32b15611"
+    ],
+    "count": 1,
+    "create_time": 1769938380,
+    "update_time": 1769938380,
+    "_id": "RAG"
+  },
+  "Llama 3.1 8B": {
+    "chunk_ids": [
+      "chunk-04a91a22ba38bfcc9bb0e1df32b15611"
+    ],
+    "count": 1,
+    "create_time": 1769938380,
+    "update_time": 1769938380,
+    "_id": "Llama 3.1 8B"
+  }
+}

@@ -1,0 +1,154 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        75,
+                        84,
+                        326,
+                        96
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                75,
+                                83,
+                                327,
+                                99
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        75,
+                                        83,
+                                        327,
+                                        99
+                                    ],
+                                    "type": "text",
+                                    "content": "RAGAnything là m■t framework RAG t■t c■ trong m■t.",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "bbox": [
+                        75,
+                        99,
+                        386,
+                        111
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 1,
+                    "lines": [
+                        {
+                            "bbox": [
+                                74,
+                                97,
+                                387,
+                                116
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        74,
+                                        97,
+                                        387,
+                                        116
+                                    ],
+                                    "type": "text",
+                                    "content": "Nó h■ tr■ x■ lý ■a ph■■ng th■c (hình ■nh, b■ng bi■u, công th■c).",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "bbox": [
+                        75,
+                        114,
+                        403,
+                        126
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 2,
+                    "lines": [
+                        {
+                            "bbox": [
+                                75,
+                                114,
+                                405,
+                                129
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        75,
+                                        114,
+                                        405,
+                                        129
+                                    ],
+                                    "type": "text",
+                                    "content": "Vi■c s■ d■ng Local LLM giúp b■o m■t d■ li■u và ti■t ki■m chi phí API.",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "bbox": [
+                        75,
+                        129,
+                        352,
+                        141
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "index": 3,
+                    "lines": [
+                        {
+                            "bbox": [
+                                76,
+                                128,
+                                353,
+                                142
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        76,
+                                        128,
+                                        353,
+                                        142
+                                    ],
+                                    "type": "text",
+                                    "content": "Llama 3.1 8B là m■t mô hình ngôn ng■ m■nh m■ c■a Meta.",
+                                    "score": 1.0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                595,
+                841
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "hybrid",
+    "_ocr_enable": false,
+    "_vlm_ocr_enable": false,
+    "_version_name": "2.7.4"
+}

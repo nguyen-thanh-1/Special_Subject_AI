@@ -1,0 +1,120 @@
+# ===========================================
+# Virtual Environment
+# ===========================================
+venv/
+.venv/
+env/
+ENV/
+
+# ===========================================
+# Python
+# ===========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ===========================================
+# IDE / Editor
+# ===========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.spyderproject
+.spyproject
+
+# ===========================================
+# Environment Variables
+# ===========================================
+.env
+.env.local
+.env.*.local
+
+# ===========================================
+# Model Weights & Large Files
+# ===========================================
+*.bin
+*.pt
+*.pth
+*.gguf
+*.safetensors
+*.onnx
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# ===========================================
+# Database & Cache
+# ===========================================
+*.db
+*.sqlite
+*.sqlite3
+chromadb/
+chroma_db/
+faiss_index/
+*.faiss
+
+# ===========================================
+# Logs
+# ===========================================
+*.log
+logs/
+log/
+
+# ===========================================
+# Jupyter Notebook
+# ===========================================
+.ipynb_checkpoints/
+*.ipynb
+
+# ===========================================
+# OS Generated
+# ===========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===========================================
+# Temporary Files
+# ===========================================
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+
+# ===========================================
+# LightRAG / RAG Data (optional - uncomment if needed)
+# ===========================================
+# lightrag_working_dir/
+# dickens/
+
+# ===========================================
+# Node modules (if any frontend)
+# ===========================================
+node_modules/

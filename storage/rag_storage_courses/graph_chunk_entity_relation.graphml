@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="truncate" attr.type="string"/>
+<key id="d12" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d11" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d10" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d8" for="edge" attr.name="description" attr.type="string"/>
+<key id="d7" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d6" for="node" attr.name="truncate" attr.type="string"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Business Copilot">
+  <data key="d0">Business Copilot</data>
+  <data key="d1">concept</data>
+  <data key="d2">-Intelligent business copilots</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769914845</data>
+  <data key="d6"></data>
+</node>
+<node id="Drag-and-drop Agent Builder">
+  <data key="d0">Drag-and-drop Agent Builder</data>
+  <data key="d1">concept</data>
+  <data key="d2">-Workflow automation with a drag-and-drop agent builder</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769914845</data>
+  <data key="d6"></data>
+</node>
+<node id="Entity Type">
+  <data key="d0">Entity Type</data>
+  <data key="d1">name</data>
+  <data key="d2">Description</data>
+  <data key="d3">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769914845</data>
+  <data key="d6"></data>
+</node>
+<node id="Concept">
+  <data key="d0">Concept</data>
+  <data key="d1">decentralizeddecision-making</data>
+  <data key="d2">**Concept**
+
+The concept encompasses various aspects of distributed systems, concurrency, and event-driven processing. It involves ensuring that concurrent execution of threads does not lead to data corruption or inconsistencies through properties like **concurrency**, **consistency**, and **fault tolerance**. This is achieved using protocols like **event sourcing**, where all consumers in a group have access to the same data and can recover from failures.
+
+In practice, this is implemented through techniques like **load balancing**, which distributes workload across multiple nodes or servers to improve responsiveness and efficiency. Another technique is **processing tasks or requests in separate threads or processes**, often to improve responsiveness or efficiency. Additionally, **reactive system design** focuses on reacting to and responding to events or changes in the environment.
+
+To ensure scalability, systems aim to be **scalable**, able to handle increased load or size without a proportional increase in cost or decrease in performance. Real-time processing is also crucial, where data or information is processed as soon as it becomes available, often in near-real-time or real-time.
+
+Coordination mechanisms like **locks** and **semaphores** are used to control access to shared resources or data among multiple threads or processes. Distributed systems employ strategies like **consistent hashing** for distributing data across multiple nodes based on a unique identifier or key. Task assignment and resource allocation are optimized using techniques like **job scheduling** and **resource allocation**.
+
+Event-driven systems involve **event handling**, where occurrences or changes in the environment trigger reactions or responses. A high-level abstraction representing a stream of related events or messages is known as a **stream**. To prevent concurrent access to shared resources, primitives like **mutexes** are used.
+
+In distributed systems, **nodes** play different roles, including **producers**, **consumers**, and **routers**. Producers send messages to topics or streams, while consumers subscribe to receive messages. Decision-making processes involve **collaborative decision making**, where multiple agents or stakeholders participate.
+
+Overall, the concept of **concept** is multifaceted, encompassing principles like concurrency, consistency, fault tolerance, scalability, real-time processing, coordination, and event-driven systems.</data>
+  <data key="d3">chunk-48e7d7bf91dbafcf34da8fb5c497bc79</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769914870</data>
+  <data key="d6"></data>
+</node>
+<node id="Confluent">
+  <data key="d0">Confluent</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d2">Sean Falconer</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769914870</data>
+  <data key="d6"></data>
+</node>
+<node id="confluent.io">
+  <data key="d0">confluent.io</data>
+  <data key="d3">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d2">experiences</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769914870</data>
+  <data key="d6"></data>
+</node>
+<node id="visiting confluent.io involves going to a website">
+  <data key="d0">visiting confluent.io involves going to a website</data>
+  <data key="d3">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d2">website</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769914870</data>
+  <data key="d6"></data>
+</node>
+<node id="is">
+  <data key="d0">is</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d2">Sean Falconer</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769914870</data>
+  <data key="d6"></data>
+</node>
+<node id="confluent.io is related to customer experiences">
+  <data key="d0">confluent.io is related to customer experiences</data>
+  <data key="d3">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d2">experiences</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769914870</data>
+  <data key="d6"></data>
+</node>
+<node id="www.confluent.io">
+  <data key="d0">www.confluent.io</data>
+  <data key="d3">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d2">website</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769914870</data>
+  <data key="d6"></data>
+</node>
+<node id="Event-Driven Design">
+  <data key="d0">Event-Driven Design</data>
+  <data key="d3">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d2">data streaming platforms</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769914870</data>
+  <data key="d6"></data>
+</node>
+<node id="confluent.io is related to real-time operations">
+  <data key="d0">confluent.io is related to real-time operations</data>
+  <data key="d3">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d2">operations</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d5">1769914870</data>
+  <data key="d6"></data>
+</node>
+<edge source="Confluent" target="is">
+  <data key="d7">1.0</data>
+  <data key="d8">Sean Falconer</data>
+  <data key="d9">associated with</data>
+  <data key="d10">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769914870</data>
+  <data key="d13"></data>
+</edge>
+<edge source="confluent.io" target="confluent.io is related to customer experiences">
+  <data key="d7">1.0</data>
+  <data key="d8">experiences</data>
+  <data key="d9">Organization</data>
+  <data key="d10">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769914870</data>
+  <data key="d13"></data>
+</edge>
+<edge source="confluent.io" target="confluent.io is related to real-time operations">
+  <data key="d7">1.0</data>
+  <data key="d8">operations</data>
+  <data key="d9">Organization</data>
+  <data key="d10">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769914870</data>
+  <data key="d13"></data>
+</edge>
+<edge source="visiting confluent.io involves going to a website" target="www.confluent.io">
+  <data key="d7">1.0</data>
+  <data key="d8">website</data>
+  <data key="d9">Location</data>
+  <data key="d10">chunk-f76209e5d34866ac5f2f8292f9bb2ff9</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769914870</data>
+  <data key="d13"></data>
+</edge>
+<edge source="is" target="Event-Driven Design">
+  <data key="d7">1.0</data>
+  <data key="d8">data streaming platforms</data>
+  <data key="d9">enabled by</data>
+  <data key="d10">chunk-36de3e44c6c5713387fd456adc08fc1e</data>
+  <data key="d11">20250423-EB-Event-Driven_Design_for_Agents_copy.pdf</data>
+  <data key="d12">1769914870</data>
+  <data key="d13"></data>
+</edge>
+</graph></graphml>

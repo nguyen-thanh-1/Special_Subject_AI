@@ -1,0 +1,114 @@
+{
+  "doc-cda0e3aef4c5151a2f709f4cef7aee7e": {
+    "relation_pairs": [
+      [
+        "LangGraph",
+        "integrates with"
+      ],
+      [
+        "Confluent",
+        "Offers"
+      ],
+      [
+        "Confluent, Inc.'s data streaming platform",
+        "integrates"
+      ],
+      [
+        "RAG",
+        "generates"
+      ],
+      [
+        "Predictive AI",
+        "transforms"
+      ],
+      [
+        "Sean Falconer",
+        "employs"
+      ],
+      [
+        "MongoDB",
+        "stores data in"
+      ],
+      [
+        "Confluent Data Streaming Platform",
+        "is based on"
+      ],
+      [
+        "Artificial Intelligence",
+        "requires"
+      ],
+      [
+        "Confluent's cloud-native offering",
+        "Is-A"
+      ],
+      [
+        "Confluent, LLC",
+        "uses"
+      ],
+      [
+        "Confluent, Inc.'s data streaming platform",
+        "uses"
+      ],
+      [
+        "GitHub",
+        "hosts"
+      ],
+      [
+        "GDPR",
+        "complies with"
+      ],
+      [
+        "Confluent, LLC",
+        "develops"
+      ],
+      [
+        "Agents use APIs, sensors, and user inputs to gather data from their environment",
+        "agent"
+      ],
+      [
+        "Confluent, LLC",
+        "has-relation-with"
+      ],
+      [
+        "Confluent, Inc.",
+        "is related to"
+      ],
+      [
+        "CrewAI",
+        "utilizes"
+      ],
+      [
+        "Confluent, LLC",
+        "integrates-with"
+      ],
+      [
+        "Confluent",
+        "Located-In"
+      ],
+      [
+        "Confluent, Inc.'s AI Accelerator Program",
+        "provides"
+      ],
+      [
+        "Sean Falconer",
+        "is-author-of"
+      ],
+      [
+        "Microsoft AutoGen",
+        "employs"
+      ],
+      [
+        "Apache Flink",
+        "uses"
+      ],
+      [
+        "Confluent",
+        "Provides"
+      ]
+    ],
+    "count": 26,
+    "create_time": 1769934371,
+    "update_time": 1769934371,
+    "_id": "doc-cda0e3aef4c5151a2f709f4cef7aee7e"
+  }
+}

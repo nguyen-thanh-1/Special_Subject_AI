@@ -1,0 +1,26 @@
+rag_v3.py:
+
+    các file:
+    🎉 Đã hoàn thành kiến trúc RAG tối ưu!
+
+    Các file đã tạo:
+    File	Mục đích	Chạy khi nào
+    rag_config.py	Cấu hình chung	Import bởi các file khác
+    index_docs.py	Indexer (offline)	Khi có tài liệu mới
+    query_rag.py	Querier (online, nhanh!)	Khi user hỏi đáp
+    test_rag_v3.py	Demo all-in-one	Để test đầy đủ workflow
+
+    Cách sử dụng:
+    Bước 1: Index tài liệu (chạy 1 lần hoặc khi có file mới)
+
+    powershell
+    uv run index_docs.py
+    # Hoặc force re-index tất cả:
+    uv run index_docs.py --force
+    Bước 2: Query nhanh (user sử dụng hàng ngày)
+
+    powershell
+    # Chế độ interactive:
+    uv run query_rag.py
+    # Hoặc query trực tiếp:
+    uv run query_rag.py "Event-Driven Design là gì?"

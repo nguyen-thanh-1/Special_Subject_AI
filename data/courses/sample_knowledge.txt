@@ -1,0 +1,6 @@
+
+        RAGAnything là một framework RAG tất cả trong một.
+        Nó hỗ trợ xử lý đa phương thức (hình ảnh, bảng biểu, công thức).
+        Việc sử dụng Local LLM giúp bảo mật dữ liệu và tiết kiệm chi phí API.
+        Llama 3.1 8B là một mô hình ngôn ngữ mạnh mẽ của Meta.
+        

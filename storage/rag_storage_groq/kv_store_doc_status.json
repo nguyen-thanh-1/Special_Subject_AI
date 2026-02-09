@@ -1,0 +1,42 @@
+{
+  "doc-e6bedbcccc6a6453b36a73929715f201": {
+    "status": "processed",
+    "chunks_count": 7,
+    "chunks_list": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e",
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5",
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e",
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79",
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c",
+      "chunk-e0da988329c10b63d290447e49c5bbe2",
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "content_summary": "A Guide to Event-Driven Design for Agents and Multi-Agent Systems \n\nBy Sean Falconer, AI Entrepreneur in Residence, Confluent \n\nContents \n\n3 Introduction \n\n4 Part I: Understanding the Evolution of AI \n\nThe First Wave: Predictive AI \n\nThe Second Wave:...",
+    "content_length": 36069,
+    "created_at": "2026-02-01T03:24:05.247833+00:00",
+    "updated_at": "2026-02-01T10:31:59+00:00",
+    "file_path": "20250423-EB-Event-Driven_Design_for_Agents_copy.pdf",
+    "track_id": "insert_20260201_102405_de73e3ca",
+    "metadata": {
+      "processing_start_time": 1769916245,
+      "processing_end_time": 1769916560
+    },
+    "multimodal_processed": true
+  },
+  "doc-d6860623b7c782cc0ca441b32e924f4b": {
+    "status": "failed",
+    "error_msg": "C[1/1]: chunk-4afbb4b48bc10c110e67d7d890d2e600: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kgbk1dr2f84b17453nhgfy5p` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99897, Requested 3250. Please try again in 45m19.008s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}} (Original exception could not be reconstructed: APIStatusError.__init__() missing 2 required keyword-only arguments: 'response' and 'body')",
+    "content_summary": "RAGAnything là m■t framework RAG t■t c■ trong m■t. \n\nNó h■ tr■ x■ lý ■a ph■■ng th■c (hình ■nh, b■ng bi■u, công th■c). \n\nVi■c s■ d■ng Local LLM giúp b■o m■t d■ li■u và ti■t ki■m chi phí API. \n\nLlama 3.1 8B là m■t mô hình ngôn ng■ m■nh m■ c■a Meta.",
+    "content_length": 246,
+    "created_at": "2026-02-01T03:32:14.857762+00:00",
+    "updated_at": "2026-02-01T10:32:15+00:00",
+    "file_path": "sample_knowledge.txt",
+    "track_id": "insert_20260201_103214_47a01ba4",
+    "metadata": {
+      "processing_start_time": 1769916734,
+      "processing_end_time": 1769916735
+    },
+    "chunks_list": [],
+    "multimodal_processed": true
+  }
+}

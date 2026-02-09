@@ -1,0 +1,786 @@
+{
+  "Memory<SEP>Short-Term Memory": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Memory<SEP>Short-Term Memory"
+  },
+  "Action<SEP>Planning": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Action<SEP>Planning"
+  },
+  "Learning<SEP>Machine Learning": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Learning<SEP>Machine Learning"
+  },
+  "Collaboration<SEP>Coordination": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Collaboration<SEP>Coordination"
+  },
+  "API Handlers<SEP>Tool Interface": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "API Handlers<SEP>Tool Interface"
+  },
+  "Event-Driven Architecture<SEP>Microservices Architecture": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Event-Driven Architecture<SEP>Microservices Architecture"
+  },
+  "Long-Term Memory<SEP>Memory": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Long-Term Memory<SEP>Memory"
+  },
+  "Data Streaming Platform<SEP>Event Streaming": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Data Streaming Platform<SEP>Event Streaming"
+  },
+  "Action<SEP>Execution Handlers": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Action<SEP>Execution Handlers"
+  },
+  "Coordination<SEP>Multi-Agent Systems": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Coordination<SEP>Multi-Agent Systems"
+  },
+  "Agent<SEP>Memory": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agent<SEP>Memory"
+  },
+  "Event-Driven Approach<SEP>Market-Based Pattern": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Event-Driven Approach<SEP>Market-Based Pattern"
+  },
+  "Agent<SEP>Planning": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agent<SEP>Planning"
+  },
+  "Apache Flink<SEP>Data Streaming Platform": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Apache Flink<SEP>Data Streaming Platform"
+  },
+  "Autonomous Trading<SEP>Market-Based Pattern": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Autonomous Trading<SEP>Market-Based Pattern"
+  },
+  "Confluent Data Streaming Platform<SEP>Kafka": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Confluent Data Streaming Platform<SEP>Kafka"
+  },
+  "Agent<SEP>Learning": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agent<SEP>Learning"
+  },
+  "AI Agents<SEP>Event-Driven Approach": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "AI Agents<SEP>Event-Driven Approach"
+  },
+  "Data Streaming Platform<SEP>Multi-Agent System": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Data Streaming Platform<SEP>Multi-Agent System"
+  },
+  "Event Persistence<SEP>Immutable Logs": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Event Persistence<SEP>Immutable Logs"
+  },
+  "Agent<SEP>Event-Driven Architecture": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agent<SEP>Event-Driven Architecture"
+  },
+  "AI Agents<SEP>Microservices Architecture": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "AI Agents<SEP>Microservices Architecture"
+  },
+  "Data Streaming Platform<SEP>Real-Time Event Broker": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Data Streaming Platform<SEP>Real-Time Event Broker"
+  },
+  "Cloud-Native Service<SEP>Confluent Data Streaming Platform": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Cloud-Native Service<SEP>Confluent Data Streaming Platform"
+  },
+  "Action<SEP>Agent": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Action<SEP>Agent"
+  },
+  "Event-Driven Approach<SEP>Microservices Architecture": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Event-Driven Approach<SEP>Microservices Architecture"
+  },
+  "AI Agents<SEP>Vector Stores": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "AI Agents<SEP>Vector Stores"
+  },
+  "Apache Kafka<SEP>LangGraph": {
+    "chunk_ids": [
+      "chunk-374dd6a7f0c3f9787b9d5e8b5dbc3e8c"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Apache Kafka<SEP>LangGraph"
+  },
+  "Confluent<SEP>Sean Falconer": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Confluent<SEP>Sean Falconer"
+  },
+  "AI<SEP>Event-Driven Design": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "AI<SEP>Event-Driven Design"
+  },
+  "Agent<SEP>Multi-Agent Systems": {
+    "chunk_ids": [
+      "chunk-f4b5515bbe441a5d3e8b11a9cb6a085e",
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 2,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agent<SEP>Multi-Agent Systems"
+  },
+  "Data Streaming Platform<SEP>Event-Driven Design": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Data Streaming Platform<SEP>Event-Driven Design"
+  },
+  "AI<SEP>Agentic AI": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "AI<SEP>Agentic AI"
+  },
+  "Machine Learning<SEP>Predictive AI": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Machine Learning<SEP>Predictive AI"
+  },
+  "Deep Learning<SEP>Generative AI": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Deep Learning<SEP>Generative AI"
+  },
+  "Agentic AI<SEP>Multi-Agent Systems": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agentic AI<SEP>Multi-Agent Systems"
+  },
+  "Data Streaming Platform<SEP>Real-Time Event Processing": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Data Streaming Platform<SEP>Real-Time Event Processing"
+  },
+  "AI<SEP>Predictive AI": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "AI<SEP>Predictive AI"
+  },
+  "Event-Driven Design<SEP>Scalability": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Event-Driven Design<SEP>Scalability"
+  },
+  "Generative AI<SEP>LLMs": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Generative AI<SEP>LLMs"
+  },
+  "Agentic RAG<SEP>Event-Driven Agentic Systems": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agentic RAG<SEP>Event-Driven Agentic Systems"
+  },
+  "Reworkd<SEP>Web Scraping": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Reworkd<SEP>Web Scraping"
+  },
+  "Airy<SEP>Intelligent Business Copilots": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Airy<SEP>Intelligent Business Copilots"
+  },
+  "Agent Taskflow<SEP>Workflow Automation": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agent Taskflow<SEP>Workflow Automation"
+  },
+  "Foundation Models<SEP>Generative AI": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Foundation Models<SEP>Generative AI"
+  },
+  "Confluent<SEP>Data Streaming Platform": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Confluent<SEP>Data Streaming Platform"
+  },
+  "AI Agents<SEP>Event-Driven Agentic Systems": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "AI Agents<SEP>Event-Driven Agentic Systems"
+  },
+  "Airy<SEP>Real-Time Data": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Airy<SEP>Real-Time Data"
+  },
+  "AI<SEP>Generative AI": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "AI<SEP>Generative AI"
+  },
+  "Agent Taskflow<SEP>Scalable Agentic Systems": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agent Taskflow<SEP>Scalable Agentic Systems"
+  },
+  "Data Streaming Platform<SEP>Event-Driven Agentic Systems": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Data Streaming Platform<SEP>Event-Driven Agentic Systems"
+  },
+  "AI Agents<SEP>Reworkd": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "AI Agents<SEP>Reworkd"
+  },
+  "Event-Driven Architecture<SEP>Multi-Agent Systems": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Event-Driven Architecture<SEP>Multi-Agent Systems"
+  },
+  "Confluent<SEP>Real-Time Data": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Confluent<SEP>Real-Time Data"
+  },
+  "Event-Driven Agentic Systems<SEP>Scalable Agentic Systems": {
+    "chunk_ids": [
+      "chunk-e0da988329c10b63d290447e49c5bbe2"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Event-Driven Agentic Systems<SEP>Scalable Agentic Systems"
+  },
+  "Confluent Data Streaming Platform<SEP>Multi-Agent Systems": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Confluent Data Streaming Platform<SEP>Multi-Agent Systems"
+  },
+  "Event-Driven Architecture<SEP>Orchestrator-Worker Pattern": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Event-Driven Architecture<SEP>Orchestrator-Worker Pattern"
+  },
+  "Apache Kafka<SEP>Confluent Data Streaming Platform": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Apache Kafka<SEP>Confluent Data Streaming Platform"
+  },
+  "Event-Driven Architecture<SEP>Hierarchical Agent Pattern": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Event-Driven Architecture<SEP>Hierarchical Agent Pattern"
+  },
+  "Decentralized System<SEP>Market-Based Pattern": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Decentralized System<SEP>Market-Based Pattern"
+  },
+  "Generative Models<SEP>LLMs": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Generative Models<SEP>LLMs"
+  },
+  "Confluent Data Streaming Platform<SEP>Event Log": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Confluent Data Streaming Platform<SEP>Event Log"
+  },
+  "Compound AI<SEP>Retrieval-Augmented Generation (RAG)": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Compound AI<SEP>Retrieval-Augmented Generation (RAG)"
+  },
+  "Blackboard Pattern<SEP>Event-Driven Architecture": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Blackboard Pattern<SEP>Event-Driven Architecture"
+  },
+  "Agentic Systems<SEP>HubSpot": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agentic Systems<SEP>HubSpot"
+  },
+  "Event-Driven Architecture<SEP>Market-Based Pattern": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Event-Driven Architecture<SEP>Market-Based Pattern"
+  },
+  "Agentic Systems<SEP>Dharmesh Shah": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agentic Systems<SEP>Dharmesh Shah"
+  },
+  "APIs<SEP>Agents": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "APIs<SEP>Agents"
+  },
+  "Data Streaming<SEP>Event-Driven Architecture": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Data Streaming<SEP>Event-Driven Architecture"
+  },
+  "Agentic Systems<SEP>Marc Benioff": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agentic Systems<SEP>Marc Benioff"
+  },
+  "Foundation Models<SEP>Generative Models": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Foundation Models<SEP>Generative Models"
+  },
+  "Agents<SEP>Sensors": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agents<SEP>Sensors"
+  },
+  "Agentic Systems<SEP>Alan Turing": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agentic Systems<SEP>Alan Turing"
+  },
+  "Agents<SEP>User Inputs": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agents<SEP>User Inputs"
+  },
+  "Agentic Systems<SEP>John McCarthy": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agentic Systems<SEP>John McCarthy"
+  },
+  "Agents<SEP>Persona": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agents<SEP>Persona"
+  },
+  "Confluent<SEP>Digital Front-End Customer Experiences": {
+    "chunk_ids": [
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Confluent<SEP>Digital Front-End Customer Experiences"
+  },
+  "Agentic Systems<SEP>Artificial Intelligence": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agentic Systems<SEP>Artificial Intelligence"
+  },
+  "Agents<SEP>Perception": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agents<SEP>Perception"
+  },
+  "Confluent<SEP>Real-Time Software-Driven Back-End Operations": {
+    "chunk_ids": [
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Confluent<SEP>Real-Time Software-Driven Back-End Operations"
+  },
+  "Customer Experiences<SEP>Digital Front-End Customer Experiences": {
+    "chunk_ids": [
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Customer Experiences<SEP>Digital Front-End Customer Experiences"
+  },
+  "Agentic Systems<SEP>Rule-Based Reasoning Agents": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agentic Systems<SEP>Rule-Based Reasoning Agents"
+  },
+  "Agents<SEP>Reasoning And Decision-Making": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agents<SEP>Reasoning And Decision-Making"
+  },
+  "Back-End Operations<SEP>Real-Time Software-Driven Back-End Operations": {
+    "chunk_ids": [
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Back-End Operations<SEP>Real-Time Software-Driven Back-End Operations"
+  },
+  "Confluent<SEP>Www.Confluent.Io": {
+    "chunk_ids": [
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Confluent<SEP>Www.Confluent.Io"
+  },
+  "Agents<SEP>Memory": {
+    "chunk_ids": [
+      "chunk-649a8550ca25b31b1eac35cf9ef704d5"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Agents<SEP>Memory"
+  },
+  "Real-Time Software-Driven Back-End Operations<SEP>Software": {
+    "chunk_ids": [
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 1,
+    "create_time": 1769916560,
+    "update_time": 1769916560,
+    "_id": "Real-Time Software-Driven Back-End Operations<SEP>Software"
+  }
+}

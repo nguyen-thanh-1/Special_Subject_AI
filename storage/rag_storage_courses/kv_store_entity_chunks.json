@@ -1,0 +1,110 @@
+{
+  "Business Copilot": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769914845,
+    "update_time": 1769914845,
+    "_id": "Business Copilot"
+  },
+  "Drag-and-drop Agent Builder": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769914845,
+    "update_time": 1769914845,
+    "_id": "Drag-and-drop Agent Builder"
+  },
+  "Entity Type": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769914845,
+    "update_time": 1769914845,
+    "_id": "Entity Type"
+  },
+  "Concept": {
+    "chunk_ids": [
+      "chunk-48e7d7bf91dbafcf34da8fb5c497bc79"
+    ],
+    "count": 1,
+    "create_time": 1769914845,
+    "update_time": 1769914845,
+    "_id": "Concept"
+  },
+  "Confluent": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769914870,
+    "update_time": 1769914870,
+    "_id": "Confluent"
+  },
+  "confluent.io": {
+    "chunk_ids": [
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 1,
+    "create_time": 1769914870,
+    "update_time": 1769914870,
+    "_id": "confluent.io"
+  },
+  "visiting confluent.io involves going to a website": {
+    "chunk_ids": [
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 1,
+    "create_time": 1769914870,
+    "update_time": 1769914870,
+    "_id": "visiting confluent.io involves going to a website"
+  },
+  "is": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769914870,
+    "update_time": 1769914870,
+    "_id": "is"
+  },
+  "confluent.io is related to customer experiences": {
+    "chunk_ids": [
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 1,
+    "create_time": 1769914870,
+    "update_time": 1769914870,
+    "_id": "confluent.io is related to customer experiences"
+  },
+  "www.confluent.io": {
+    "chunk_ids": [
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 1,
+    "create_time": 1769914870,
+    "update_time": 1769914870,
+    "_id": "www.confluent.io"
+  },
+  "Event-Driven Design": {
+    "chunk_ids": [
+      "chunk-36de3e44c6c5713387fd456adc08fc1e"
+    ],
+    "count": 1,
+    "create_time": 1769914870,
+    "update_time": 1769914870,
+    "_id": "Event-Driven Design"
+  },
+  "confluent.io is related to real-time operations": {
+    "chunk_ids": [
+      "chunk-f76209e5d34866ac5f2f8292f9bb2ff9"
+    ],
+    "count": 1,
+    "create_time": 1769914870,
+    "update_time": 1769914870,
+    "_id": "confluent.io is related to real-time operations"
+  }
+}

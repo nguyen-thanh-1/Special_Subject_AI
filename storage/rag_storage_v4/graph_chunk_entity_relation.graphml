@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="truncate" attr.type="string"/>
+<key id="d12" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d11" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d10" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d8" for="edge" attr.name="description" attr.type="string"/>
+<key id="d7" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d6" for="node" attr.name="truncate" attr.type="string"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="The Anatomy of an Agent">
+  <data key="d0">The Anatomy of an Agent</data>
+  <data key="d1">content</data>
+  <data key="d2">https://www.confluent.io/blog/the-anatomy-of-an-agent/</data>
+  <data key="d3">chunk-d6c229e370b8a7d2f437965f778c3850</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="event-driven microservices">
+  <data key="d0">event-driven microservices</data>
+  <data key="d1">concept</data>
+  <data key="d2">https://microservices.io/patterns/contents/event-driven-microservices.html</data>
+  <data key="d3">chunk-d6c229e370b8a7d2f437965f778c3850</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="Alan Turing's theoretical considerations">
+  <data key="d0">Alan Turing's theoretical considerations</data>
+  <data key="d1">concept</data>
+  <data key="d2">https://plato.stanford.edu/archives/win2016/posts/2016-01-13-theory-of-computation/</data>
+  <data key="d3">chunk-d6c229e370b8a7d2f437965f778c3850</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="event">
+  <data key="d0">event</data>
+  <data key="d1">earlytheoreticalconsiderationsofaibyalanturingandjohnmccarthy</data>
+  <data key="d2">publication event&lt;SEP&gt;historical event</data>
+  <data key="d3">chunk-f23ac140cb981aae9be85d4061cdc74f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="Confluent, Inc.">
+  <data key="d0">Confluent, Inc.</data>
+  <data key="d3">chunk-be8a479aabd0d0444893f31e7e29e918</data>
+  <data key="d2">event-driven architectures</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="Confluent, Inc.'s data streaming platform">
+  <data key="d0">Confluent, Inc.'s data streaming platform</data>
+  <data key="d3">chunk-be8a479aabd0d0444893f31e7e29e918</data>
+  <data key="d2">creation of event-driven multi-agent systems</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="Confluent, Inc.'s AI Accelerator Program">
+  <data key="d0">Confluent, Inc.'s AI Accelerator Program</data>
+  <data key="d3">chunk-be8a479aabd0d0444893f31e7e29e918</data>
+  <data key="d2">technical and business mentorship to AI startups</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="Agents use APIs, sensors, and user inputs to gather data from their environment">
+  <data key="d0">Agents use APIs, sensors, and user inputs to gather data from their environment</data>
+  <data key="d3">chunk-d6c229e370b8a7d2f437965f778c3850</data>
+  <data key="d2">APIs, sensors, and user inputs</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="Confluent's cloud-native offering">
+  <data key="d0">Confluent's cloud-native offering</data>
+  <data key="d3">chunk-1171fadc9ac9d0b83d49887e5793a469</data>
+  <data key="d2">data infrastructure</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="Confluent">
+  <data key="d0">Confluent</data>
+  <data key="d3">chunk-1171fadc9ac9d0b83d49887e5793a469</data>
+  <data key="d2">technical and business mentorship</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="is related to">
+  <data key="d0">is related to</data>
+  <data key="d3">chunk-be8a479aabd0d0444893f31e7e29e918</data>
+  <data key="d2">event-driven architectures</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="uses">
+  <data key="d0">uses</data>
+  <data key="d3">chunk-be8a479aabd0d0444893f31e7e29e918</data>
+  <data key="d2">creation of event-driven multi-agent systems</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="provides">
+  <data key="d0">provides</data>
+  <data key="d3">chunk-be8a479aabd0d0444893f31e7e29e918</data>
+  <data key="d2">technical and business mentorship to AI startups</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="agent">
+  <data key="d0">agent</data>
+  <data key="d3">chunk-d6c229e370b8a7d2f437965f778c3850</data>
+  <data key="d2">APIs, sensors, and user inputs</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="Is-A">
+  <data key="d0">Is-A</data>
+  <data key="d3">chunk-1171fadc9ac9d0b83d49887e5793a469</data>
+  <data key="d2">data infrastructure</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="Provides">
+  <data key="d0">Provides</data>
+  <data key="d3">chunk-1171fadc9ac9d0b83d49887e5793a469</data>
+  <data key="d2">technical and business mentorship</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="integrates">
+  <data key="d0">integrates</data>
+  <data key="d3">chunk-be8a479aabd0d0444893f31e7e29e918</data>
+  <data key="d2">storage of embeddings in vector stores like MongoDB</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="Offers">
+  <data key="d0">Offers</data>
+  <data key="d3">chunk-1171fadc9ac9d0b83d49887e5793a469</data>
+  <data key="d2">rich digital front-end customer experiences</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="Located-In">
+  <data key="d0">Located-In</data>
+  <data key="d3">chunk-1171fadc9ac9d0b83d49887e5793a469</data>
+  <data key="d2">the internet</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938365</data>
+  <data key="d6"></data>
+</node>
+<node id="RAG">
+  <data key="d0">RAG</data>
+  <data key="d1">person</data>
+  <data key="d2">-</data>
+  <data key="d3">chunk-04a91a22ba38bfcc9bb0e1df32b15611</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938380</data>
+  <data key="d6"></data>
+</node>
+<node id="Llama 3.1 8B">
+  <data key="d0">Llama 3.1 8B</data>
+  <data key="d1">artifact</data>
+  <data key="d2">-</data>
+  <data key="d3">chunk-04a91a22ba38bfcc9bb0e1df32b15611</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1769938380</data>
+  <data key="d6"></data>
+</node>
+<edge source="Confluent, Inc." target="is related to">
+  <data key="d7">1.0</data>
+  <data key="d8">event-driven architectures</data>
+  <data key="d9">develops</data>
+  <data key="d10">chunk-be8a479aabd0d0444893f31e7e29e918</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1769938365</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Confluent, Inc.'s data streaming platform" target="uses">
+  <data key="d7">1.0</data>
+  <data key="d8">creation of event-driven multi-agent systems</data>
+  <data key="d9">supports</data>
+  <data key="d10">chunk-be8a479aabd0d0444893f31e7e29e918</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1769938365</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Confluent, Inc.'s data streaming platform" target="integrates">
+  <data key="d7">1.0</data>
+  <data key="d8">storage of embeddings in vector stores like MongoDB</data>
+  <data key="d9">supports</data>
+  <data key="d10">chunk-be8a479aabd0d0444893f31e7e29e918</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1769938365</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Confluent, Inc.'s AI Accelerator Program" target="provides">
+  <data key="d7">1.0</data>
+  <data key="d8">technical and business mentorship to AI startups</data>
+  <data key="d9">offers</data>
+  <data key="d10">chunk-be8a479aabd0d0444893f31e7e29e918</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1769938365</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Agents use APIs, sensors, and user inputs to gather data from their environment" target="agent">
+  <data key="d7">1.0</data>
+  <data key="d8">APIs, sensors, and user inputs</data>
+  <data key="d9">data gathering</data>
+  <data key="d10">chunk-d6c229e370b8a7d2f437965f778c3850</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1769938365</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Confluent's cloud-native offering" target="Is-A">
+  <data key="d7">1.0</data>
+  <data key="d8">data infrastructure</data>
+  <data key="d9">is-a</data>
+  <data key="d10">chunk-1171fadc9ac9d0b83d49887e5793a469</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1769938365</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Confluent" target="Provides">
+  <data key="d7">1.0</data>
+  <data key="d8">technical and business mentorship</data>
+  <data key="d9">provides</data>
+  <data key="d10">chunk-1171fadc9ac9d0b83d49887e5793a469</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1769938365</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Confluent" target="Offers">
+  <data key="d7">1.0</data>
+  <data key="d8">rich digital front-end customer experiences</data>
+  <data key="d9">offers</data>
+  <data key="d10">chunk-1171fadc9ac9d0b83d49887e5793a469</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1769938365</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Confluent" target="Located-In">
+  <data key="d7">1.0</data>
+  <data key="d8">the internet</data>
+  <data key="d9">located-in</data>
+  <data key="d10">chunk-1171fadc9ac9d0b83d49887e5793a469</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1769938365</data>
+  <data key="d13"></data>
+</edge>
+</graph></graphml>
