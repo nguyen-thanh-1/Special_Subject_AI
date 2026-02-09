@@ -496,7 +496,7 @@ def main():
     print("=" * 70)
     
     try:
-        rag = MultiFormatRAG(api_key="AIzaSyDXG1WzdA1oqodgLE8jus32FK5-cOEC8bA", documents_dir="./courses", model_name="gemini-2.5-flash")
+        rag = MultiFormatRAG(api_key="Your_api_key", documents_dir="./courses", model_name="gemini-2.5-flash")
     except Exception as e:
         print(f"\n❌ Lỗi khởi tạo: {e}")
         return
