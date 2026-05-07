@@ -66,6 +66,10 @@ class LLMManager:
                 torch.cuda.ipc_collect()
             print("VRAM cleared.")
 
+    def unload(self):
+        with self._load_lock:
+            self._cleanup_vram()
+
     def get_available_models(self):
         return [{"id": m["id"], "name": m["name"]} for m in self.model_list]
 

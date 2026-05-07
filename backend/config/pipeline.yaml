@@ -39,8 +39,8 @@ knowledge:
   qdrant_path: "data/qdrant_db"
   chunk_min: 400
   chunk_max: 800
-  chunk_overlap: 50
-  top_k_retrieve: 15
+  chunk_overlap: 100
+  top_k_retrieve: 5
 
 reranker:
   enabled: true
