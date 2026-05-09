@@ -60,9 +60,6 @@ async def chat_endpoint(request: ChatRequest):
                 full_response += chunk
                 yield chunk
 
-            if request.session_id:
-                session_manager.add_message(request.session_id, "user", request.message)
-                session_manager.add_message(request.session_id, "assistant", full_response)
         except Exception as e:
             yield f"\n[Error from Pipeline] {str(e)}"
 
