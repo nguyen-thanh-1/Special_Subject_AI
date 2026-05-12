@@ -7,6 +7,9 @@ import {
 import { createChart, ColorType, CandlestickSeries } from 'lightweight-charts';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 
 
 
@@ -129,6 +132,8 @@ const normalizeMarkdownTables = (input: string) => {
   const out: string[] = [];
 
   const isTableRowLine = (line: string) => {
+    const trimmed = line.trim();
+    if (trimmed.startsWith('$$')) return false; 
     const row = splitPipeRow(line);
     return !!row && !isSeparatorCells(row.cells);
   };
@@ -969,7 +974,11 @@ const App: React.FC = () => {
                   background: msg.role === 'user' ? 'rgba(16, 185, 129, 0.2)' : '#0D1117'
                 }}>
                   {msg.role === 'assistant' ? (
-                    <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
+                    <ReactMarkdown 
+                      remarkPlugins={[remarkGfm, remarkMath]} 
+                      rehypePlugins={[rehypeKatex]}
+                      components={markdownComponents}
+                    >
                       {normalizeMarkdownTables(msg.text)}
                     </ReactMarkdown>
                   ) : (
