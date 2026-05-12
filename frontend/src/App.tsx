@@ -254,6 +254,10 @@ const App: React.FC = () => {
   const [isUploading, setIsUploading] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
 
+  // App Mode State
+  const [appMode, setAppMode] = useState<'CHAT' | 'INDEXING'>('CHAT');
+  const [isSwitchingMode, setIsSwitchingMode] = useState(false);
+
   const scrollChatToBottom = (force = false) => {
     const el = chatMessagesRef.current;
     if (!el) return;
@@ -325,9 +329,10 @@ const App: React.FC = () => {
     modelsFetchedRef.current = true;
     const fetchModels = async () => {
       try {
-        const [modelsRes, currentModelRes] = await Promise.all([
+        const [modelsRes, currentModelRes, modeRes] = await Promise.all([
           fetch(`${apiUrl}/api/chat/models`),
-          fetch(`${apiUrl}/api/chat/current-model`)
+          fetch(`${apiUrl}/api/chat/current-model`),
+          fetch(`${apiUrl}/api/chat/app-mode`)
         ]);
 
         if (modelsRes.ok && currentModelRes.ok) {
@@ -336,8 +341,12 @@ const App: React.FC = () => {
           setModels(modelsData);
           setSelectedModel(currentData.model_id);
         }
+        if (modeRes.ok) {
+          const modeData = await modeRes.json();
+          setAppMode(modeData.mode);
+        }
       } catch (err) {
-        console.error("Failed to fetch models:", err);
+        console.error("Failed to fetch startup data:", err);
       }
     };
     fetchModels();
@@ -370,6 +379,31 @@ const App: React.FC = () => {
         .then(data => setSelectedModel(data.model_id));
     } finally {
       setIsModelLoading(false);
+    }
+  };
+
+  const toggleAppMode = async () => {
+    if (isSwitchingMode) return;
+    setIsSwitchingMode(true);
+    const nextMode = appMode === 'CHAT' ? 'INDEXING' : 'CHAT';
+    try {
+      const res = await fetch(`${apiUrl}/api/chat/app-mode`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ mode: nextMode })
+      });
+      if (res.ok) {
+        const data = await res.json();
+        setAppMode(data.mode);
+      } else {
+        const err = await res.json();
+        alert(`Lỗi chuyển mode: ${err.detail}`);
+      }
+    } catch(e) {
+      console.error(e);
+      alert("Lỗi kết nối khi chuyển mode");
+    } finally {
+      setIsSwitchingMode(false);
     }
   };
 
@@ -724,7 +758,42 @@ const App: React.FC = () => {
             }}
           />
           <div style={styles.knowledgeContainer}>
-            <div style={styles.marketHeader}>Quản lý Kiến thức (RAG)</div>
+            <div style={{ ...styles.marketHeader, display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingBottom: '10px' }}>
+              <span>Quản lý Kiến thức (RAG)</span>
+              
+              {/* Mode Toggle Button */}
+              <div style={styles.modeToggleContainer}>
+                <span style={{ fontSize: '0.8em', color: '#8B949E' }}>Mode:</span>
+                <button 
+                  disabled={isSwitchingMode}
+                  onClick={toggleAppMode}
+                  style={{
+                    ...styles.modeToggleBtn,
+                    background: appMode === 'INDEXING' ? 'rgba(239, 68, 68, 0.2)' : 'rgba(255, 255, 255, 0.05)',
+                    color: appMode === 'INDEXING' ? '#EF4444' : '#8B949E',
+                    borderColor: appMode === 'INDEXING' ? '#EF4444' : '#30363D',
+                    opacity: isSwitchingMode ? 0.5 : 1
+                  }}
+                >
+                  {isSwitchingMode ? <Loader2 size={12} style={{ animation: 'spin 1s linear infinite' }} /> : <Database size={12} />}
+                  INDEXING
+                </button>
+                <button 
+                  disabled={isSwitchingMode}
+                  onClick={toggleAppMode}
+                  style={{
+                    ...styles.modeToggleBtn,
+                    background: appMode === 'CHAT' ? 'rgba(16, 185, 129, 0.2)' : 'rgba(255, 255, 255, 0.05)',
+                    color: appMode === 'CHAT' ? '#10B981' : '#8B949E',
+                    borderColor: appMode === 'CHAT' ? '#10B981' : '#30363D',
+                    opacity: isSwitchingMode ? 0.5 : 1
+                  }}
+                >
+                  {isSwitchingMode ? <Loader2 size={12} style={{ animation: 'spin 1s linear infinite' }} /> : <MessageSquare size={12} />}
+                  CHAT
+                </button>
+              </div>
+            </div>
             
             <div
               style={{
@@ -742,9 +811,14 @@ const App: React.FC = () => {
                   accept=".pdf"
                   onChange={handleUploadKnowledge}
                   style={{ display: 'none' }}
-                  disabled={isUploading}
+                  disabled={isUploading || appMode === 'CHAT'}
                 />
-                {isUploading ? (
+                {appMode === 'CHAT' ? (
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+                    <AlertCircle size={32} color="#EF4444" />
+                    <span style={{ fontSize: '0.9em', color: '#EF4444' }}>Vui lòng chuyển sang INDEXING Mode để tải file lên</span>
+                  </div>
+                ) : isUploading ? (
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <Loader2 size={24} style={{ animation: 'spin 1s linear infinite' }} />
                     <span>Đang nạp dữ liệu...</span>
@@ -828,8 +902,42 @@ const App: React.FC = () => {
             }}
           />
           <div style={styles.chatContainer}>
-            <div style={{ ...styles.marketHeader, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div style={{ ...styles.marketHeader, display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingBottom: '10px' }}>
               <span>AI Support</span>
+              
+              {/* Mode Toggle Button */}
+              <div style={{...styles.modeToggleContainer, marginLeft: 'auto', marginRight: '15px'}}>
+                <span style={{ fontSize: '0.8em', color: '#8B949E' }}>Mode:</span>
+                <button 
+                  disabled={isSwitchingMode}
+                  onClick={toggleAppMode}
+                  style={{
+                    ...styles.modeToggleBtn,
+                    background: appMode === 'INDEXING' ? 'rgba(239, 68, 68, 0.2)' : 'rgba(255, 255, 255, 0.05)',
+                    color: appMode === 'INDEXING' ? '#EF4444' : '#8B949E',
+                    borderColor: appMode === 'INDEXING' ? '#EF4444' : '#30363D',
+                    opacity: isSwitchingMode ? 0.5 : 1
+                  }}
+                >
+                  {isSwitchingMode ? <Loader2 size={12} style={{ animation: 'spin 1s linear infinite' }} /> : <Database size={12} />}
+                  INDEXING
+                </button>
+                <button 
+                  disabled={isSwitchingMode}
+                  onClick={toggleAppMode}
+                  style={{
+                    ...styles.modeToggleBtn,
+                    background: appMode === 'CHAT' ? 'rgba(16, 185, 129, 0.2)' : 'rgba(255, 255, 255, 0.05)',
+                    color: appMode === 'CHAT' ? '#10B981' : '#8B949E',
+                    borderColor: appMode === 'CHAT' ? '#10B981' : '#30363D',
+                    opacity: isSwitchingMode ? 0.5 : 1
+                  }}
+                >
+                  {isSwitchingMode ? <Loader2 size={12} style={{ animation: 'spin 1s linear infinite' }} /> : <MessageSquare size={12} />}
+                  CHAT
+                </button>
+              </div>
+
               <select
                 value={selectedModel}
                 onChange={(e) => handleModelChange(e.target.value)}
@@ -840,7 +948,7 @@ const App: React.FC = () => {
                   border: '1px solid #30363D',
                   borderRadius: '4px',
                   fontSize: '0.7em',
-                  padding: '2px 4px',
+                  padding: '4px',
                   outline: 'none',
                   cursor: isModelLoading || models.length === 0 ? 'not-allowed' : 'pointer',
                   maxWidth: '120px'
@@ -882,20 +990,20 @@ const App: React.FC = () => {
             <div style={styles.chatInput}>
               <input
                 type="text"
-                placeholder={isModelLoading ? "Đang tải mô hình..." : "Hỏi AI..."}
-                style={{ ...styles.ghostInput, opacity: isModelLoading ? 0.5 : 1 }}
+                placeholder={appMode === 'INDEXING' ? "Chat bị vô hiệu hóa trong lúc Indexing..." : isModelLoading ? "Đang tải mô hình..." : "Hỏi AI..."}
+                style={{ ...styles.ghostInput, opacity: (isModelLoading || appMode === 'INDEXING') ? 0.5 : 1 }}
                 value={inputValue}
-                disabled={isModelLoading}
+                disabled={isModelLoading || appMode === 'INDEXING'}
                 onChange={(e) => setInputValue(e.target.value)}
-                onKeyDown={(e) => e.key === 'Enter' && handleSendMessage()}
+                onKeyDown={(e) => e.key === 'Enter' && !isModelLoading && appMode !== 'INDEXING' && handleSendMessage()}
               />
               <Send
                 size={16}
                 style={{
-                  cursor: isModelLoading ? 'not-allowed' : 'pointer',
-                  color: isModelLoading ? '#30363D' : '#10B981'
+                  cursor: (isModelLoading || appMode === 'INDEXING') ? 'not-allowed' : 'pointer',
+                  color: (isModelLoading || appMode === 'INDEXING') ? '#30363D' : '#10B981'
                 }}
-                onClick={!isModelLoading ? handleSendMessage : undefined}
+                onClick={(!isModelLoading && appMode !== 'INDEXING') ? handleSendMessage : undefined}
               />
             </div>
           </div>
@@ -1131,7 +1239,9 @@ const styles: Record<string, React.CSSProperties> = {
     wordBreak: 'break-word',
     lineHeight: '1.5'
   },
-  chatInput: { padding: '20px', borderTop: '1px solid #30363D', display: 'flex', gap: '10px', alignItems: 'center' }
+  chatInput: { padding: '20px', borderTop: '1px solid #30363D', display: 'flex', gap: '10px', alignItems: 'center' },
+  modeToggleContainer: { display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(0,0,0,0.2)', padding: '4px 8px', borderRadius: '8px', border: '1px solid rgba(48,54,61,0.5)' },
+  modeToggleBtn: { border: '1px solid', padding: '4px 10px', borderRadius: '6px', fontSize: '0.7em', fontWeight: 'bold', cursor: 'pointer', transition: 'all 0.2s', display: 'flex', alignItems: 'center', gap: '4px' }
 };
 
 export default App;

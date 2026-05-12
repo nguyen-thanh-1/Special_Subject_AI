@@ -213,7 +213,8 @@ class KnowledgeBase:
         # Embed only the new ones
         if to_embed_texts:
             logger.info(f"[knowledge] embedding {len(to_embed_texts)} new chunks (cached: {cached_count})")
-            new_embeddings = embedder.embed(to_embed_texts).vectors
+            # Use a small batch size (e.g. 8) because chunk size can be very large (up to 1500 words)
+            new_embeddings = embedder.embed(to_embed_texts, batch_size=8).vectors
             for text, emb in zip(to_embed_texts, new_embeddings):
                 self.embedding_cache.set(text, emb)
         else:

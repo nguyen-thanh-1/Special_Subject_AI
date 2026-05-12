@@ -71,6 +71,9 @@ class RouterManager:
         except Exception as e:
             return (Routes.GENERAL, f"router_error: {e}")
 
+    def unload(self):
+        logger.info("[router] Unloading model...")
+        self._model.unload()
 
 _router_instance: Optional[RouterManager] = None
 

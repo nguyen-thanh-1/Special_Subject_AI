@@ -11,7 +11,12 @@ from src.utils.app_config import AppConfig
 from src.pipeline.chat_pipeline import get_chat_pipeline
 from src.utils.knowledge_base import get_knowledge_base
 from src.utils.knowledge_manager import get_knowledge_manager
+from src.utils.app_mode import get_app_mode_manager, Mode
 from src.utils.logger import logger
+from pydantic import BaseModel
+
+class AppModeRequest(BaseModel):
+    mode: str
 
 router = APIRouter(prefix="/api/chat", tags=["chatbot"])
 
@@ -43,6 +48,12 @@ async def chat_endpoint(request: ChatRequest):
     Chatbot endpoint with session-based history management.
     Uses the ChatPipeline and SessionManager.
     """
+    mode_mgr = get_app_mode_manager()
+    if mode_mgr.current_mode == Mode.INDEXING:
+        def generate_error():
+            yield "\n[Hệ thống] Chatbot hiện đang trong chế độ Nạp Tài Liệu (Indexing). Không thể nhắn tin lúc này. Vui lòng chuyển lại Chat Mode."
+        return StreamingResponse(generate_error(), media_type="text/plain")
+
     pipeline = get_chat_pipeline()
     session_manager = get_session_manager()
     
@@ -75,6 +86,10 @@ async def get_last_trace():
 
 @router.post("/upload-knowledge")
 async def upload_knowledge(background_tasks: BackgroundTasks, file: UploadFile = File(...)):
+    mode_mgr = get_app_mode_manager()
+    if mode_mgr.current_mode == Mode.CHAT:
+        raise HTTPException(status_code=403, detail="Vui lòng chuyển sang chế độ Nạp Tài Liệu (Indexing Mode) trước khi upload file.")
+
     if not file.filename.endswith(".pdf"):
         raise HTTPException(status_code=400, detail="Only PDF files are supported")
     
@@ -122,3 +137,21 @@ async def delete_knowledge_file(file_id: int):
         kb.delete_file_vectors(filename)
         return {"message": f"File '{filename}' deleted from knowledge base"}
     raise HTTPException(status_code=404, detail="File not found")
+
+@router.get("/app-mode")
+async def get_app_mode():
+    """Returns the current application mode"""
+    return {"mode": get_app_mode_manager().current_mode.value}
+
+@router.post("/app-mode")
+async def set_app_mode(request: AppModeRequest):
+    """Sets the current application mode"""
+    try:
+        new_mode = Mode(request.mode.upper())
+    except ValueError:
+        raise HTTPException(status_code=400, detail=f"Invalid mode. Must be CHAT or INDEXING.")
+        
+    success = get_app_mode_manager().set_mode(new_mode)
+    if not success:
+        raise HTTPException(status_code=500, detail="Failed to switch application mode.")
+    return {"status": "success", "mode": new_mode.value}

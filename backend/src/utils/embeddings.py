@@ -76,6 +76,42 @@ class EmbeddingManager:
             vecs = vecs.reshape(1, -1)
         return EmbeddingResult(vectors=vecs)
 
+    def unload(self):
+        with self._lock:
+            if self._model is not None:
+                import gc
+                import torch
+                logger.info("[embeddings] Unloading model...")
+                del self._model
+                self._model = None
+                gc.collect()
+                if torch.cuda.is_available():
+                    torch.cuda.empty_cache()
+
+    def set_device(self, new_device: str):
+        with self._lock:
+            import torch
+            if new_device.lower() == "cuda" and not torch.cuda.is_available():
+                new_device = "cpu"
+                
+            if self.device == new_device:
+                return
+
+            self.device = new_device
+            logger.info(f"[embeddings] Changing device to {new_device}")
+            
+            # If already loaded, unload and reload
+            if self._model is not None:
+                import gc
+                del self._model
+                self._model = None
+                gc.collect()
+                if torch.cuda.is_available():
+                    torch.cuda.empty_cache()
+                
+            # Unlock temporarily to call ensure_loaded which acquires lock
+        self.ensure_loaded()
+
 
 _embed_instance: Optional[EmbeddingManager] = None
 
