@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from threading import Thread
-from src.routers import chatbot, market_data
+from src.routers import chatbot, market_data, vn30
 from src.utils.llm import get_llm
 from src.pipeline.chat_pipeline import get_chat_pipeline
 from src.utils.logger import logger
@@ -22,6 +22,7 @@ app.add_middleware(
 # Include Routers
 app.include_router(chatbot.router)
 app.include_router(market_data.router)
+app.include_router(vn30.router)
 
 @app.get("/")
 def read_root():

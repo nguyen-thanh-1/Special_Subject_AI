@@ -221,10 +221,16 @@ const App: React.FC = () => {
   const apiUrl =
     import.meta.env.VITE_API_URL ||
     '';
-  const [activeTab, setActiveTab] = useState('Hàng hóa');
+  const [activeTab, setActiveTab] = useState('VN30');
   const [side, setSide] = useState<'buy' | 'sell'>('buy');
-  const [activeAsset, setActiveAsset] = useState('GOLD');
+  const [activeAsset, setActiveAsset] = useState('FPT');
   const [sidebarView, setSidebarView] = useState<'market' | 'ai' | 'knowledge'>('market');
+  
+  // VN30 State
+  const [vn30Quotes, setVn30Quotes] = useState<any[]>([]);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [activeTimeframe, setActiveTimeframe] = useState('1m');
+  const [isChartLoading, setIsChartLoading] = useState(false);
   const NAV_WIDTH = 60;
   const MARKET_WIDTH = 280;
   const ORDER_MIN_WIDTH = 220;
@@ -236,11 +242,35 @@ const App: React.FC = () => {
   const resizeStartWidthRef = useRef(CHAT_MIN_WIDTH);
   const forceChatScrollRef = useRef(false);
   const chatScrollRafRef = useRef<number | null>(null);
-  const [currentPrice, setCurrentPrice] = useState(2154.30);
-  const [priceChange, setPriceChange] = useState(-0.24);
+  const [currentPrice, setCurrentPrice] = useState(0);
+  const [priceChange, setPriceChange] = useState(0);
   const [chatMessages, setChatMessages] = useState([
     { role: 'assistant', text: 'Chào bạn! Tôi là AI hỗ trợ giao dịch. Bạn cần giúp gì hôm nay?' }
   ]);
+
+  // Fetch VN30 Quotes
+  useEffect(() => {
+    const fetchQuotes = async () => {
+      try {
+        const res = await fetch(`${apiUrl}/api/vn30/quotes`);
+        if (res.ok) {
+          const data = await res.json();
+          setVn30Quotes(data);
+          
+          const activeQ = data.find((q: any) => q.symbol === activeAsset);
+          if (activeQ && activeQ.close) {
+             setCurrentPrice(activeQ.close);
+             setPriceChange(activeQ.change_pct);
+          }
+        }
+      } catch (err) {
+        console.error("Failed to fetch VN30 quotes", err);
+      }
+    };
+    fetchQuotes();
+    const iv = setInterval(fetchQuotes, 5000); // poll every 5s
+    return () => clearInterval(iv);
+  }, [apiUrl, activeAsset]);
 
 
 
@@ -489,10 +519,11 @@ const App: React.FC = () => {
   useEffect(() => {
     if (!chartContainerRef.current) return;
 
-    let simulationInterval: any = null;
+    setIsChartLoading(true);
+    let chart: any = null;
 
     try {
-      const chart: any = createChart(chartContainerRef.current, {
+      chart = createChart(chartContainerRef.current, {
         layout: {
           background: { type: ColorType.Solid, color: '#0A0E14' },
           textColor: '#8B949E' as any,
@@ -503,6 +534,10 @@ const App: React.FC = () => {
         },
         width: chartContainerRef.current.clientWidth,
         height: chartContainerRef.current.clientHeight || 450,
+        timeScale: {
+          timeVisible: true,
+          secondsVisible: false,
+        }
       });
 
       const candlestickSeries = chart.addSeries(CandlestickSeries, {
@@ -513,75 +548,47 @@ const App: React.FC = () => {
         wickDownColor: '#EF4444',
       });
 
-      const startSimulation = (lastPoint: any, basePrice: number) => {
-        let current = { ...lastPoint };
-        let lastMinute = Math.floor(Date.now() / 60000);
-
-        simulationInterval = setInterval(() => {
-          const nowMinute = Math.floor(Date.now() / 60000);
-
-          if (nowMinute > lastMinute) {
-            // Start a new candle every minute
-            const newTime = current.time + 60;
-            current = {
-              time: newTime as any,
-              open: current.close,
-              high: current.close,
-              low: current.close,
-              close: current.close,
-            };
-            lastMinute = nowMinute;
-          } else {
-            // Smooth, multi-tick update for the current candle
-            // Fast volatility for testing: 0.2% of the current price per second
-            const volatility = current.close * 0.002;
-            const change = (Math.random() - 0.5) * volatility;
-            current.close += change;
-            if (current.close > current.high) current.high = current.close;
-            if (current.close < current.low) current.low = current.close;
-          }
-
-          setCurrentPrice(current.close);
-
-          // Calculate and set price change percentage
-          const pChange = ((current.close - basePrice) / basePrice) * 100;
-          setPriceChange(parseFloat(pChange.toFixed(2)));
-
-          candlestickSeries.update(current);
-        }, 1000);
-      };
+      let chartUpdateInterval: any = null;
+      let isFirstLoad = true;
 
       const fetchData = async () => {
         try {
-          const response = await fetch(`${apiUrl}/api/market-data`);
+          const response = await fetch(`${apiUrl}/api/vn30/ohlcv/${activeAsset}?timeframe=${activeTimeframe}`);
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
           const data = await response.json();
+          
           if (Array.isArray(data) && data.length > 0) {
-            candlestickSeries.setData(data);
-            chart.timeScale().fitContent();
+            // Ensure data is sorted by time and unique
+            const uniqueData = Array.from(new Map(data.map(item => [item.time, item])).values());
+            
+            candlestickSeries.setData(uniqueData);
+            
+            if (isFirstLoad) {
+              chart.timeScale().fitContent();
+              isFirstLoad = false;
+            }
 
-            const last = data[data.length - 1];
-            const basePrice = data[0].open;
-            setCurrentPrice(last.close);
-
-            // Start live simulation based on last data point
-            startSimulation(last, basePrice);
-          } else {
-            const mockData = generateMockData();
-            candlestickSeries.setData(mockData);
-            startSimulation(mockData[mockData.length - 1], mockData[0].open);
+            // Sync current price if quote API hasn't loaded yet
+            const last = uniqueData[uniqueData.length - 1];
+            if (currentPrice === 0) {
+              setCurrentPrice(last.close);
+            }
           }
         } catch (err) {
-          const mockData = generateMockData();
-          candlestickSeries.setData(mockData);
-          startSimulation(mockData[mockData.length - 1], mockData[0].open);
+          console.error("Failed to fetch chart data:", err);
+        } finally {
+          setIsChartLoading(false);
         }
       };
 
+      // Initial fetch
       fetchData();
+      
+      // Auto-update real chart data every 5 seconds
+      chartUpdateInterval = setInterval(fetchData, 5000);
 
       const handleResize = () => {
-        if (chartContainerRef.current) {
+        if (chartContainerRef.current && chart) {
           chart.applyOptions({
             width: chartContainerRef.current.clientWidth,
             height: chartContainerRef.current.clientHeight
@@ -593,15 +600,13 @@ const App: React.FC = () => {
 
       return () => {
         window.removeEventListener('resize', handleResize);
-        chart.remove();
-        if (simulationInterval) {
-          clearInterval(simulationInterval);
-        }
+        if (chartUpdateInterval) clearInterval(chartUpdateInterval);
+        if (chart) chart.remove();
       };
     } catch (err) {
       console.error("Chart init error:", err);
     }
-  }, []);
+  }, [activeAsset, activeTimeframe, apiUrl]);
 
   const generateMockData = (): any[] => {
     const data: any[] = [];
@@ -717,7 +722,7 @@ const App: React.FC = () => {
           <>
             <div style={styles.marketHeader}>Thị trường</div>
             <div style={styles.marketTabs}>
-              {['Hàng hóa', 'Tiền tệ', 'Tiền điện tử'].map(tab => (
+              {['VN30', 'HNX30', 'Thế giới'].map(tab => (
                 <span
                   key={tab}
                   style={{ ...styles.marketTab, ...(activeTab === tab ? styles.marketTabActive : {}) }}
@@ -730,18 +735,35 @@ const App: React.FC = () => {
             <div style={styles.searchBar}>
               <div style={styles.inputWrapper}>
                 <Search size={14} color="#8B949E" style={{ marginRight: '8px' }} />
-                <input type="text" placeholder="Tìm kiếm tài sản..." style={styles.ghostInput} />
+                <input 
+                  type="text" 
+                  placeholder="Tìm kiếm mã CP..." 
+                  style={styles.ghostInput}
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
               </div>
             </div>
             <div style={styles.marketItems}>
-              <MarketItem
-                symbol="GOLD"
-                name="XAUUSD"
-                price={currentPrice.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                change={priceChange > 0 ? `+${priceChange}%` : `${priceChange}%`}
-                active={activeAsset === 'GOLD'}
-                onClick={() => setActiveAsset('GOLD')}
-              />
+              {vn30Quotes.length === 0 ? (
+                 <div style={{ color: '#8B949E', fontSize: '0.8em', padding: '15px', textAlign: 'center' }}>
+                   Đang tải dữ liệu VN30...
+                 </div>
+              ) : (
+                vn30Quotes
+                  .filter(q => q.symbol.toLowerCase().includes(searchQuery.toLowerCase()))
+                  .map(q => (
+                    <MarketItem
+                      key={q.symbol}
+                      symbol={q.symbol}
+                      name={q.symbol}
+                      price={q.close ? q.close.toLocaleString(undefined, { minimumFractionDigits: 1 }) : '---'}
+                      change={q.change_pct ? `${q.change_pct > 0 ? '+' : ''}${q.change_pct}%` : '---'}
+                      active={activeAsset === q.symbol}
+                      onClick={() => setActiveAsset(q.symbol)}
+                    />
+                ))
+              )}
             </div>
           </>
         )}
@@ -1015,10 +1037,34 @@ const App: React.FC = () => {
         <header style={styles.topNav}>
           <div style={styles.pairInfo}>
             <TrendingUp color="#10B981" size={20} />
-            <h2 style={{ fontSize: '1.1em', fontWeight: 600 }}>
-              {activeAsset} <span style={{ fontSize: '0.6em', color: '#8B949E', fontWeight: 400 }}>Real-time</span>
-            </h2>
-            <button style={styles.btnAi} onClick={() => setSidebarView('ai')}>
+            <div>
+              <h2 style={{ fontSize: '1.1em', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                {activeAsset}
+                {isChartLoading && <Loader2 size={12} color="#8B949E" style={{ animation: 'spin 1s linear infinite' }} />}
+              </h2>
+              <div style={{ display: 'flex', gap: '8px', marginTop: '4px' }}>
+                {['1d', '5d', '1m', '3m', '1y', '5y'].map(tf => (
+                  <button
+                    key={tf}
+                    onClick={() => setActiveTimeframe(tf)}
+                    style={{
+                      background: activeTimeframe === tf ? 'rgba(16, 185, 129, 0.15)' : 'transparent',
+                      color: activeTimeframe === tf ? '#10B981' : '#8B949E',
+                      border: `1px solid ${activeTimeframe === tf ? 'rgba(16, 185, 129, 0.3)' : 'transparent'}`,
+                      borderRadius: '4px',
+                      padding: '2px 8px',
+                      fontSize: '0.7em',
+                      cursor: 'pointer',
+                      fontWeight: activeTimeframe === tf ? 600 : 400,
+                      textTransform: 'uppercase'
+                    }}
+                  >
+                    {tf}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <button style={{ ...styles.btnAi, marginLeft: '16px' }} onClick={() => setSidebarView('ai')}>
               <Sparkles size={14} /> Hỏi AI
             </button>
           </div>
