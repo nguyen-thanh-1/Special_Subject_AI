@@ -42,6 +42,9 @@ def _preload_default_model():
                 logger.info("[startup] preloading main LLM (default model) ...")
                 get_llm().ensure_loaded()
                 logger.info("[startup] main LLM ready.")
+            
+            # Pre-fetch market data to local cache
+            vn30.pre_fetch_market_data()
         except Exception:
             logger.exception("[startup] preload failed")
 
