@@ -40,3 +40,4 @@ Khi hệ thống khởi chạy hoặc có yêu cầu kích hoạt, module này s
     -   [Backend_System_Monitor.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_System_Monitor.md) (`./Backend_System_Monitor.md`): Ghi log nhật ký tiến trình lưu trữ và xuất lỗi.
 -   **Được gọi bởi (Called by / Dependency of):**
     -   [Backend_Router_VN30.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_Router_VN30.md) (`./Backend_Router_VN30.md`): Khởi chạy ngầm hàm `export_vn30_historical_csv()` khi khởi động server lúc pre_fetch dữ liệu rổ VN30.
+    -   [Backend_Stock_Analysis.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_Stock_Analysis.md) (`./Backend_Stock_Analysis.md`): Sử dụng các file CSV OHLCV đã xuất làm nguồn dữ liệu đầu vào cho 35 hàm phân tích cổ phiếu.

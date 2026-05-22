@@ -51,6 +51,7 @@ graph TD
     Backend_Config["Config Loader: app_config.py (./Backend_Config.md)"]:::infra
     Backend_App_Mode["App Mode Manager: app_mode.py (./Backend_App_Mode.md)"]:::infra
     Backend_Market_Exporter["Market Exporter: market_exporter.py (./Backend_Market_Exporter.md)"]:::infra
+    Backend_Stock_Analysis["Stock Analysis: stock_analysis/ (./Backend_Stock_Analysis.md)"]:::infra
     Backend_System_Monitor["System Monitor: logger.py & vram.py (./Backend_System_Monitor.md)"]:::infra
 
     %% 2. Thiết lập liên kết Đồ thị (Connections)
@@ -72,6 +73,7 @@ graph TD
     Backend_Router_Chatbot -->|"Truyền Câu hỏi"| Backend_Pipeline
 
     Backend_Router_VN30 -->|"Kích hoạt Xuất CSV"| Backend_Market_Exporter
+    Backend_Market_Exporter -.->|"Cung cấp CSV OHLCV"| Backend_Stock_Analysis
 
     Backend_Pipeline -->|"Kiểm duyệt độc hại đầu vào/ra"| Backend_Guardrails
     Backend_Pipeline -->|"Viết lại câu hỏi làm rõ đại từ"| Backend_Agents
@@ -138,6 +140,7 @@ Bạn có thể click trực tiếp vào các liên kết bên dưới để m�
 - **[Backend_Config.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_Config.md)**: Bộ nạp biến môi trường `.env` và tệp cấu hình YAML (`llms.yaml`, `pipeline.yaml`, v.v.).
 - **[Backend_App_Mode.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_App_Mode.md)**: Bộ quản lý trạng thái, tự động giải phóng VRAM (dọn GPU) khi đổi từ CHAT sang INDEXING và nạp lại mô hình.
 - **[Backend_Market_Exporter.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_Market_Exporter.md)**: Tiện ích xuất dữ liệu nến lịch sử VN30 5 năm ra các file CSV cục bộ.
+- **[Backend_Stock_Analysis.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_Stock_Analysis.md)**: Thư viện phân tích cổ phiếu 35 hàm (6 module): Technical, Risk, Valuation, Performance, Dividend, Macro. Sử dụng dữ liệu OHLCV từ CSV VN30.
 - **[Backend_System_Monitor.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_System_Monitor.md)**: Nhật ký Rich Handler, log bảng biểu Agent/Tool/Metrics trực quan và giám sát rò rỉ dung lượng VRAM thực tế.
 
 ---
@@ -147,3 +150,28 @@ Bạn có thể click trực tiếp vào các liên kết bên dưới để m�
 1.  **Dễ dàng Hiểu & Cập nhật**: Mỗi khi bạn thay đổi mã nguồn trong một tệp tin (ví dụ: `vn30.py`), bạn chỉ cần tìm file tương ứng trong bản đồ (`Backend_Router_VN30.md`), xem cột **Liên kết Đồ thị** để biết ngay những mô-đun nào sẽ bị ảnh hưởng, từ đó kiểm thử chính xác và tránh gây lỗi lan truyền.
 2.  **Hỗ trợ AI Tối đa**: Khi bạn đưa bối cảnh dự án này cho các AI assistant, AI sẽ có ngay một bản đồ toàn cảnh sắc nét về hệ thống của bạn, từ đó đưa ra các đề xuất code chuẩn xác, đúng vị trí và không làm xáo trộn cấu trúc chung.
 3.  **Tích hợp click mở file nhanh**: Chỉ cần click vào tên file hoặc đường dẫn tuyệt đối trong tài liệu, IDE sẽ tự động mở file mã nguồn đích để bạn bắt tay vào chỉnh sửa ngay lập tức!
+
+---
+
+## 🔄 Hướng dẫn Cập nhật Tài liệu Kiến trúc (Maintenance Guide)
+
+> **Quy tắc vàng**: Mỗi khi thay đổi code đáng kể, hãy cập nhật file `.md` tương ứng trong `project_graph/`.
+
+### Khi nào CẦN cập nhật?
+
+| Loại thay đổi | Hành động cần làm |
+|--------------|--------------------|
+| **Thêm module/file mới** | Tạo file `.md` mới theo cấu trúc 6 mục (Mô tả, Trách nhiệm, Đầu vào, Đầu ra, File vật lý, Liên kết). Cập nhật `README.md` (sơ đồ Mermaid + danh mục Node). |
+| **Thay đổi công thức / cách tính** | Cập nhật mục **Mô tả chi tiết** và docstring trong code tương ứng. |
+| **Thêm hàm / chức năng mới** | Cập nhật mục **Mô tả chi tiết** và **Đầu ra** trong file `.md` tương ứng. |
+| **Thay đổi đầu vào / đầu ra** | Cập nhật mục **Đầu vào** và **Đầu ra**. |
+| **Thay đổi dependency** | Cập nhật mục **Liên kết Đồ thị** (Gọi đến / Được gọi bởi). |
+| **Xóa module** | Xóa file `.md` tương ứng. Cập nhật `README.md` và các file `.md` khác có liên kết đến module đã xóa. |
+| **Sửa lỗi nhỏ / refactor không đổi API** | Không cần cập nhật tài liệu. |
+
+### Quy trình cho AI Assistant
+
+1.  **ƯU TIÊN ĐỌC FILE `.md` TRƯỚC** khi tìm hiểu code: Các file trong `project_graph/` chứa bản đồ toàn cảnh kiến trúc hệ thống, giúp tiết kiệm token và thời gian so với việc đọc toàn bộ mã nguồn.
+2.  **Đọc `README.md` đầu tiên** để nắm tổng quan, sau đó đọc file `.md` cụ thể của module cần thao tác.
+3.  **Sau khi thay đổi code**, kiểm tra xem thay đổi có thuộc các trường hợp "Cần cập nhật" ở bảng trên không. Nếu có → cập nhật file `.md` tương ứng.
+4.  **Khi thêm node mới**, đảm bảo cập nhật đầy đủ: file `.md` mới + sơ đồ Mermaid trong `README.md` + danh mục Node.
