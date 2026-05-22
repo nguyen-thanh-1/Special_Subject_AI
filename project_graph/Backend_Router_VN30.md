@@ -15,32 +15,35 @@ Module này chịu trách nhiệm phục vụ dữ liệu thị trường chuyê
     -   `GET /api/vn30/tickers`: Trả về danh sách 30 cấu phần VN30 và tổng số lượng để frontend hiển thị.
     -   `GET /api/vn30/quotes`: Báo giá phiên giao dịch gần nhất cho 30 cổ phiếu (bao gồm: giá mở, cao, thấp, đóng, khối lượng, chênh lệch giá, phần trăm thay đổi). Lưu cache hoặc đọc fallback từ cache `data/market_cache/vn30_quotes.json`.
     -   `GET /api/vn30/ohlcv/{symbol}`: Trả về chuỗi nến biểu đồ cho một mã cụ thể dựa theo tham số `timeframe` (`1d`, `5d`, `1m`, `3m`, `1y`, `5y`).
+    -   `GET /api/vn30/analysis/{symbol}`: Tính toán và trả về toàn bộ chỉ báo kỹ thuật (SMA, EMA, RSI, MACD, Bollinger Bands, Stochastic, OBV, ADX, Fibonacci) và chỉ báo rủi ro & thanh khoản (Max Drawdown, Sharpe Ratio, VaR 95%, Liquidity) dựa trên dữ liệu EOD lịch sử 5 năm.
 -   **Chuyển đổi Độ phân giải Biểu đồ**:
     -   Với khung thời gian ngắn (`1d`, `5d`): Gọi API lấy nến intraday chi tiết có độ phân giải **15 phút** (`15m`).
     -   Với khung thời gian dài (`1m`, `3m`, `1y`, `5y`): Gọi API lấy nến đóng cửa cuối ngày (**EOD - 1d**).
 -   **Điều phối tải trước (Background Pre-fetcher)**:
     -   `pre_fetch_market_data()`: Kích hoạt tải bảng giá hiện tại vào bộ đệm và gọi tiện ích xuất lịch sử CSV của toàn bộ 30 mã để chuẩn bị sẵn sàng dữ liệu phân tích cục bộ.
-
-## 3. Đầu vào (Inputs)
--   HTTP Requests kèm tham số truy vấn (`timeframe`) và tham số đường dẫn (`symbol`).
--   Biến môi trường: `FINLENS_API_KEY` dùng để cấu hình SDK.
--   Tệp tin cache cục bộ trong thư mục `data/market_cache/`.
-
-## 4. Đầu ra (Outputs)
--   Bảng JSON chứa danh sách báo giá hiện thời VN30.
--   Mảng JSON danh sách các nến OHLCV vẽ biểu đồ TradingView.
--   Các tệp tin cache lưu trên đĩa cứng (`ohlcv_{symbol}_{tf}.json`).
--   Mã lỗi HTTP 404 nếu mã CP không thuộc VN30, hoặc 503 nếu lỗi API và không có tệp đệm hỗ trợ.
-
-## 5. File/Thư mục vật lý (Physical Files)
--   **Đường dẫn tuyệt đối**: [vn30.py](file:///c:/Users/Admin/Desktop/Kafi_chatbot/backend/src/routers/vn30.py)
--   **Đường dẫn tương đối**: `./backend/src/routers/vn30.py`
--   **Thư mục lưu trữ bộ đệm**: `data/market_cache/`
-
-## 6. Liên kết Đồ thị (Graph Connections)
--   **Gọi đến (Calls to / Depends on):**
-    -   [Backend_Market_Exporter.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_Market_Exporter.md) (`./Backend_Market_Exporter.md`): Gọi hàm `export_vn30_historical_csv()` để xuất file CSV dữ liệu lịch sử 5 năm khi khởi chạy ngầm.
-    -   [Backend_System_Monitor.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_System_Monitor.md) (`./Backend_System_Monitor.md`): Sử dụng logger để ghi nhận các ngoại lệ và tiến trình tải trước dữ liệu.
--   **Được gọi bởi (Called by / Dependency of):**
-    -   [Backend_Main.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_Main.md) (`./Backend_Main.md`): Đăng ký sub-router vào hệ thống FastAPI và chạy ngầm hàm `pre_fetch_market_data()` khi server bắt đầu khởi chạy.
-    -   [Frontend_App.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Frontend_App.md) (`./Frontend_App.md`): Polling giá thị trường liên tục và yêu cầu nến dữ liệu để vẽ biểu đồ kỹ thuật.
+ 
+ ## 3. Đầu vào (Inputs)
+ -   HTTP Requests kèm tham số truy vấn (`timeframe`) và tham số đường dẫn (`symbol`).
+ -   Biến môi trường: `FINLENS_API_KEY` dùng để cấu hình SDK.
+ -   Tệp tin cache cục bộ trong thư mục `data/market_cache/`.
+ 
+ ## 4. Đầu ra (Outputs)
+ -   Bảng JSON chứa danh sách báo giá hiện thời VN30.
+ -   Mảng JSON danh sách các nến OHLCV vẽ biểu đồ TradingView.
+ -   Báo cáo JSON chứa kết quả phân tích kỹ thuật và rủi ro của cổ phiếu.
+ -   Các tệp tin cache lưu trên đĩa cứng (`ohlcv_{symbol}_{tf}.json`).
+ -   Mã lỗi HTTP 404 nếu mã CP không thuộc VN30, hoặc 503 nếu lỗi API và không có tệp đệm hỗ trợ.
+ 
+ ## 5. File/Thư mục vật lý (Physical Files)
+ -   **Đường dẫn tuyệt đối**: [vn30.py](file:///c:/Users/Admin/Desktop/Kafi_chatbot/backend/src/routers/vn30.py)
+ -   **Đường dẫn tương đối**: `./backend/src/routers/vn30.py`
+ -   **Thư mục lưu trữ bộ đệm**: `data/market_cache/`
+ 
+ ## 6. Liên kết Đồ thị (Graph Connections)
+ -   **Gọi đến (Calls to / Depends on):**
+     -   [Backend_Market_Exporter.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_Market_Exporter.md) (`./Backend_Market_Exporter.md`): Gọi hàm `export_vn30_historical_csv()` để xuất file CSV dữ liệu lịch sử 5 năm khi khởi chạy ngầm.
+     -   [Backend_Stock_Analysis.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_Stock_Analysis.md) (`./Backend_Stock_Analysis.md`): Sử dụng các hàm trong thư viện phân tích để tính toán chỉ báo kỹ thuật và rủi ro.
+     -   [Backend_System_Monitor.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_System_Monitor.md) (`./Backend_System_Monitor.md`): Sử dụng logger để ghi nhận các ngoại lệ và tiến trình tải trước dữ liệu.
+ -   **Được gọi bởi (Called by / Dependency of):**
+     -   [Backend_Main.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_Main.md) (`./Backend_Main.md`): Đăng ký sub-router vào hệ thống FastAPI và chạy ngầm hàm `pre_fetch_market_data()` khi server bắt đầu khởi chạy.
+     -   [Frontend_App.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Frontend_App.md) (`./Frontend_App.md`): Polling giá thị trường liên tục, hiển thị Dashboard phân tích và yêu cầu nến dữ liệu để vẽ biểu đồ kỹ thuật.

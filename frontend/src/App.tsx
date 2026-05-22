@@ -215,6 +215,398 @@ const normalizeMarkdownTables = (input: string) => {
   return out.join('\n');
 };
 
+interface StockAnalysisDashboardProps {
+  symbol: string;
+  data: any;
+  loading: boolean;
+}
+
+const StockAnalysisDashboard: React.FC<StockAnalysisDashboardProps> = ({ symbol, data, loading }) => {
+  const [subTab, setSubTab] = useState<'tech' | 'risk' | 'fundamental'>('tech');
+
+  if (loading) {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', minHeight: '300px', gap: '15px', color: '#8B949E' }}>
+        <Loader2 size={40} style={{ animation: 'spin 1s linear infinite', color: '#10B981' }} />
+        <span>Đang phân tích dữ liệu {symbol}...</span>
+      </div>
+    );
+  }
+
+  if (!data) {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', minHeight: '300px', color: '#8B949E', gap: '10px' }}>
+        <AlertCircle size={40} color="#EF4444" />
+        <span>Không tìm thấy dữ liệu phân tích của {symbol}.</span>
+        <span style={{ fontSize: '0.85em', color: '#484F58' }}>Vui lòng kiểm tra xem tệp CSV EOD của {symbol} đã được tạo chưa.</span>
+      </div>
+    );
+  }
+
+  const { technical, risk, price } = data;
+
+  const fmt = (val: number | null | undefined, dec = 2) => {
+    if (val === null || val === undefined) return '---';
+    return val.toLocaleString(undefined, { minimumFractionDigits: dec, maximumFractionDigits: dec });
+  };
+
+  const getBadgeStyle = (status: 'bullish' | 'bearish' | 'neutral') => {
+    if (status === 'bullish') return { color: '#10B981', background: 'rgba(16, 185, 129, 0.1)' };
+    if (status === 'bearish') return { color: '#EF4444', background: 'rgba(239, 68, 68, 0.1)' };
+    return { color: '#8B949E', background: 'rgba(139, 148, 158, 0.1)' };
+  };
+
+  const getRsiStatus = (val: number | null) => {
+    if (val === null) return { text: 'N/A', type: 'neutral' as const };
+    if (val > 70) return { text: 'Quá mua (Đắt)', type: 'bearish' as const };
+    if (val < 30) return { text: 'Quá bán (Rẻ)', type: 'bullish' as const };
+    return { text: 'Trung lập', type: 'neutral' as const };
+  };
+
+  const getMacdStatus = (macdObj: any) => {
+    if (!macdObj || macdObj.histogram === null) return { text: 'N/A', type: 'neutral' as const };
+    if (macdObj.histogram > 0) return { text: 'Hội tụ tăng (Bullish)', type: 'bullish' as const };
+    return { text: 'Hội tụ giảm (Bearish)', type: 'bearish' as const };
+  };
+
+  const getBbStatus = (currentPr: number, bbObj: any) => {
+    if (!bbObj || bbObj.upper === null || bbObj.lower === null) return { text: 'N/A', type: 'neutral' as const };
+    if (currentPr >= bbObj.upper) return { text: 'Chạm Upper Band (Bearish)', type: 'bearish' as const };
+    if (currentPr <= bbObj.lower) return { text: 'Chạm Lower Band (Bullish)', type: 'bullish' as const };
+    return { text: 'Bình thường', type: 'neutral' as const };
+  };
+
+  const getStochStatus = (stochObj: any) => {
+    if (!stochObj || stochObj.k === null) return { text: 'N/A', type: 'neutral' as const };
+    if (stochObj.k > 80) return { text: 'Quá mua (>80)', type: 'bearish' as const };
+    if (stochObj.k < 20) return { text: 'Quá bán (<20)', type: 'bullish' as const };
+    return { text: 'Trung lập', type: 'neutral' as const };
+  };
+
+  const getAdxStatus = (adxObj: any) => {
+    if (!adxObj || adxObj.adx === null) return { text: 'N/A', type: 'neutral' as const };
+    if (adxObj.adx > 25) {
+      const dir = adxObj.plus_di > adxObj.minus_di ? 'Tăng mạnh' : 'Giảm mạnh';
+      return { text: `Xu hướng ${dir} (ADX=${fmt(adxObj.adx)})`, type: adxObj.plus_di > adxObj.minus_di ? ('bullish' as const) : ('bearish' as const) };
+    }
+    return { text: 'Xu hướng yếu / Đi ngang', type: 'neutral' as const };
+  };
+
+  const getSharpeStatus = (val: number | null) => {
+    if (val === null) return { text: 'N/A', type: 'neutral' as const };
+    if (val > 2) return { text: 'Xuất sắc (>2.0)', type: 'bullish' as const };
+    if (val > 1) return { text: 'Tốt (1.0 - 2.0)', type: 'bullish' as const };
+    if (val >= 0) return { text: 'Chấp nhận được', type: 'neutral' as const };
+    return { text: 'Kém (<0)', type: 'bearish' as const };
+  };
+
+  const rsi = getRsiStatus(technical.rsi14);
+  const macd = getMacdStatus(technical.macd);
+  const bb = getBbStatus(price, technical.bollinger);
+  const stoch = getStochStatus(technical.stochastic);
+  const adx = getAdxStatus(technical.adx);
+  const sharpeStatus = getSharpeStatus(risk.sharpe_ratio);
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', color: '#E6EDF3' }}>
+      <div style={{ display: 'flex', gap: '15px', borderBottom: '1px solid #30363D', paddingBottom: '10px' }}>
+        {[
+          { id: 'tech', label: 'Chỉ số Kỹ thuật (EOD)' },
+          { id: 'risk', label: 'Rủi ro & Thanh khoản' },
+          { id: 'fundamental', label: 'Cơ bản & Định giá (BCTC)' },
+        ].map(t => (
+          <button
+            key={t.id}
+            onClick={() => setSubTab(t.id as any)}
+            style={{
+              background: 'transparent',
+              border: 'none',
+              color: subTab === t.id ? '#10B981' : '#8B949E',
+              borderBottom: subTab === t.id ? '2px solid #10B981' : '2px solid transparent',
+              padding: '6px 12px',
+              cursor: 'pointer',
+              fontWeight: subTab === t.id ? 600 : 400,
+              fontSize: '0.9em',
+              transition: '0.2s',
+            }}
+          >
+            {t.label}
+          </button>
+        ))}
+      </div>
+
+      {subTab === 'tech' && (
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
+          <div style={styles.analysisCard}>
+            <div style={styles.cardHeader}>
+              <TrendingUp size={18} color="#10B981" />
+              <span>Chỉ báo Dao động & Xu hướng</span>
+            </div>
+            <div style={styles.cardContent}>
+              <div style={styles.metricRow}>
+                <span style={{ fontSize: '0.85em', color: '#8B949E' }}>Chỉ số Sức mạnh Tương đối (RSI 14)</span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '4px' }}>
+                  <strong style={{ fontSize: '1.1em' }}>{fmt(technical.rsi14)}</strong>
+                  <span style={{ ...styles.badge, ...getBadgeStyle(rsi.type) }}>{rsi.text}</span>
+                </div>
+              </div>
+              
+              <div style={styles.metricRow}>
+                <span style={{ fontSize: '0.85em', color: '#8B949E' }}>Đường MACD & Tín hiệu</span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '4px' }}>
+                  <span style={{ fontSize: '0.85em' }}>
+                    Line: {fmt(technical.macd.line)} | Sig: {fmt(technical.macd.signal)}
+                  </span>
+                  <span style={{ ...styles.badge, ...getBadgeStyle(macd.type) }}>{macd.text}</span>
+                </div>
+              </div>
+
+              <div style={styles.metricRow}>
+                <span style={{ fontSize: '0.85em', color: '#8B949E' }}>Dải Bollinger Bands (20, 2)</span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '4px' }}>
+                  <span style={{ fontSize: '0.8em' }}>
+                    U: {fmt(technical.bollinger.upper)} | M: {fmt(technical.bollinger.middle)} | L: {fmt(technical.bollinger.lower)}
+                  </span>
+                  <span style={{ ...styles.badge, ...getBadgeStyle(bb.type) }}>{bb.text}</span>
+                </div>
+              </div>
+
+              <div style={styles.metricRow}>
+                <span style={{ fontSize: '0.85em', color: '#8B949E' }}>Stochastic Oscillator (%K, %D)</span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '4px' }}>
+                  <span style={{ fontSize: '0.85em' }}>
+                    %K: {fmt(technical.stochastic.k)} | %D: {fmt(technical.stochastic.d)}
+                  </span>
+                  <span style={{ ...styles.badge, ...getBadgeStyle(stoch.type) }}>{stoch.text}</span>
+                </div>
+              </div>
+
+              <div style={styles.metricRow}>
+                <span style={{ fontSize: '0.85em', color: '#8B949E' }}>Chỉ số Định hướng ADX (14)</span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '4px' }}>
+                  <span style={{ fontSize: '0.8em' }}>
+                    +DI: {fmt(technical.adx.plus_di)} | -DI: {fmt(technical.adx.minus_di)}
+                  </span>
+                  <span style={{ ...styles.badge, ...getBadgeStyle(adx.type) }}>{adx.text}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style={styles.analysisCard}>
+            <div style={styles.cardHeader}>
+              <LineChart size={18} color="#10B981" />
+              <span>Đường Trung bình Động & Fibonacci</span>
+            </div>
+            <div style={styles.cardContent}>
+              <div style={styles.metricRow}>
+                <span style={{ fontSize: '0.85em', color: '#8B949E' }}>Giá hiện tại vs SMA 20 (Ngắn hạn)</span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '4px' }}>
+                  <span>SMA20: {fmt(technical.sma20)}</span>
+                  <span style={{ ...styles.badge, ...getBadgeStyle(price > technical.sma20 ? 'bullish' : 'bearish') }}>
+                    {price > technical.sma20 ? 'Trên SMA20 (Tăng)' : 'Dưới SMA20 (Giảm)'}
+                  </span>
+                </div>
+              </div>
+
+              <div style={styles.metricRow}>
+                <span style={{ fontSize: '0.85em', color: '#8B949E' }}>Giá hiện tại vs SMA 50 (Trung hạn)</span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '4px' }}>
+                  <span>SMA50: {fmt(technical.sma50)}</span>
+                  <span style={{ ...styles.badge, ...getBadgeStyle(price > technical.sma50 ? 'bullish' : 'bearish') }}>
+                    {price > technical.sma50 ? 'Trên SMA50' : 'Dưới SMA50'}
+                  </span>
+                </div>
+              </div>
+
+              <div style={styles.metricRow}>
+                <span style={{ fontSize: '0.85em', color: '#8B949E' }}>Giá hiện tại vs SMA 200 (Dài hạn)</span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '4px' }}>
+                  <span>SMA200: {fmt(technical.sma200)}</span>
+                  <span style={{ ...styles.badge, ...getBadgeStyle(price > technical.sma200 ? 'bullish' : 'bearish') }}>
+                    {price > technical.sma200 ? 'Trên SMA200' : 'Dưới SMA200'}
+                  </span>
+                </div>
+              </div>
+
+              <div style={{ ...styles.metricRow, borderBottom: 'none' }}>
+                <span style={{ display: 'block', fontSize: '0.85em', color: '#8B949E', marginBottom: '8px' }}>Fibonacci Levels (Chu kỳ 60 ngày)</span>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '8px' }}>
+                  {Object.entries(technical.fibonacci || {}).map(([level, val]: any) => (
+                    <div key={level} style={{ background: '#0D1117', padding: '6px', borderRadius: '6px', textAlign: 'center', fontSize: '0.8em', border: '1px solid #30363D' }}>
+                      <div style={{ color: '#8B949E', fontSize: '0.75em' }}>{level}</div>
+                      <div style={{ fontWeight: 600, color: '#10B981', marginTop: '2px' }}>{fmt(val, 1)}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {subTab === 'risk' && (
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
+          <div style={styles.analysisCard}>
+            <div style={styles.cardHeader}>
+              <AlertCircle size={18} color="#EF4444" />
+              <span>Chỉ số Rủi ro thị trường</span>
+            </div>
+            <div style={styles.cardContent}>
+              <div style={styles.metricRow}>
+                <span style={{ fontSize: '0.85em', color: '#8B949E' }}>Sharpe Ratio (Rủi ro vs Lợi nhuận)</span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '4px' }}>
+                  <strong style={{ fontSize: '1.1em' }}>{fmt(risk.sharpe_ratio)}</strong>
+                  <span style={{ ...styles.badge, ...getBadgeStyle(sharpeStatus.type) }}>{sharpeStatus.text}</span>
+                </div>
+              </div>
+
+              <div style={styles.metricRow}>
+                <span style={{ fontSize: '0.85em', color: '#8B949E' }}>Sụt giảm tối đa lịch sử (Max Drawdown)</span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '4px' }}>
+                  <strong style={{ fontSize: '1.1em', color: '#EF4444' }}>{fmt(risk.max_drawdown.pct)}%</strong>
+                  <span style={{ fontSize: '0.8em', color: '#8B949E' }}>
+                    Từ {fmt(risk.max_drawdown.peak)} về {fmt(risk.max_drawdown.trough)}
+                  </span>
+                </div>
+              </div>
+
+              <div style={styles.metricRow}>
+                <span style={{ fontSize: '0.85em', color: '#8B949E' }}>Giá trị chịu rủi ro 1 ngày (VaR 95% lịch sử)</span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '4px' }}>
+                  <strong style={{ fontSize: '1.1em', color: '#EF4444' }}>{fmt(risk.var_95 * 100)}%</strong>
+                  <span style={{ fontSize: '0.8em', color: '#8B949E' }}>Độ tin cậy 95%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style={styles.analysisCard}>
+            <div style={styles.cardHeader}>
+              <Database size={18} color="#10B981" />
+              <span>Thanh khoản cổ phiếu</span>
+            </div>
+            <div style={styles.cardContent}>
+              <div style={styles.metricRow}>
+                <span style={{ fontSize: '0.85em', color: '#8B949E' }}>Thanh khoản phiên gần nhất</span>
+                <div style={{ marginTop: '4px' }}>
+                  <strong style={{ fontSize: '1.1em' }}>{fmt(risk.liquidity.daily / 1e9, 2)} tỷ VND</strong>
+                </div>
+              </div>
+
+              <div style={styles.metricRow}>
+                <span style={{ fontSize: '0.85em', color: '#8B949E' }}>Thanh khoản trung bình 20 phiên</span>
+                <div style={{ marginTop: '4px' }}>
+                  <strong style={{ fontSize: '1.1em', color: '#10B981' }}>{fmt(risk.liquidity.avg20 / 1e9, 2)} tỷ VND</strong>
+                </div>
+              </div>
+
+              <div style={styles.metricRow}>
+                <span style={{ fontSize: '0.85em', color: '#8B949E' }}>Tỷ lệ thanh khoản so với TB 20 phiên</span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '4px' }}>
+                  <strong style={{ fontSize: '1.1em' }}>
+                    {fmt((risk.liquidity.daily / (risk.liquidity.avg20 || 1)) * 100, 0)}%
+                  </strong>
+                  <span style={{ ...styles.badge, ...getBadgeStyle(risk.liquidity.daily >= risk.liquidity.avg20 ? 'bullish' : 'neutral') }}>
+                    {risk.liquidity.daily >= risk.liquidity.avg20 ? 'Thanh khoản tăng mạnh' : 'Thanh khoản thấp'}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {subTab === 'fundamental' && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', background: 'rgba(245, 158, 11, 0.1)', border: '1px solid rgba(245, 158, 11, 0.3)', padding: '15px', borderRadius: '8px', color: '#F59E0B' }}>
+            <AlertCircle size={20} />
+            <div style={{ fontSize: '0.85em' }}>
+              <strong>Chờ nguồn dữ liệu Báo cáo Tài chính (BCTC):</strong> Thư viện `stock_analysis` đã tích hợp 22 chỉ số tài chính nâng cao. Khi nạp dữ liệu Báo cáo Tài chính (Bảng CĐKT, Báo cáo KQKD, Dòng tiền) vào hệ thống, các chỉ số dưới đây sẽ được tính toán tự động.
+            </div>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
+            <div style={styles.analysisCard}>
+              <div style={styles.cardHeader}>
+                <Database size={18} color="#F59E0B" />
+                <span>Chỉ số Định giá (Valuation)</span>
+              </div>
+              <div style={styles.cardContent}>
+                <div style={styles.metricRowFuture}>
+                  <div style={styles.futureName}>P/E (Price to Earnings) <span style={styles.futureTag}>BCTC</span></div>
+                  <div style={styles.futureFormula}>Công thức: Giá thị trường / EPS</div>
+                  <div style={styles.futureDesc}>Yêu cầu: Lợi nhuận ròng, Số cổ phiếu đang lưu hành.</div>
+                </div>
+                <div style={styles.metricRowFuture}>
+                  <div style={styles.futureName}>P/B (Price to Book Value) <span style={styles.futureTag}>BCTC</span></div>
+                  <div style={styles.futureFormula}>Công thức: Giá thị trường / BVPS</div>
+                  <div style={styles.futureDesc}>Yêu cầu: Tổng tài sản, Nợ phải trả, Vốn CSH.</div>
+                </div>
+                <div style={styles.metricRowFuture}>
+                  <div style={styles.futureName}>EV/EBITDA <span style={styles.futureTag}>BCTC</span></div>
+                  <div style={styles.futureFormula}>Công thức: Enterprise Value / EBITDA</div>
+                </div>
+                <div style={styles.metricRowFuture}>
+                  <div style={styles.futureName}>PEG (Price/Earnings-to-Growth) <span style={styles.futureTag}>BCTC</span></div>
+                  <div style={styles.futureFormula}>Công thức: P/E / Tốc độ tăng trưởng EPS</div>
+                </div>
+              </div>
+            </div>
+
+            <div style={styles.analysisCard}>
+              <div style={styles.cardHeader}>
+                <Database size={18} color="#F59E0B" />
+                <span>Hiệu suất kinh doanh & Cổ tức</span>
+              </div>
+              <div style={styles.cardContent}>
+                <div style={styles.metricRowFuture}>
+                  <div style={styles.futureName}>ROE (Return on Equity) <span style={styles.futureTag}>BCTC</span></div>
+                  <div style={styles.futureFormula}>Công thức: Lợi nhuận sau thuế / Vốn CSH</div>
+                </div>
+                <div style={styles.metricRowFuture}>
+                  <div style={styles.futureName}>ROA (Return on Assets) <span style={styles.futureTag}>BCTC</span></div>
+                  <div style={styles.futureFormula}>Công thức: Lợi nhuận sau thuế / Tổng tài sản</div>
+                </div>
+                <div style={styles.metricRowFuture}>
+                  <div style={styles.futureName}>Tỷ suất Cổ tức (Dividend Yield) <span style={styles.futureTag}>BCTC</span></div>
+                  <div style={styles.futureFormula}>Công thức: Cổ tức mỗi CP / Giá thị trường</div>
+                </div>
+                <div style={styles.metricRowFuture}>
+                  <div style={styles.futureName}>Định giá DDM Gordon <span style={styles.futureTag}>BCTC</span></div>
+                  <div style={styles.futureFormula}>Công thức: D1 / (r - g) (Mô hình chiết khấu cổ tức)</div>
+                </div>
+              </div>
+            </div>
+
+            <div style={styles.analysisCard}>
+              <div style={styles.cardHeader}>
+                <Database size={18} color="#F59E0B" />
+                <span>Vĩ mô nâng cao & Định giá Nội tại</span>
+              </div>
+              <div style={styles.cardContent}>
+                <div style={styles.metricRowFuture}>
+                  <div style={styles.futureName}>WACC <span style={styles.futureTag}>BCTC</span></div>
+                  <div style={styles.futureFormula}>Công thức: Chi phí vốn bình quân gia quyền</div>
+                  <div style={styles.futureDesc}>Yêu cầu: Cơ cấu nợ/CSH, Chi phí sử dụng nợ, Chi phí vốn CSH.</div>
+                </div>
+                <div style={styles.metricRowFuture}>
+                  <div style={styles.futureName}>DCF (Discounted Cash Flow) <span style={styles.futureTag}>BCTC</span></div>
+                  <div style={styles.futureFormula}>Công thức: Định giá dòng tiền chiết khấu (FCF/WACC)</div>
+                </div>
+                <div style={styles.metricRowFuture}>
+                  <div style={styles.futureName}>Foreign Ownership Room <span style={styles.futureTag}>BCTC</span></div>
+                  <div style={styles.futureFormula}>Công thức: Giới hạn room ngoại còn lại của cổ phiếu</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
 const App: React.FC = () => {
   const chartContainerRef = useRef<HTMLDivElement>(null);
   const chatMessagesRef = useRef<HTMLDivElement>(null);
@@ -224,7 +616,35 @@ const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState('VN30');
   const [side, setSide] = useState<'buy' | 'sell'>('buy');
   const [activeAsset, setActiveAsset] = useState('FPT');
-  const [sidebarView, setSidebarView] = useState<'market' | 'ai' | 'knowledge'>('market');
+  const [sidebarView, setSidebarView] = useState<'market' | 'ai' | 'knowledge' | 'analysis'>('market');
+
+  // Stock Analysis State
+  const [analysisData, setAnalysisData] = useState<any>(null);
+  const [isAnalysisLoading, setIsAnalysisLoading] = useState(false);
+
+  useEffect(() => {
+    if (sidebarView !== 'analysis') return;
+    
+    const fetchAnalysis = async () => {
+      setIsAnalysisLoading(true);
+      try {
+        const res = await fetch(`${apiUrl}/api/vn30/analysis/${activeAsset}`);
+        if (res.ok) {
+          const data = await res.json();
+          setAnalysisData(data);
+        } else {
+          setAnalysisData(null);
+        }
+      } catch (err) {
+        console.error("Failed to fetch stock analysis", err);
+        setAnalysisData(null);
+      } finally {
+        setIsAnalysisLoading(false);
+      }
+    };
+    
+    fetchAnalysis();
+  }, [activeAsset, sidebarView, apiUrl]);
   
   // VN30 State
   const [vn30Quotes, setVn30Quotes] = useState<any[]>([]);
@@ -608,6 +1028,7 @@ const App: React.FC = () => {
     }
   }, [activeAsset, activeTimeframe, apiUrl]);
 
+  /*
   const generateMockData = (): any[] => {
     const data: any[] = [];
     let currentPrice = 1.15181;
@@ -624,6 +1045,7 @@ const App: React.FC = () => {
     }
     return data;
   };
+  */
 
   const handleSendMessage = async () => {
     if (!inputValue.trim()) return;
@@ -705,7 +1127,7 @@ const App: React.FC = () => {
       <nav style={styles.sidebar}>
         <div style={styles.logo}>TT</div>
         <NavItem active={sidebarView === 'market'} title="Thị trường" icon={<LayoutDashboard size={20} />} onClick={() => setSidebarView('market')} />
-        <NavItem title="Biểu đồ" icon={<LineChart size={20} />} />
+        <NavItem active={sidebarView === 'analysis'} title="Phân tích" icon={<LineChart size={20} />} onClick={() => setSidebarView('analysis')} />
         <NavItem title="Danh mục" icon={<Briefcase size={20} />} />
         <NavItem title="Lịch sử" icon={<History size={20} />} />
         <NavItem active={sidebarView === 'ai'} title="AI support" icon={<MessageSquare size={20} />} onClick={() => setSidebarView('ai')} />
@@ -718,7 +1140,7 @@ const App: React.FC = () => {
 
       {/* Second Column: Market or AI Chat */}
       <section style={styles.marketSidebar}>
-        {sidebarView === 'market' && (
+        {(sidebarView === 'market' || sidebarView === 'analysis') && (
           <>
             <div style={styles.marketHeader}>Thị trường</div>
             <div style={styles.marketTabs}>
@@ -1040,30 +1462,44 @@ const App: React.FC = () => {
             <div>
               <h2 style={{ fontSize: '1.1em', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px' }}>
                 {activeAsset}
-                {isChartLoading && <Loader2 size={12} color="#8B949E" style={{ animation: 'spin 1s linear infinite' }} />}
+                <span style={{ fontSize: '0.8em', color: priceChange >= 0 ? '#10B981' : '#EF4444', fontWeight: 400, marginLeft: '8px' }}>
+                  {currentPrice ? currentPrice.toLocaleString() : ''} ({priceChange >= 0 ? '+' : ''}{(priceChange || 0).toFixed(2)}%)
+                </span>
+                {isChartLoading && sidebarView !== 'analysis' && <Loader2 size={12} color="#8B949E" style={{ animation: 'spin 1s linear infinite' }} />}
               </h2>
-              <div style={{ display: 'flex', gap: '8px', marginTop: '4px' }}>
-                {['1d', '5d', '1m', '3m', '1y', '5y'].map(tf => (
-                  <button
-                    key={tf}
-                    onClick={() => setActiveTimeframe(tf)}
-                    style={{
-                      background: activeTimeframe === tf ? 'rgba(16, 185, 129, 0.15)' : 'transparent',
-                      color: activeTimeframe === tf ? '#10B981' : '#8B949E',
-                      border: `1px solid ${activeTimeframe === tf ? 'rgba(16, 185, 129, 0.3)' : 'transparent'}`,
-                      borderRadius: '4px',
-                      padding: '2px 8px',
-                      fontSize: '0.7em',
-                      cursor: 'pointer',
-                      fontWeight: activeTimeframe === tf ? 600 : 400,
-                      textTransform: 'uppercase'
-                    }}
-                  >
-                    {tf}
-                  </button>
-                ))}
-              </div>
+              {sidebarView !== 'analysis' ? (
+                <div style={{ display: 'flex', gap: '8px', marginTop: '4px' }}>
+                  {['1d', '5d', '1m', '3m', '1y', '5y'].map(tf => (
+                    <button
+                      key={tf}
+                      onClick={() => setActiveTimeframe(tf)}
+                      style={{
+                        background: activeTimeframe === tf ? 'rgba(16, 185, 129, 0.15)' : 'transparent',
+                        color: activeTimeframe === tf ? '#10B981' : '#8B949E',
+                        border: `1px solid ${activeTimeframe === tf ? 'rgba(16, 185, 129, 0.3)' : 'transparent'}`,
+                        borderRadius: '4px',
+                        padding: '2px 8px',
+                        fontSize: '0.7em',
+                        cursor: 'pointer',
+                        fontWeight: activeTimeframe === tf ? 600 : 400,
+                        textTransform: 'uppercase'
+                      }}
+                    >
+                      {tf}
+                    </button>
+                  ))}
+                </div>
+              ) : (
+                <div style={{ fontSize: '0.75em', color: '#8B949E', marginTop: '4px' }}>
+                  Báo cáo Phân tích Chuyên sâu (EOD)
+                </div>
+              )}
             </div>
+            {sidebarView === 'analysis' && analysisData && (
+              <span style={{ fontSize: '0.8em', color: '#8B949E', marginLeft: '16px', background: 'rgba(255,255,255,0.03)', padding: '4px 10px', borderRadius: '6px', border: '1px solid #30363D' }}>
+                Cập nhật: <strong style={{ color: '#E6EDF3' }}>{analysisData.latest_date}</strong>
+              </span>
+            )}
             <button style={{ ...styles.btnAi, marginLeft: '16px' }} onClick={() => setSidebarView('ai')}>
               <Sparkles size={14} /> Hỏi AI
             </button>
@@ -1078,9 +1514,19 @@ const App: React.FC = () => {
           </div>
         </header>
 
-        <div ref={chartContainerRef} style={{ flex: 1, minWidth: 0, position: 'relative', background: '#0A0E14', overflow: 'hidden' }}>
-          {/* Chart container */}
-        </div>
+        {sidebarView === 'analysis' ? (
+          <div style={{ flex: 1, overflowY: 'auto', background: '#0A0E14', padding: '20px' }}>
+            <StockAnalysisDashboard 
+              symbol={activeAsset} 
+              data={analysisData} 
+              loading={isAnalysisLoading} 
+            />
+          </div>
+        ) : (
+          <div ref={chartContainerRef} style={{ flex: 1, minWidth: 0, position: 'relative', background: '#0A0E14', overflow: 'hidden' }}>
+            {/* Chart container */}
+          </div>
+        )}
       </main>
 
       {/* Order Panel */}
@@ -1152,7 +1598,7 @@ const MarketItem: React.FC<{ symbol: string, name: string, price: string, change
   </div>
 );
 
-const styles: Record<string, React.CSSProperties> = {
+const styles: Record<string, any> = {
   sidebar: { background: '#161B22', borderRight: '1px solid #30363D', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px 0', gap: '20px' },
   logo: { width: '32px', height: '32px', background: '#10B981', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'black', fontWeight: 'bold', marginBottom: '10px' },
   navItem: { color: '#8B949E', cursor: 'pointer', padding: '10px', borderRadius: '10px', transition: '0.2s' },
@@ -1287,7 +1733,77 @@ const styles: Record<string, React.CSSProperties> = {
   },
   chatInput: { padding: '20px', borderTop: '1px solid #30363D', display: 'flex', gap: '10px', alignItems: 'center' },
   modeToggleContainer: { display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(0,0,0,0.2)', padding: '4px 8px', borderRadius: '8px', border: '1px solid rgba(48,54,61,0.5)' },
-  modeToggleBtn: { border: '1px solid', padding: '4px 10px', borderRadius: '6px', fontSize: '0.7em', fontWeight: 'bold', cursor: 'pointer', transition: 'all 0.2s', display: 'flex', alignItems: 'center', gap: '4px' }
+  modeToggleBtn: { border: '1px solid', padding: '4px 10px', borderRadius: '6px', fontSize: '0.7em', fontWeight: 'bold', cursor: 'pointer', transition: 'all 0.2s', display: 'flex', alignItems: 'center', gap: '4px' },
+  analysisCard: {
+    background: '#161B22',
+    border: '1px solid #30363D',
+    borderRadius: '12px',
+    padding: '20px',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '15px',
+    textAlign: 'left'
+  },
+  cardHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+    fontSize: '1em',
+    fontWeight: 600,
+    borderBottom: '1px solid #30363D',
+    paddingBottom: '10px'
+  },
+  cardContent: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '12px'
+  },
+  metricRow: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    paddingBottom: '10px',
+    borderBottom: '1px solid rgba(48, 54, 61, 0.3)',
+    gap: '6px'
+  },
+  metricRowFuture: {
+    display: 'flex',
+    flexDirection: 'column',
+    paddingBottom: '10px',
+    borderBottom: '1px solid rgba(48, 54, 61, 0.3)',
+    gap: '4px'
+  },
+  futureName: {
+    fontWeight: 600,
+    fontSize: '0.9em',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px'
+  },
+  futureTag: {
+    fontSize: '0.7em',
+    background: 'rgba(245, 158, 11, 0.15)',
+    color: '#F59E0B',
+    padding: '2px 6px',
+    borderRadius: '4px',
+    fontWeight: 600
+  },
+  futureFormula: {
+    fontSize: '0.8em',
+    color: '#8B949E',
+    fontStyle: 'italic'
+  },
+  futureDesc: {
+    fontSize: '0.75em',
+    color: '#484F58'
+  },
+  badge: {
+    fontSize: '0.75em',
+    padding: '2px 8px',
+    borderRadius: '12px',
+    fontWeight: 600,
+    whiteSpace: 'nowrap'
+  }
 };
 
 export default App;

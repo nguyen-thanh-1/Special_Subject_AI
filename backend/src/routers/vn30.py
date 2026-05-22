@@ -221,6 +221,123 @@ def get_stock_ohlcv(
             return cached
         raise HTTPException(status_code=503, detail=f"OHLCV data for {symbol} unavailable")
 
+
+@router.get("/analysis/{symbol}")
+def get_stock_analysis(symbol: str):
+    """
+    Calculate and return all possible stock analysis indicators 
+    for a given symbol using the 5-year daily CSV data.
+    """
+    symbol = symbol.upper()
+    if symbol not in VN30_TICKERS:
+        raise HTTPException(status_code=404, detail=f"'{symbol}' is not in VN30 index")
+
+    # Resolve CSV file path
+    csv_path = Path("data/vn30_historical_csv") / f"{symbol}_5y_daily.csv"
+    if not csv_path.exists():
+        csv_path = Path("backend/data/vn30_historical_csv") / f"{symbol}_5y_daily.csv"
+
+    if not csv_path.exists():
+        raise HTTPException(status_code=404, detail=f"Historical CSV for {symbol} not found. Run pre-fetch or export first.")
+
+    try:
+        import numpy as np
+        df = pd.read_csv(csv_path)
+        if df.empty or len(df) < 50:
+            raise HTTPException(status_code=400, detail=f"Not enough historical data for {symbol} to calculate indicators")
+
+        # Ensure sorted by date
+        df["Date"] = pd.to_datetime(df["Date"])
+        df = df.sort_values("Date").reset_index(drop=True)
+
+        from src.utils import stock_analysis as sa
+
+        # Calculate Technical Indicators
+        close_series = df["Close"]
+        high_series = df["High"]
+        low_series = df["Low"]
+        volume_series = df["Volume"]
+
+        sma20 = sa.sma(close_series, 20)
+        sma50 = sa.sma(close_series, 50)
+        sma200 = sa.sma(close_series, 200)
+        ema12 = sa.ema(close_series, 12)
+        ema26 = sa.ema(close_series, 26)
+        rsi14 = sa.rsi(close_series, 14)
+        macd_df = sa.macd(close_series)
+        bb_df = sa.bollinger_bands(close_series)
+        stoch_df = sa.stochastic_oscillator(high_series, low_series, close_series)
+        obv_series = sa.obv(close_series, volume_series)
+        adx_df = sa.adx(high_series, low_series, close_series)
+        fib_levels = sa.fibonacci_retracement(high_series.tail(60), low_series.tail(60))
+
+        # Calculate Risk Indicators
+        mdd_res = sa.max_drawdown(close_series)
+        sharpe = sa.sharpe_ratio(close_series)
+        var_val = sa.value_at_risk(close_series, confidence=0.95)
+        liq_df = sa.market_liquidity(close_series, volume_series)
+
+        def _to_float_or_none(val):
+            if pd.isna(val) or (isinstance(val, (int, float)) and np.isnan(val)):
+                return None
+            try:
+                return float(val)
+            except Exception:
+                return None
+
+        # Format latest values for response
+        res = {
+            "symbol": symbol,
+            "latest_date": str(df["Date"].iloc[-1])[:10],
+            "price": float(close_series.iloc[-1]),
+            "technical": {
+                "sma20": _to_float_or_none(sma20.iloc[-1]),
+                "sma50": _to_float_or_none(sma50.iloc[-1]),
+                "sma200": _to_float_or_none(sma200.iloc[-1]),
+                "ema12": _to_float_or_none(ema12.iloc[-1]),
+                "ema26": _to_float_or_none(ema26.iloc[-1]),
+                "rsi14": _to_float_or_none(rsi14.iloc[-1]),
+                "macd": {
+                    "line": _to_float_or_none(macd_df["macd_line"].iloc[-1]),
+                    "signal": _to_float_or_none(macd_df["signal_line"].iloc[-1]),
+                    "histogram": _to_float_or_none(macd_df["histogram"].iloc[-1]),
+                },
+                "bollinger": {
+                    "upper": _to_float_or_none(bb_df["upper"].iloc[-1]),
+                    "middle": _to_float_or_none(bb_df["middle"].iloc[-1]),
+                    "lower": _to_float_or_none(bb_df["lower"].iloc[-1]),
+                },
+                "stochastic": {
+                    "k": _to_float_or_none(stoch_df["%K"].iloc[-1]),
+                    "d": _to_float_or_none(stoch_df["%D"].iloc[-1]),
+                },
+                "obv": _to_float_or_none(obv_series.iloc[-1]),
+                "adx": {
+                    "plus_di": _to_float_or_none(adx_df["+DI"].iloc[-1]),
+                    "minus_di": _to_float_or_none(adx_df["-DI"].iloc[-1]),
+                    "adx": _to_float_or_none(adx_df["ADX"].iloc[-1]),
+                },
+                "fibonacci": fib_levels,
+            },
+            "risk": {
+                "max_drawdown": {
+                    "pct": _to_float_or_none(mdd_res["max_drawdown_pct"]),
+                    "peak": _to_float_or_none(mdd_res["peak_value"]),
+                    "trough": _to_float_or_none(mdd_res["trough_value"]),
+                },
+                "sharpe_ratio": _to_float_or_none(sharpe),
+                "var_95": _to_float_or_none(var_val),
+                "liquidity": {
+                    "daily": _to_float_or_none(liq_df["daily_value"].iloc[-1]),
+                    "avg20": _to_float_or_none(liq_df["avg_value"].iloc[-1]),
+                }
+            }
+        }
+        return res
+    except Exception as e:
+        logger.error(f"[vn30] failed to calculate analysis for {symbol}: {e}")
+        raise HTTPException(status_code=500, detail=f"Failed to calculate indicators: {e}")
+
 def pre_fetch_market_data():
     """Background task to pre-fetch and cache VN30 quotes and export CSVs on startup."""
     logger.info("[vn30] starting background pre-fetch and CSV export...")
