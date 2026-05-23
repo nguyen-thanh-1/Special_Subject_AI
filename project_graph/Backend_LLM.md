@@ -30,6 +30,7 @@ Module này chịu trách nhiệm quản lý vòng đời và thực thi suy lu�
 -   `model_id` (chuỗi ký tự): ID mô hình muốn chuyển đổi.
 -   `user_input` (chuỗi ký tự): Câu hỏi mở rộng cần LLM suy luận.
 -   `history` (danh sách tin nhắn dạng Role-Content): Ngữ cảnh trò chuyện để mô hình bám sát.
+-   `system_prompt` (tùy chọn - chuỗi ký tự): Prompt hệ thống chuyên biệt dùng để ghi đè prompt mặc định khi sinh phản hồi.
 -   Cấu hình mô hình từ `llms.yaml`.
 
 ## 4. Đầu ra (Outputs)

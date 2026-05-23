@@ -198,13 +198,14 @@ class LLMManager:
             return None
         return None
 
-    def generate_response(self, user_input, history=[]):
+    def generate_response(self, user_input, history=[], system_prompt=None):
         if not self.ensure_loaded():
             yield "[Error] Failed to load model."
             return
 
         # Format history
-        messages = [{"role": "system", "content": self.system_prompt}]
+        sys_prompt = system_prompt if system_prompt is not None else self.system_prompt
+        messages = [{"role": "system", "content": sys_prompt}]
         for msg in history:
             messages.append(msg)
         

@@ -153,6 +153,77 @@ class ChatPipeline:
                 mgr.add_message(session_id, "assistant", response_text)
             return
 
+        # (1.3) Stock Tag Detection (@SYMBOL)
+        import re
+        from src.routers.vn30 import VN30_TICKERS, get_stock_analysis
+
+        symbol_match = re.search(r'@\b(' + '|'.join(VN30_TICKERS) + r')\b', user_text, re.IGNORECASE)
+        if symbol_match:
+            symbol = symbol_match.group(1).upper()
+            user_query_without_symbol = re.sub(r'@\b(' + '|'.join(VN30_TICKERS) + r')\b', "", user_text, flags=re.IGNORECASE).strip()
+            logger.info(f"[pipeline] Detected stock analysis request for @{symbol}")
+            
+            # Save user message to history IMMEDIATELY
+            if session_id:
+                get_session_manager().add_message(session_id, "user", user_text)
+                
+            try:
+                analysis = get_stock_analysis(symbol)
+                daily_liq = analysis['risk']['liquidity']['daily'] or 0
+                avg20_liq = analysis['risk']['liquidity']['avg20'] or 0
+                
+                # Load prompt instructions from backend/config/agents.yaml
+                from src.utils.app_config import AppConfig
+                agents_cfg = AppConfig.get_agents_config()
+                stock_analyst_cfg = agents_cfg.get("stock_analyst", {})
+                stock_analyst_system_prompt = stock_analyst_cfg.get("instructions", "")
+
+                user_input_prompt = (
+                    f"Context stock data for symbol: {symbol}\n"
+                    f"Current Close Price: {analysis['price']}\n"
+                    f"Latest Date: {analysis['latest_date']}\n\n"
+                    f"TECHNICAL INDICATORS:\n"
+                    f"- RSI (14): {analysis['technical']['rsi14']}\n"
+                    f"- MACD Line: {analysis['technical']['macd']['line']}, Signal: {analysis['technical']['macd']['signal']}, Histogram: {analysis['technical']['macd']['histogram']}\n"
+                    f"- Bollinger Bands: Upper Band {analysis['technical']['bollinger']['upper']}, Middle Band {analysis['technical']['bollinger']['middle']}, Lower Band {analysis['technical']['bollinger']['lower']}\n"
+                    f"- SMA20: {analysis['technical']['sma20']}, SMA50: {analysis['technical']['sma50']}, SMA200: {analysis['technical']['sma200']}\n"
+                    f"- Stochastic Oscillator: %K={analysis['technical']['stochastic']['k']}, %D={analysis['technical']['stochastic']['d']}\n"
+                    f"- ADX (14): {analysis['technical']['adx']['adx']}, +DI: {analysis['technical']['adx']['plus_di']}, -DI: {analysis['technical']['adx']['minus_di']}\n\n"
+                    f"RISK AND LIQUIDITY INDICATORS:\n"
+                    f"- Sharpe Ratio: {analysis['risk']['sharpe_ratio']}\n"
+                    f"- Max Drawdown: {analysis['risk']['max_drawdown']['pct']}% (Peak: {analysis['risk']['max_drawdown']['peak']}, Trough: {analysis['risk']['max_drawdown']['trough']})\n"
+                    f"- Value at Risk (VaR 95%): {analysis['risk']['var_95']}%\n"
+                    f"- Latest Daily Volume Value: {daily_liq / 1e9:.2f} billion VND\n"
+                    f"- 20-day Average Volume Value: {avg20_liq / 1e9:.2f} billion VND\n\n"
+                    f"USER QUERY: {user_query_without_symbol if user_query_without_symbol else 'Vui lòng phân tích tổng quan.'}\n"
+                )
+                
+                agent = get_financial_agent()
+                gen = agent.process_chat(user_input_prompt, history, system_prompt=stock_analyst_system_prompt)
+                response_text = yield from self._stream_with_periodic_output_guardrails(chunk_iter=gen)
+                
+                if session_id:
+                    get_session_manager().add_message(session_id, "assistant", response_text)
+                    
+                trace = PipelineTrace(
+                    input_safety=decision_in.value,
+                    cache_hit=False,
+                    cache_similarity=0.0,
+                    route="STOCK_ANALYSIS",
+                    output_safety="SAFE",
+                )
+                with self._lock:
+                    self._last_trace = trace
+                return
+                
+            except Exception as ex:
+                logger.error(f"[pipeline] Stock analysis generation failed for {symbol}: {ex}")
+                error_msg = f"Đã xảy ra lỗi khi tải dữ liệu phân tích kỹ thuật cho cổ phiếu {symbol}. Vui lòng thử lại sau!"
+                yield error_msg
+                if session_id:
+                    get_session_manager().add_message(session_id, "assistant", error_msg)
+                return
+
         # (1.5) Query Rewriting
         agent = get_financial_agent()
         rewritten_query = agent.rewrite_query(user_text, history)

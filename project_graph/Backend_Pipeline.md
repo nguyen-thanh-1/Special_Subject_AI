@@ -24,6 +24,12 @@ graph TD
 
 Một điểm đặc biệt trong thiết kế là **luồng stream kết hợp kiểm duyệt an toàn định kỳ**: Ứng dụng vừa stream kết quả từng chữ về client vừa bộ đệm tích lũy văn bản. Cứ mỗi **300 ký tự** được sinh ra, hệ thống gọi Guardrails kiểm tra ngầm. Nếu phát hiện câu trả lời vi phạm an toàn ở giữa chừng, hệ thống chủ động ngắt dòng stream, chèn thông báo từ chối an toàn bằng tiếng Việt và dừng phản hồi lập tức để bảo vệ hệ thống.
 
+Ngoài ra, hệ thống tích hợp bộ lọc tag cổ phiếu thông minh: Khi tin nhắn của người dùng chứa định danh cổ phiếu thuộc chỉ số VN30 dưới dạng `@SYMBOL` (ví dụ: `@FPT`, `@BID`), luồng xử lý sẽ nhận diện và chuyển tiếp trực tiếp sang **Stock Analysis Agent**. Trình xử lý này sẽ tự động nạp các chỉ số kỹ thuật (RSI, MACD, Bollinger Bands, SMA) và chỉ số rủi ro/thanh khoản lịch sử (Sharpe, Max Drawdown, VaR 95%), xây dựng một prompt chuyên gia định vị đầu tư tập trung vào:
+- **Khuyến nghị rõ ràng** (Mua/Bán/Nắm giữ/Quan sát).
+- **Vùng giá khuyến nghị** (Vùng mua, Mục tiêu, Cắt lỗ).
+- **Thời gian nắm giữ & Tỷ trọng giải ngân** tối ưu.
+Điều này giúp phản hồi của LLM luôn bám sát dữ liệu số liệu thực tế được tính toán offline một cách chính xác, súc tích và trực diện nhất.
+
 ## 2. Nhiệm vụ và Trách nhiệm (Responsibilities)
 -   **Khởi tạo Hệ thống AI**: Tải cấu hình từ `pipeline.yaml` và liên kết instance của các module bổ trợ: `GuardrailsManager`, `RouterManager`, `EmbeddingManager`, `RerankerManager`, `KnowledgeBase`, và `SemanticCache`.
 -   **Làm ấm mô hình (`warmup`)**: Gọi các tiến trình đảm bảo nạp mô hình vào VRAM trước khi nhận request đầu tiên.

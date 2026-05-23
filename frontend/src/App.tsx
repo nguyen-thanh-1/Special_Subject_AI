@@ -937,7 +937,7 @@ const App: React.FC = () => {
 
 
   useEffect(() => {
-    if (!chartContainerRef.current) return;
+    if (!chartContainerRef.current || sidebarView === 'analysis') return;
 
     setIsChartLoading(true);
     let chart: any = null;
@@ -1026,7 +1026,7 @@ const App: React.FC = () => {
     } catch (err) {
       console.error("Chart init error:", err);
     }
-  }, [activeAsset, activeTimeframe, apiUrl]);
+  }, [activeAsset, activeTimeframe, apiUrl, sidebarView]);
 
   /*
   const generateMockData = (): any[] => {
@@ -1130,7 +1130,12 @@ const App: React.FC = () => {
         <NavItem active={sidebarView === 'analysis'} title="Phân tích" icon={<LineChart size={20} />} onClick={() => setSidebarView('analysis')} />
         <NavItem title="Danh mục" icon={<Briefcase size={20} />} />
         <NavItem title="Lịch sử" icon={<History size={20} />} />
-        <NavItem active={sidebarView === 'ai'} title="AI support" icon={<MessageSquare size={20} />} onClick={() => setSidebarView('ai')} />
+        <NavItem active={sidebarView === 'ai'} title="AI support" icon={<MessageSquare size={20} />} onClick={() => {
+          setSidebarView('ai');
+          if (!inputValue.trim()) {
+            setInputValue(`@${activeAsset} `);
+          }
+        }} />
         <NavItem active={sidebarView === 'knowledge'} title="Quản lý kiến thức" icon={<Database size={20} />} onClick={() => setSidebarView('knowledge')} />
 
         <div style={{ marginTop: 'auto' }}>
@@ -1202,11 +1207,10 @@ const App: React.FC = () => {
             }}
           />
           <div style={styles.knowledgeContainer}>
-            <div style={{ ...styles.marketHeader, display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingBottom: '10px' }}>
-              <span>Quản lý Kiến thức (RAG)</span>
-              
+            <div style={{ padding: '20px', paddingBottom: '10px' }}>
+              <div style={{ fontSize: '1em', fontWeight: 600, marginBottom: '10px' }}>Quản lý Kiến thức (RAG)</div>
               {/* Mode Toggle Button */}
-              <div style={styles.modeToggleContainer}>
+              <div style={{...styles.modeToggleContainer, width: 'fit-content'}}>
                 <span style={{ fontSize: '0.8em', color: '#8B949E' }}>Mode:</span>
                 <button 
                   disabled={isSwitchingMode}
@@ -1346,66 +1350,67 @@ const App: React.FC = () => {
             }}
           />
           <div style={styles.chatContainer}>
-            <div style={{ ...styles.marketHeader, display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingBottom: '10px' }}>
-              <span>AI Support</span>
-              
-              {/* Mode Toggle Button */}
-              <div style={{...styles.modeToggleContainer, marginLeft: 'auto', marginRight: '15px'}}>
-                <span style={{ fontSize: '0.8em', color: '#8B949E' }}>Mode:</span>
-                <button 
-                  disabled={isSwitchingMode}
-                  onClick={toggleAppMode}
-                  style={{
-                    ...styles.modeToggleBtn,
-                    background: appMode === 'INDEXING' ? 'rgba(239, 68, 68, 0.2)' : 'rgba(255, 255, 255, 0.05)',
-                    color: appMode === 'INDEXING' ? '#EF4444' : '#8B949E',
-                    borderColor: appMode === 'INDEXING' ? '#EF4444' : '#30363D',
-                    opacity: isSwitchingMode ? 0.5 : 1
-                  }}
-                >
-                  {isSwitchingMode ? <Loader2 size={12} style={{ animation: 'spin 1s linear infinite' }} /> : <Database size={12} />}
-                  INDEXING
-                </button>
-                <button 
-                  disabled={isSwitchingMode}
-                  onClick={toggleAppMode}
-                  style={{
-                    ...styles.modeToggleBtn,
-                    background: appMode === 'CHAT' ? 'rgba(16, 185, 129, 0.2)' : 'rgba(255, 255, 255, 0.05)',
-                    color: appMode === 'CHAT' ? '#10B981' : '#8B949E',
-                    borderColor: appMode === 'CHAT' ? '#10B981' : '#30363D',
-                    opacity: isSwitchingMode ? 0.5 : 1
-                  }}
-                >
-                  {isSwitchingMode ? <Loader2 size={12} style={{ animation: 'spin 1s linear infinite' }} /> : <MessageSquare size={12} />}
-                  CHAT
-                </button>
-              </div>
+            <div style={{ padding: '15px 20px', borderBottom: '1px solid #30363D' }}>
+              <div style={{ fontSize: '1em', fontWeight: 600, marginBottom: '10px' }}>AI Support</div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
+                {/* Mode Toggle Button */}
+                <div style={styles.modeToggleContainer}>
+                  <span style={{ fontSize: '0.8em', color: '#8B949E' }}>Mode:</span>
+                  <button 
+                    disabled={isSwitchingMode}
+                    onClick={toggleAppMode}
+                    style={{
+                      ...styles.modeToggleBtn,
+                      background: appMode === 'INDEXING' ? 'rgba(239, 68, 68, 0.2)' : 'rgba(255, 255, 255, 0.05)',
+                      color: appMode === 'INDEXING' ? '#EF4444' : '#8B949E',
+                      borderColor: appMode === 'INDEXING' ? '#EF4444' : '#30363D',
+                      opacity: isSwitchingMode ? 0.5 : 1
+                    }}
+                  >
+                    {isSwitchingMode ? <Loader2 size={12} style={{ animation: 'spin 1s linear infinite' }} /> : <Database size={12} />}
+                    INDEXING
+                  </button>
+                  <button 
+                    disabled={isSwitchingMode}
+                    onClick={toggleAppMode}
+                    style={{
+                      ...styles.modeToggleBtn,
+                      background: appMode === 'CHAT' ? 'rgba(16, 185, 129, 0.2)' : 'rgba(255, 255, 255, 0.05)',
+                      color: appMode === 'CHAT' ? '#10B981' : '#8B949E',
+                      borderColor: appMode === 'CHAT' ? '#10B981' : '#30363D',
+                      opacity: isSwitchingMode ? 0.5 : 1
+                    }}
+                  >
+                    {isSwitchingMode ? <Loader2 size={12} style={{ animation: 'spin 1s linear infinite' }} /> : <MessageSquare size={12} />}
+                    CHAT
+                  </button>
+                </div>
 
-              <select
-                value={selectedModel}
-                onChange={(e) => handleModelChange(e.target.value)}
-                disabled={isModelLoading || models.length === 0}
-                style={{
-                  background: '#0D1117',
-                  color: '#10B981',
-                  border: '1px solid #30363D',
-                  borderRadius: '4px',
-                  fontSize: '0.7em',
-                  padding: '4px',
-                  outline: 'none',
-                  cursor: isModelLoading || models.length === 0 ? 'not-allowed' : 'pointer',
-                  maxWidth: '120px'
-                }}
-              >
-                {models.length === 0 ? (
-                  <option value="" disabled>Loading...</option>
-                ) : (
-                  models.map(m => (
-                    <option key={m.id} value={m.id}>{m.name}</option>
-                  ))
-                )}
-              </select>
+                <select
+                  value={selectedModel}
+                  onChange={(e) => handleModelChange(e.target.value)}
+                  disabled={isModelLoading || models.length === 0}
+                  style={{
+                    background: '#0D1117',
+                    color: '#10B981',
+                    border: '1px solid #30363D',
+                    borderRadius: '4px',
+                    fontSize: '0.7em',
+                    padding: '4px',
+                    outline: 'none',
+                    cursor: isModelLoading || models.length === 0 ? 'not-allowed' : 'pointer',
+                    maxWidth: '120px'
+                  }}
+                >
+                  {models.length === 0 ? (
+                    <option value="" disabled>Loading...</option>
+                  ) : (
+                    models.map(m => (
+                      <option key={m.id} value={m.id}>{m.name}</option>
+                    ))
+                  )}
+                </select>
+              </div>
             </div>
 
 
@@ -1500,9 +1505,14 @@ const App: React.FC = () => {
                 Cập nhật: <strong style={{ color: '#E6EDF3' }}>{analysisData.latest_date}</strong>
               </span>
             )}
-            <button style={{ ...styles.btnAi, marginLeft: '16px' }} onClick={() => setSidebarView('ai')}>
-              <Sparkles size={14} /> Hỏi AI
-            </button>
+            {sidebarView !== 'ai' && sidebarView !== 'knowledge' && (
+              <button style={{ ...styles.btnAi, marginLeft: '16px' }} onClick={() => {
+                setSidebarView('ai');
+                setInputValue(`@${activeAsset} `);
+              }}>
+                <Sparkles size={14} /> Hỏi AI
+              </button>
+            )}
           </div>
           <div style={styles.accountInfo}>
             <div style={styles.balanceBox}>

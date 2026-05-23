@@ -22,6 +22,7 @@ Hiện tại, `FinancialAgent` chịu trách nhiệm thực thi 2 nhóm nghiệp
 ## 3. Đầu vào (Inputs)
 -   `user_input` (chuỗi ký tự): Câu hỏi hiện tại của người dùng.
 -   `history` (danh sách tin nhắn dạng Role-Content): Nhật ký hội thoại của phiên hiện hành.
+-   `system_prompt` (tùy chọn - chuỗi ký tự): Prompts hệ thống chuyên biệt để ghi đè hệ thống mặc định (ví dụ: dùng cho Stock Analyst Agent).
 
 ## 4. Đầu ra (Outputs)
 -   **Khi chat**: Một generator truyền trực tiếp luồng stream các chunk text từ LLM.

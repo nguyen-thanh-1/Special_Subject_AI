@@ -51,7 +51,8 @@ Mỗi hàm đều có **docstring chi tiết bằng tiếng Việt** bao gồm: 
     -   Thư viện bên ngoài: `numpy`, `pandas`, `scipy.stats` (chỉ cho VaR parametric).
     -   Dữ liệu CSV được xuất bởi [Backend_Market_Exporter.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_Market_Exporter.md) (`./Backend_Market_Exporter.md`).
 -   **Được gọi bởi (Called by / Dependency of):**
-    -   Hiện tại là thư viện độc lập (standalone library). Có thể được tích hợp bởi [Backend_Agents.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_Agents.md) hoặc [Backend_Pipeline.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_Pipeline.md) khi xây dựng tool phân tích tự động cho chatbot.
+    -   [Backend_Router_VN30.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_Router_VN30.md) (`./Backend_Router_VN30.md`): `get_stock_analysis` imports and executes the library functions (`technical.py` and `risk.py`) to serve stock analysis to the frontend.
+    -   [Backend_Pipeline.md](file:///c:/Users/Admin/Desktop/Kafi_chatbot/project_graph/Backend_Pipeline.md) (`./Backend_Pipeline.md`): Chat Pipeline calls `get_stock_analysis` to fetch indicators for the `@SYMBOL` stock analysis flow.
 
 ## 7. Bảng tóm tắt 35 hàm
 

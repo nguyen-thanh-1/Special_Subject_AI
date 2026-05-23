@@ -73,7 +73,9 @@ graph TD
     Backend_Router_Chatbot -->|"Truyền Câu hỏi"| Backend_Pipeline
 
     Backend_Router_VN30 -->|"Kích hoạt Xuất CSV"| Backend_Market_Exporter
+    Backend_Router_VN30 -->|"Tính toán Chỉ báo VN30"| Backend_Stock_Analysis
     Backend_Market_Exporter -.->|"Cung cấp CSV OHLCV"| Backend_Stock_Analysis
+    Backend_Pipeline -->|"Lấy chỉ báo @SYMBOL"| Backend_Router_VN30
 
     Backend_Pipeline -->|"Kiểm duyệt độc hại đầu vào/ra"| Backend_Guardrails
     Backend_Pipeline -->|"Viết lại câu hỏi làm rõ đại từ"| Backend_Agents

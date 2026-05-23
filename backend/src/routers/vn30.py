@@ -43,6 +43,7 @@ def _load_cache(filename: str) -> Optional[any]:
         logger.warning(f"[vn30] failed to load cache {filename}: {e}")
         return None
 
+OFFLINE_MODE = os.getenv("FINLENS_OFFLINE", "true").lower() == "true"
 _FINLENS_API_KEY = os.getenv("FINLENS_API_KEY", "")
 
 def _get_client():
@@ -82,6 +83,108 @@ def _interval_for_timeframe(tf: str) -> str:
     return "1d"        # EOD for longer periods
 
 
+def _generate_quotes_from_dataset() -> List[dict]:
+    results = []
+    historical_dir = Path("data/vn30_historical_csv")
+    if not historical_dir.exists():
+        historical_dir = Path("backend/data/vn30_historical_csv")
+    
+    for symbol in VN30_TICKERS:
+        csv_path = historical_dir / f"{symbol}_5y_daily.csv"
+        if csv_path.exists():
+            try:
+                df = pd.read_csv(csv_path)
+                if not df.empty and len(df) >= 2:
+                    df["Date"] = pd.to_datetime(df["Date"])
+                    df = df.sort_values("Date").reset_index(drop=True)
+                    
+                    latest = df.iloc[-1]
+                    prev = df.iloc[-2]
+                    
+                    close = float(latest.get("Close", latest.get("close", 0)))
+                    open_ = float(latest.get("Open", latest.get("open", close)))
+                    high = float(latest.get("High", latest.get("high", close)))
+                    low = float(latest.get("Low", latest.get("low", close)))
+                    volume = float(latest.get("Volume", latest.get("volume", 0)))
+                    prev_close = float(prev.get("Close", prev.get("close", close)))
+                    
+                    change = close - prev_close
+                    change_pct = (change / prev_close * 100) if prev_close != 0 else 0.0
+                    
+                    results.append({
+                        "symbol": symbol,
+                        "open": open_,
+                        "high": high,
+                        "low": low,
+                        "close": close,
+                        "volume": volume,
+                        "change": round(change, 2),
+                        "change_pct": round(change_pct, 2),
+                    })
+                    continue
+            except Exception as e:
+                logger.warning(f"[vn30] failed to read CSV quote for {symbol}: {e}")
+        
+        results.append({
+            "symbol": symbol,
+            "open": 0.0,
+            "high": 0.0,
+            "low": 0.0,
+            "close": 0.0,
+            "volume": 0.0,
+            "change": 0.0,
+            "change_pct": 0.0,
+        })
+    return results
+
+
+def _get_ohlcv_from_dataset(symbol: str, tf: str) -> List[dict]:
+    historical_dir = Path("data/vn30_historical_csv")
+    if not historical_dir.exists():
+        historical_dir = Path("backend/data/vn30_historical_csv")
+    
+    csv_path = historical_dir / f"{symbol}_5y_daily.csv"
+    if not csv_path.exists():
+        return []
+        
+    try:
+        df = pd.read_csv(csv_path)
+        if df.empty:
+            return []
+            
+        df["Date"] = pd.to_datetime(df["Date"])
+        df = df.sort_values("Date").reset_index(drop=True)
+        
+        mapping = {
+            "1d": 2,
+            "5d": 5,
+            "1m": 22,
+            "3m": 66,
+            "1y": 252,
+            "5y": len(df)
+        }
+        limit = mapping.get(tf, 22)
+        df_sliced = df.tail(limit)
+        
+        candles = []
+        for _, row in df_sliced.iterrows():
+            dt = row["Date"]
+            ts = int(dt.timestamp())
+            
+            candles.append({
+                "time": ts,
+                "open": float(row.get("Open", row.get("open", 0))),
+                "high": float(row.get("High", row.get("high", 0))),
+                "low": float(row.get("Low", row.get("low", 0))),
+                "close": float(row.get("Close", row.get("close", 0))),
+                "volume": float(row.get("Volume", row.get("volume", 0))),
+            })
+        return candles
+    except Exception as e:
+        logger.error(f"[vn30] failed to load ohlcv from CSV for {symbol}: {e}")
+        return []
+
+
 # ─── Endpoints ─────────────────────────────────────────────────────────────
 
 @router.get("/tickers")
@@ -94,8 +197,14 @@ def get_vn30_tickers():
 def get_vn30_quotes():
     """
     Return latest EOD quotes for all VN30 stocks.
-    Tries Finlens first, falls back to local cache if API fails.
+    Uses local offline dataset if OFFLINE_MODE is True or if FinLens API calls fail.
     """
+    if OFFLINE_MODE:
+        results = _generate_quotes_from_dataset()
+        if results:
+            _save_cache("vn30_quotes.json", results)
+        return results
+
     try:
         cli = _get_client()
         today = date.today()
@@ -136,25 +245,24 @@ def get_vn30_quotes():
                 })
             except Exception as e:
                 logger.warning(f"[vn30] failed to fetch quote for {symbol}: {e}")
-                # Try to find symbol in previous cache if exists
-                cached_quotes = _load_cache("vn30_quotes.json")
-                if cached_quotes:
-                    sym_cache = next((q for q in cached_quotes if q["symbol"] == symbol), None)
-                    if sym_cache:
-                        results.append(sym_cache)
-                        continue
-                results.append({"symbol": symbol, "close": None, "change_pct": None})
+                # Try to load from CSV dataset as fallback
+                csv_quotes = _generate_quotes_from_dataset()
+                sym_cache = next((q for q in csv_quotes if q["symbol"] == symbol), None) if csv_quotes else None
+                if sym_cache:
+                    results.append(sym_cache)
+                else:
+                    results.append({"symbol": symbol, "close": 0.0, "change_pct": 0.0})
 
         if results:
             _save_cache("vn30_quotes.json", results)
         return results
 
     except Exception as e:
-        logger.error(f"[vn30] API quotes fetch failed: {e}. Falling back to full cache.")
-        cached = _load_cache("vn30_quotes.json")
-        if cached:
-            return cached
-        raise HTTPException(status_code=503, detail="Market data unavailable (API error and no cache)")
+        logger.error(f"[vn30] API quotes fetch failed: {e}. Falling back to CSV dataset.")
+        results = _generate_quotes_from_dataset()
+        if results:
+            return results
+        raise HTTPException(status_code=503, detail="Market data unavailable")
 
 
 @router.get("/ohlcv/{symbol}")
@@ -164,7 +272,7 @@ def get_stock_ohlcv(
 ):
     """
     Return OHLCV candlestick data for a given symbol and timeframe.
-    Tries API first, falls back to 'data/market_cache/ohlcv_{symbol}_{tf}.json' if fails.
+    Tries API first, falls back to CSV dataset if offline or fails.
     """
     symbol = symbol.upper()
     tf = timeframe.lower()
@@ -173,22 +281,25 @@ def get_stock_ohlcv(
     if symbol not in VN30_TICKERS:
         raise HTTPException(status_code=404, detail=f"'{symbol}' is not in VN30 index")
 
+    if OFFLINE_MODE:
+        candles = _get_ohlcv_from_dataset(symbol, tf)
+        if candles:
+            _save_cache(cache_file, candles)
+        return candles
+
     try:
         start_str, end_str = _date_range_for_timeframe(tf)
         cli = _get_client()
 
         if tf in ("1d", "5d"):
-            # Intraday 15m candles
             df = cli.intraday.stock.ohlcv(symbol=symbol, start=start_str, end=end_str, interval="15m")
         else:
-            # End-of-day daily candles
             df = cli.eod.stock.ohlcv(symbol=symbol, start=start_str, end=end_str)
 
         if df is None or len(df) == 0:
-            cached = _load_cache(cache_file)
-            return cached if cached else []
+            candles = _get_ohlcv_from_dataset(symbol, tf)
+            return candles if candles else []
 
-        # Normalize column names to lowercase
         df.columns = [c.lower() for c in df.columns]
         date_col = "date" if "date" in df.columns else df.columns[0]
         df = df.sort_values(date_col)
@@ -215,10 +326,10 @@ def get_stock_ohlcv(
         return candles
 
     except Exception as e:
-        logger.error(f"[vn30] ohlcv fetch failed for {symbol}/{tf}: {e}. Trying cache.")
-        cached = _load_cache(cache_file)
-        if cached:
-            return cached
+        logger.error(f"[vn30] ohlcv fetch failed for {symbol}/{tf}: {e}. Falling back to CSV dataset.")
+        candles = _get_ohlcv_from_dataset(symbol, tf)
+        if candles:
+            return candles
         raise HTTPException(status_code=503, detail=f"OHLCV data for {symbol} unavailable")
 
 
@@ -342,12 +453,15 @@ def pre_fetch_market_data():
     """Background task to pre-fetch and cache VN30 quotes and export CSVs on startup."""
     logger.info("[vn30] starting background pre-fetch and CSV export...")
     try:
-        # 1. Fetch quotes for JSON cache (for sidebar)
+        # 1. Fetch quotes (from dataset if offline, from API if online)
         get_vn30_quotes()
         
-        # 2. Export 5-year historical CSVs
-        from src.utils.market_exporter import export_vn30_historical_csv
-        export_vn30_historical_csv()
+        # 2. Export 5-year historical CSVs only if NOT offline
+        if not OFFLINE_MODE:
+            from src.utils.market_exporter import export_vn30_historical_csv
+            export_vn30_historical_csv()
+        else:
+            logger.info("[vn30] Running in OFFLINE mode. Using local pre-downloaded CSV dataset.")
         
         logger.info("[vn30] background pre-fetch and CSV export complete.")
     except Exception as e:

@@ -6,13 +6,13 @@ class FinancialAgent:
     def __init__(self):
         self.llm = get_llm()
 
-    def process_chat(self, user_input: str, history: List[Dict[str, str]]):
+    def process_chat(self, user_input: str, history: List[Dict[str, str]], system_prompt: str = None):
         """
         Coordinates the LLM to process a financial chat request.
         """
         # Logic for pre-processing or additional context could go here
         # For now, it simply delegates to the LLM
-        return self.llm.generate_response(user_input, history)
+        return self.llm.generate_response(user_input, history, system_prompt=system_prompt)
 
     def rewrite_query(self, user_input: str, history: List[Dict[str, str]]) -> str:
         """
